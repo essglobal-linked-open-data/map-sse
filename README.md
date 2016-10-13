@@ -10,9 +10,11 @@ We are following exactly the process documented at http://nvie.com/posts/a-succe
   - The master branch is updated only on release
   - The develop branch is the plase to look for current activity.
 
+Note: when tagging in a local checkout, you must explicitly push tags up to the origin (just as for branches). See [Git Basics -- Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
 ## Release versions
 
-### v1.0
+### V1.0 (git tag `1.0`)
 
 Consists of `.ttl`, `.rdf` and `.skos` files copied from the `essglobal.org` server.
 
@@ -21,7 +23,7 @@ Consists of `.ttl`, `.rdf` and `.skos` files copied from the `essglobal.org` ser
 | `.ttl`, `.rdf` | `vocabs/vocab/v1.0` |
 | `.skos` | `vocabs/standard` |
 
-### v1.1
+### V1.1 (git tag `1.1`)
 
 Consists of `.ttl` and `.rdf` copied from the `essglobal.org` server.
 
