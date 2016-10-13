@@ -20,3 +20,12 @@ Consists of `.ttl`, `.rdf` and `.skos` files copied from the `essglobal.org` ser
 | --------- | ----------------------- |
 | `.ttl`, `.rdf` | `vocabs/vocab/v1.0` |
 | `.skos` | `vocabs/standard` |
+
+### v1.1
+
+Consists of `.ttl` and `.rdf` copied from the `essglobal.org` server.
+
+| File type | Origin on essglobal.org |
+| --------- | ----------------------- |
+| `.ttl`, `.rdf` | `vocabs/vocab/v1.1` |
+| `.skos` | unchanged |
