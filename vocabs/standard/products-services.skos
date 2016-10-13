@@ -1,0 +1,1060 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://purl.org/essglobal/standard/products-services/">
+  
+<skos:ConceptScheme rdf:about="">
+       <dc:title>Products and Services</dc:title>
+       <dc:description>Qualifiers controlled vocabulary for SSE</dc:description>
+       <dc:creator>Mariana Curado Malta (mariana@maltas.org)</dc:creator>
+       <dc:contributor>Daniel Tygel (dtygel@gmail.com)</dc:contributor>
+	 	<dc:contributor>Jason Nardi (jason.nardi@gmail.com)</dc:contributor>
+	 	<dc:contributor>Marc Alphandery (marc.alphandery@wanadoo.fr)</dc:contributor>
+       <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>
+	   <dc:contributor></dc:contributor>
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-20</dcterms:created>
+       <dc:language>en-en</dc:language>
+      <dc:publisher rdf:resource="http://www.ripess.org/" />
+      <dcterms:publisher>ESSGLOBAL</dcterms:publisher>
+	   <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+	   <skos:hasTopConcept rdf:resource="70000000"/>
+	   <skos:hasTopConcept rdf:resource="71000000"/>
+	   <skos:hasTopConcept rdf:resource="72000000"/>
+	   <skos:hasTopConcept rdf:resource="73000000"/>   	 
+	   <skos:hasTopConcept rdf:resource="74000000"/>  
+	   <skos:hasTopConcept rdf:resource="76000000"/>  
+	   <skos:hasTopConcept rdf:resource="77000000"/>
+       <skos:hasTopConcept rdf:resource="78000000"/>
+       <skos:hasTopConcept rdf:resource="80000000"/>
+       <skos:hasTopConcept rdf:resource="81000000"/>
+       <skos:hasTopConcept rdf:resource="82000000"/>
+       <skos:hasTopConcept rdf:resource="83000000"/>
+       <skos:hasTopConcept rdf:resource="84000000"/>
+       <skos:hasTopConcept rdf:resource="85000000"/>
+       <skos:hasTopConcept rdf:resource="86000000"/>
+       <skos:hasTopConcept rdf:resource="90000000"/>
+       <skos:hasTopConcept rdf:resource="91000000"/>
+       <skos:hasTopConcept rdf:resource="92000000"/>
+       <skos:hasTopConcept rdf:resource="93000000"/>
+       <skos:hasTopConcept rdf:resource="94000000"/>
+       <skos:hasTopConcept rdf:resource="95000000"/>
+       
+</skos:ConceptScheme>
+
+<skos:Concept rdf:ID="70000000">
+       <skos:definition xml:lang="EN">Farming and Fishing and Forestry and Wildlife Contracting Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Farming and Fishing and Forestry and Wildlife Contracting Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="70100000">
+       <skos:prefLabel xml:lang="EN">70100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Fisheries and aquaculture</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="70110000">
+       <skos:prefLabel xml:lang="EN">70110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Horticulture</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="70120000">
+       <skos:prefLabel xml:lang="EN">70120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Livestock services</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="70130000">
+       <skos:prefLabel xml:lang="EN">70130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Land and soil preparation and management and protection</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="70140000">
+       <skos:prefLabel xml:lang="EN">70140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Crop production and management and protection</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="70150000">
+       <skos:prefLabel xml:lang="EN">70150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Forestry</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="70160000">
+        <skos:prefLabel xml:lang="EN">70160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Wildlife and flora</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="70170000">
+        <skos:prefLabel xml:lang="EN">70170000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Water resources development and oversight</skos:definition>
+       <skos:broader rdf:resource="70000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+<skos:Concept rdf:ID="71000000">
+       <skos:definition xml:lang="EN">Mining and oil and gas services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Mining and oil and gas services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="71100000">
+       <skos:prefLabel xml:lang="EN">71100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Mining services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>  
+<skos:Concept rdf:about="71110000">
+       <skos:prefLabel xml:lang="EN">71110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Oil and gas exploration services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="71120000">
+       <skos:prefLabel xml:lang="EN">71120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Well drilling and construction services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="71130000">
+       <skos:prefLabel xml:lang="EN">71130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Oil and gas extraction and production enhancement services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="71140000">
+       <skos:prefLabel xml:lang="EN">71140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Oil and gas restoration and reclamation services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="71150000">
+       <skos:prefLabel xml:lang="EN">71150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Oil and gas data management and processing services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="71160000">
+        <skos:prefLabel xml:lang="EN">71160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Oil and gas well project management services</skos:definition>
+       <skos:broader rdf:resource="71000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+<skos:Concept rdf:ID="72000000">
+       <skos:definition xml:lang="EN">Building and Facility Construction and Maintenance Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Building and Facility Construction and Maintenance Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="72100000">
+       <skos:prefLabel xml:lang="EN">72100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Building and facility maintenance and repair services</skos:definition>
+       <skos:broader rdf:resource="72000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>  
+<skos:Concept rdf:about="72110000">
+       <skos:prefLabel xml:lang="EN">72110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Residential building construction services</skos:definition>
+       <skos:broader rdf:resource="72000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="72120000">
+       <skos:prefLabel xml:lang="EN">72120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Nonresidential building construction services</skos:definition>
+       <skos:broader rdf:resource="72000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+
+<skos:Concept rdf:about="72140000">
+       <skos:prefLabel xml:lang="EN">72140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Heavy construction services</skos:definition>
+       <skos:broader rdf:resource="72000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="72150000">
+       <skos:prefLabel xml:lang="EN">72150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Specialized trade construction and maintenance services</skos:definition>
+       <skos:broader rdf:resource="72000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+<skos:Concept rdf:ID="73000000">
+       <skos:definition xml:lang="EN">Industrial Production and Manufacturing Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Industrial Production and Manufacturing Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="73100000">
+       <skos:prefLabel xml:lang="EN">73100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Plastic and chemical industries</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="73110000">
+       <skos:prefLabel xml:lang="EN">73110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Wood and paper industries</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="73120000">
+       <skos:prefLabel xml:lang="EN">73120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Metal and mineral industries</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="73130000">
+       <skos:prefLabel xml:lang="EN">73130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Food and beverage industries</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="73140000">
+       <skos:prefLabel xml:lang="EN">73140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Fibers and textiles and fabric industries</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="73150000">
+       <skos:prefLabel xml:lang="EN">73150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Manufacturing support services</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="73160000">
+        <skos:prefLabel xml:lang="EN">73160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Manufacture</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="73170000">
+        <skos:prefLabel xml:lang="EN">73170000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Precision instruments</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="73180000">
+        <skos:prefLabel xml:lang="EN">73180000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Machining and processing services</skos:definition>
+       <skos:broader rdf:resource="73000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+<skos:Concept rdf:ID="76000000">
+       <skos:definition xml:lang="EN">Industrial Cleaning Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Industrial Cleaning Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="76100000">
+       <skos:prefLabel xml:lang="EN">76100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Decontamination services</skos:definition>
+       <skos:broader rdf:resource="76000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="76110000">
+       <skos:prefLabel xml:lang="EN">76110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Cleaning and janitorial services</skos:definition>
+       <skos:broader rdf:resource="76000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="76120000">
+       <skos:prefLabel xml:lang="EN">76120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Refuse disposal and treatment</skos:definition>
+       <skos:broader rdf:resource="76000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="76130000">
+       <skos:prefLabel xml:lang="EN">76130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Toxic and hazardous waste cleanup</skos:definition>
+       <skos:broader rdf:resource="76000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+
+
+
+
+
+<skos:Concept rdf:ID="77000000">
+       <skos:definition xml:lang="EN"></skos:definition>
+	   <skos:prefLabel xml:lang="EN">Environmental Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN">Environmental Services</skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="77100000">
+       <skos:prefLabel xml:lang="EN">77100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Environmental management</skos:definition>
+       <skos:broader rdf:resource="77000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="77110000">
+       <skos:prefLabel xml:lang="EN">77110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Environmental protection</skos:definition>
+       <skos:broader rdf:resource="77000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="77120000">
+       <skos:prefLabel xml:lang="EN">77120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Pollution tracking and monitoring and rehabilitation</skos:definition>
+       <skos:broader rdf:resource="77000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="77130000">
+       <skos:prefLabel xml:lang="EN">70130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Pollutants tracking and monitoring and rehabilitation services</skos:definition>
+       <skos:broader rdf:resource="77000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+
+
+<skos:Concept rdf:ID="78000000">
+       <skos:definition xml:lang="EN">Transportation and Storage and Mail Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Transportation and Storage and Mail Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="78100000">
+       <skos:prefLabel xml:lang="EN">78100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Mail and cargo transport</skos:definition>
+       <skos:broader rdf:resource="78000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="78110000">
+       <skos:prefLabel xml:lang="EN">78110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Passenger transport</skos:definition>
+       <skos:broader rdf:resource="78000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="78120000">
+       <skos:prefLabel xml:lang="EN">78120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Material packing and handling</skos:definition>
+       <skos:broader rdf:resource="78000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="78130000">
+       <skos:prefLabel xml:lang="EN">78130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Storage</skos:definition>
+       <skos:broader rdf:resource="78000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="78140000">
+       <skos:prefLabel xml:lang="EN">78140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Transport services</skos:definition>
+       <skos:broader rdf:resource="78000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="78180000">
+        <skos:prefLabel xml:lang="EN">78180000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Transportation repair or maintenance services</skos:definition>
+       <skos:broader rdf:resource="78000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="80000000">
+       <skos:definition xml:lang="EN">Management and Business Professionals and Administrative Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Management and Business Professionals and Administrative Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="80100000">
+       <skos:prefLabel xml:lang="EN">80100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Management advisory services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+
+<skos:Concept rdf:about="80110000">
+       <skos:prefLabel xml:lang="EN">80110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Human resources services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="80120000">
+       <skos:prefLabel xml:lang="EN">80120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Legal services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="80130000">
+       <skos:prefLabel xml:lang="EN">80130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Real estate services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="80140000">
+       <skos:prefLabel xml:lang="EN">80140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Marketing and distribution</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="80150000">
+       <skos:prefLabel xml:lang="EN">80150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Trade policy and services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="80160000">
+        <skos:prefLabel xml:lang="EN">80160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Business administration services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+
+
+
+<skos:Concept rdf:ID="81000000">
+       <skos:definition xml:lang="EN">Engineering and Research and Technology Based Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Engineering and Research and Technology Based Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+<skos:Concept rdf:about="81100000">
+       <skos:prefLabel xml:lang="EN">81100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Professional engineering services</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="81110000">
+       <skos:prefLabel xml:lang="EN">81110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Computer Services</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="81120000">
+       <skos:prefLabel xml:lang="EN">81120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Economics</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="81130000">
+       <skos:prefLabel xml:lang="EN">81130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Statistics</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="81140000">
+       <skos:prefLabel xml:lang="EN">81140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Manufacturing technologies</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="81150000">
+       <skos:prefLabel xml:lang="EN">81150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Earth science services</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="81160000">
+        <skos:prefLabel xml:lang="EN">81160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Information Technology Service Delivery</skos:definition>
+       <skos:broader rdf:resource="81000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+<skos:Concept rdf:ID="82000000">
+       <skos:definition xml:lang="EN">Editorial and Design and Graphic and Fine Art Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Editorial and Design and Graphic and Fine Art Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="82100000">
+       <skos:prefLabel xml:lang="EN">82100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Advertising</skos:definition>
+       <skos:broader rdf:resource="82000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="82110000">
+       <skos:prefLabel xml:lang="EN">82110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Writing and translations</skos:definition>
+       <skos:broader rdf:resource="82000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="82120000">
+       <skos:prefLabel xml:lang="EN">82120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Reproduction services</skos:definition>
+       <skos:broader rdf:resource="82000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="82130000">
+       <skos:prefLabel xml:lang="EN">82130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Photographic services</skos:definition>
+       <skos:broader rdf:resource="82000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="82140000">
+       <skos:prefLabel xml:lang="EN">82140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Graphic design</skos:definition>
+       <skos:broader rdf:resource="82000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="82150000">
+       <skos:prefLabel xml:lang="EN">82150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Professional artists and performers</skos:definition>
+       <skos:broader rdf:resource="82000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+<skos:Concept rdf:ID="83000000">
+       <skos:definition xml:lang="EN">Public Utilities and Public Sector Related Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Public Utilities and Public Sector Related Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="83100000">
+       <skos:prefLabel xml:lang="EN">83100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Utilities</skos:definition>
+       <skos:broader rdf:resource="83000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="83110000">
+       <skos:prefLabel xml:lang="EN">83110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Telecommunications media services</skos:definition>
+       <skos:broader rdf:resource="83000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+
+<skos:Concept rdf:about="83120000">
+       <skos:prefLabel xml:lang="EN">83120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Information services</skos:definition>
+       <skos:broader rdf:resource="83000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	
+
+
+
+
+<skos:Concept rdf:ID="84000000">
+       <skos:definition xml:lang="EN">Financial and Insurance Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Financial and Insurance Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="84100000">
+       <skos:prefLabel xml:lang="EN">84100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Development finance</skos:definition>
+       <skos:broader rdf:resource="84000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="84110000">
+       <skos:prefLabel xml:lang="EN">84110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Accounting and bookkeeping services</skos:definition>
+       <skos:broader rdf:resource="84000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+
+<skos:Concept rdf:about="84120000">
+       <skos:prefLabel xml:lang="EN">84120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Banking and investment</skos:definition>
+       <skos:broader rdf:resource="84000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="84130000">
+       <skos:prefLabel xml:lang="EN">84130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Insurance and retirement services</skos:definition>
+       <skos:broader rdf:resource="84000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="84140000">
+       <skos:prefLabel xml:lang="EN">84140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Credit agencies</skos:definition>
+       <skos:broader rdf:resource="84000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+
+
+
+
+<skos:Concept rdf:ID="85000000">
+       <skos:definition xml:lang="EN">Healthcare Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Healthcare Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="85100000">
+       <skos:prefLabel xml:lang="EN">85100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Comprehensive health services</skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="85110000">
+       <skos:prefLabel xml:lang="EN">85110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Disease prevention and control</skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="85120000">
+       <skos:prefLabel xml:lang="EN">85120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Medical practice</skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="85130000">
+       <skos:prefLabel xml:lang="EN">85130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Medical science research and experimentation</skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="85140000">
+       <skos:prefLabel xml:lang="EN">85140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN"></skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="80150000">
+       <skos:prefLabel xml:lang="EN">80150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Food and nutrition services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="85160000">
+        <skos:prefLabel xml:lang="EN">85160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Medical Surgical Equipment Maintenance Refurbishment and Repair Services</skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="805170000">
+        <skos:prefLabel xml:lang="EN">85170000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Death and dying support services</skos:definition>
+       <skos:broader rdf:resource="85000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+
+
+
+
+<skos:Concept rdf:ID="86000000">
+       <skos:definition xml:lang="EN">Education and Training Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Education and Training Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="86100000">
+       <skos:prefLabel xml:lang="EN">86100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Vocational training</skos:definition>
+       <skos:broader rdf:resource="86000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="86110000">
+       <skos:prefLabel xml:lang="EN">86110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Alternative educational systems</skos:definition>
+       <skos:broader rdf:resource="86000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="86120000">
+       <skos:prefLabel xml:lang="EN">86120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Educational institutions</skos:definition>
+       <skos:broader rdf:resource="86000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="86130000">
+       <skos:prefLabel xml:lang="EN">86130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Specialized educational services</skos:definition>
+       <skos:broader rdf:resource="86000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="86140000">
+       <skos:prefLabel xml:lang="EN">86140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Educational facilities</skos:definition>
+       <skos:broader rdf:resource="86000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+
+<skos:Concept rdf:ID="90000000">
+       <skos:definition xml:lang="EN">Travel and Food and Lodging and Entertainment Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Travel and Food and Lodging and Entertainment Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="90100000">
+       <skos:prefLabel xml:lang="EN">90100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Restaurants and catering</skos:definition>
+       <skos:broader rdf:resource="90000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="90110000">
+       <skos:prefLabel xml:lang="EN">90110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Hotels and lodging and meeting facilities</skos:definition>
+       <skos:broader rdf:resource="90000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="90120000">
+       <skos:prefLabel xml:lang="EN">90120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Travel facilitation</skos:definition>
+       <skos:broader rdf:resource="90000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="90130000">
+       <skos:prefLabel xml:lang="EN">90130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Performing arts</skos:definition>
+       <skos:broader rdf:resource="90000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="90140000">
+       <skos:prefLabel xml:lang="EN">90140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Commercial sports</skos:definition>
+       <skos:broader rdf:resource="90000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="80150000">
+       <skos:prefLabel xml:lang="EN">90150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Entertainment services</skos:definition>
+       <skos:broader rdf:resource="90000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+
+<skos:Concept rdf:ID="91000000">
+       <skos:definition xml:lang="EN">Personal and Domestic Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Personal and Domestic Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="91100000">
+       <skos:prefLabel xml:lang="EN">91100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Personal appearance</skos:definition>
+       <skos:broader rdf:resource="91000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="91110000">
+       <skos:prefLabel xml:lang="EN">91110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Domestic and personal assistance</skos:definition>
+       <skos:broader rdf:resource="91000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+
+
+
+<skos:Concept rdf:ID="92000000">
+       <skos:definition xml:lang="EN">Security and Safety Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Security and Safety Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="92120000">
+       <skos:prefLabel xml:lang="EN">92120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Security and personal safety</skos:definition>
+       <skos:broader rdf:resource="92000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+
+
+
+<skos:Concept rdf:ID="93000000">
+       <skos:definition xml:lang="EN">Politics and Civic Affairs Services</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Politics and Civic Affairs Services</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="93100000">
+       <skos:prefLabel xml:lang="EN">93100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Political systems and institutions</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="93110000">
+       <skos:prefLabel xml:lang="EN">93110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Socio political conditions</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="93120000">
+       <skos:prefLabel xml:lang="EN">93120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">International relations</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="93130000">
+       <skos:prefLabel xml:lang="EN">93130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Humanitarian aid and relief</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="93140000">
+       <skos:prefLabel xml:lang="EN">93140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Community and social services</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="80150000">
+       <skos:prefLabel xml:lang="EN">80150000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Public administration and finance services</skos:definition>
+       <skos:broader rdf:resource="80000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="93160000">
+        <skos:prefLabel xml:lang="EN">93160000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Taxation</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="93170000">
+        <skos:prefLabel xml:lang="EN">93170000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Trade policy and regulation</skos:definition>
+       <skos:broader rdf:resource="93000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+
+
+<skos:Concept rdf:ID="94000000">
+       <skos:definition xml:lang="EN">Organizations and Clubs</skos:definition>
+	   <skos:prefLabel xml:lang="EN"></skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="94100000">
+       <skos:prefLabel xml:lang="EN">94100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Work related organizations</skos:definition>
+       <skos:broader rdf:resource="94000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="94110000">
+       <skos:prefLabel xml:lang="EN">94110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Religious organizations</skos:definition>
+       <skos:broader rdf:resource="94000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="94120000">
+       <skos:prefLabel xml:lang="EN">94120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Clubs</skos:definition>
+       <skos:broader rdf:resource="94000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="94130000">
+       <skos:prefLabel xml:lang="EN">94130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Civic organizations and associations and movements</skos:definition>
+       <skos:broader rdf:resource="94000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+
+
+
+
+
+
+
+
+
+
+
+<skos:Concept rdf:ID="95000000">
+       <skos:definition xml:lang="EN">Land and Buildings and Structures and Thoroughfares</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Land and Buildings and Structures and Thoroughfares</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="95100000">
+       <skos:prefLabel xml:lang="EN">95100000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Land parcels</skos:definition>
+       <skos:broader rdf:resource="95000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>   
+
+
+<skos:Concept rdf:about="95110000">
+       <skos:prefLabel xml:lang="EN">95110000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Thoroughfares</skos:definition>
+       <skos:broader rdf:resource="95000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="95120000">
+       <skos:prefLabel xml:lang="EN">95120000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Permanent buildings and structures</skos:definition>
+       <skos:broader rdf:resource="95000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="95130000">
+       <skos:prefLabel xml:lang="EN">95130000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Portable buildings and structures</skos:definition>
+       <skos:broader rdf:resource="95000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="95140000">
+       <skos:prefLabel xml:lang="EN">95140000</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Prefabricated buildings and structures</skos:definition>
+       <skos:broader rdf:resource="95000000"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+</rdf:RDF>
