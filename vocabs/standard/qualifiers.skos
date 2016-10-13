@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://purl.org/essglobal/standard/qualifiers/">
+  
+<skos:ConceptScheme rdf:about="qualifiers">
+<dc:title>Qualifiers</dc:title>
+       <dc:description>Qualifiers controlled vocabulary for SSE</dc:description>
+       <dc:creator>Cesar Araujo (cesar_araujo@sapo.pt)</dc:creator>
+       <dc:creator>Leonardo Cruz (leonardopscruz@gmail.com)</dc:creator>
+       <dc:creator>Rodrigo Alves (rasalves@gmail.com)</dc:creator>
+       <dc:creator>Sergio Vale (gks_sergio@hotmail.com)</dc:creator>
+       <dc:contributor>Daniel Tygel (dtygel@gmail.com)</dc:contributor>
+		 <dc:contributor>Jason Nardi (jason.nardi@gmail.com)</dc:contributor>
+		 <dc:contributor>Marc Alphandery (marc.alphandery@wanadoo.fr)</dc:contributor>     
+	    <dc:contributor>Mariana Malta (mariana@iscap.ipp.pt)</dc:contributor>
+		 <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>       
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-20</dcterms:created>
+       <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-25</dcterms:modified>
+       <dc:language>en-en</dc:language>
+		<dc:publisher rdf:resource="http://www.ripess.org/" />
+       <dcterms:publisher>ESSGLOBAL</dcterms:publisher>
+	    <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+	    <skos:hasTopConcept rdf:resource="q01"/>
+	    <skos:hasTopConcept rdf:resource="q02"/>
+	    <skos:hasTopConcept rdf:resource="q03"/>
+	    <skos:hasTopConcept rdf:resource="q04"/>   	 
+	    <skos:hasTopConcept rdf:resource="q05"/>  
+	    <skos:hasTopConcept rdf:resource="q06"/>  
+	    <skos:hasTopConcept rdf:resource="q07"/>
+       <skos:hasTopConcept rdf:resource="q08"/>
+</skos:ConceptScheme>
+
+<skos:Concept rdf:ID="q01">
+       <skos:definition xml:lang="EN">Products and Services which are developed in a process that is focused on environmental sustainability, like the usage of renewable energy, recycling, ecologic packing, reused inputs, etc.</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Ecologically or Environmentally Sustainable</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="Agroecological">
+       <skos:prefLabel xml:lang="EN">Agroecological</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Agriculture Products or Services that ally social justice (no workers exploration) and organic farming.</skos:definition>
+       <skos:broader rdf:resource="q01"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>   
+
+<skos:Concept rdf:about="Agroextrativism">
+       <skos:prefLabel xml:lang="EN">Agroextrativism</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Extractivism of natural fruits, seeds and other plants that's done in a traditional manner without harming the biodiversity and natural environment</skos:definition>
+       <skos:broader rdf:resource="q01"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept> 
+	   
+<skos:Concept rdf:about="Animalwelfare">
+       <skos:prefLabel xml:lang="EN">Animal Welfare</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products and Services which are developped in a process that doesn't do any harm to animals, like animal testing or the usage of animal material as inputs.</skos:definition>
+       <skos:broader rdf:resource="q01"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept> 
+
+<skos:Concept rdf:about="Madefromrecycledorrecoveredmaterial">
+       <skos:prefLabel xml:lang="EN">Made from Recycled or Recovered Material</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products and Services that use inputs that are recovered or recycled, totally or partially.</skos:definition>
+       <skos:broader rdf:resource="q01"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="Naturalcosmeticsandherbalmedicines">
+       <skos:prefLabel xml:lang="EN">Natural Cosmetics and Herbal Medicines</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Medicinal os Cosmetic Products and Services that use only natural essences, without human made chemical compounds.</skos:definition>
+       <skos:broader rdf:resource="q01"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="Organic">
+        <skos:prefLabel xml:lang="EN">Organic</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Agricultural Products issued from organic farming, without the usage of agrotoxics and other chemical based seeds, fertilizer or other inputs. It might also be Products and Services that use only organic agricultural products as inputs.</skos:definition>
+       <skos:broader rdf:resource="q01"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="q02">
+       <skos:definition xml:lang="EN">Work relations, structure and conditions which are democratic and decent.</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Democratic and decent working conditions</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="Selfmanagement">
+        <skos:prefLabel xml:lang="EN">Self-management</skos:prefLabel>
+	   <skos:definition xml:lang="EN">SSE enterprise owned by the workers. Decisions about the initiative and the work are done by the same people.</skos:definition>
+       <skos:broader rdf:resource="q02"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="q03">
+       <skos:definition xml:lang="EN">"Products and Services developed by people normally marginalised from society and the work market, like for example unemployed people, immigrants, disabled, ex-prisonners."</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Socially fair</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="Socialinsertioninitiatives">
+        <skos:prefLabel xml:lang="EN">Social insertion initiatives</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Unemployed people work during a established timespan in an insertion enterprise to be better qualified for the market.</skos:definition>
+       <skos:broader rdf:resource="q03"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="q04">
+       <skos:definition xml:lang="EN">"Products and Services which are democratic and fair in the economic level, bringing autonomy to local SSE enterprises, fair relations along chains and contributing for a sovreign, territorial and solidarity development."</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Economically democratic and sovereign</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="Fairtrade">
+        <skos:prefLabel xml:lang="EN">Fair trade</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products and Services which are offered in a trading chain that respects several criteria and code of conducts from production to the consumption, like direct relashionship among consummers and producers, international fair trade, open/transparent price composition, trading process owned by the producers, etc.</skos:definition>
+       <skos:broader rdf:resource="q04"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="LocalorFromCommunity">
+        <skos:prefLabel xml:lang="EN">Local or From Community</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products and Services issued and traded locally.</skos:definition>
+       <skos:broader rdf:resource="q04"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="q05">
+       <skos:definition xml:lang="EN">Products and Services developped in a way where women are empowered, as in women owned SSE initiatives or initiatives that have an internal charter granting gender equity in all steps of the economic activity.</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Gender Equity</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="q06">
+       <skos:definition xml:lang="EN">SSE initiatives from local and traditional communities, indigenous people, "campesinat".</skos:definition>
+	   <skos:prefLabel xml:lang="EN">From original / indigenous people or traditional communities</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="FromOriginalorIndigenousPeople">
+        <skos:prefLabel xml:lang="EN">From Original or Indigenous People</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products and Services developped by original or indigenous people.</skos:definition>
+       <skos:broader rdf:resource="q06"/>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="PeasantorFamilyAgriculture">
+        <skos:prefLabel xml:lang="EN">Peasant or Family Agriculture</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products and Services developped by small farmers, normally organised in the community, and normally families, that might be using traditional ways to do farming.</skos:definition>
+       <skos:broader rdf:resource="q06"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="q07">
+       <skos:definition xml:lang="EN">The outcomes of the work have licenses which allow for reproduction and sharing of knowledge and culture.</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Commons and free knowledge/free culture</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="FreeCulture">
+        <skos:prefLabel xml:lang="EN">Free Culture</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Artistic and Cultural Products which have licenses like the Creative Commons and similars, where it can be copied and in some times transformed with some conditions that vary, like citing the original author, prohibition of commercial trading, etc.</skos:definition>
+       <skos:broader rdf:resource="q07"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+<skos:Concept rdf:about="FreeKnowledgeorSoftware">
+        <skos:prefLabel xml:lang="EN">Free Knowledge or Software</skos:prefLabel>
+	   <skos:definition xml:lang="EN">Products, like software and machinery, that are licensed in a way that allows the public to know the source code (the way it has been produced) and to produce derivatives, under some conditions like citing the original author and having to also use the same license,as in GPL.</skos:definition>
+       <skos:broader rdf:resource="q07"/>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+
+
+<skos:Concept rdf:ID="q08">
+       <skos:definition xml:lang="EN">Products and Services that are not industrial, being made in a traditional and artisanal way.</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Handicraft</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource="qualifiers"/>
+</skos:Concept>
+
+</rdf:RDF>

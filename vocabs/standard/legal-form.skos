@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://www.essglobal.info/standard/legal-form/">
+
+
+<skos:ConceptScheme rdf:about="">
+<dc:title>Legal Form</dc:title>
+       <dc:description>SSE Initiative or SSE Network Legal form controlled vocabulary for SSE</dc:description>
+       <dc:creator>Mariana Malta (mariana@maltas.org)</dc:creator>
+       <dc:contributor>Daniel Tygel (dtygel@gmail.com)</dc:contributor>
+	    <dc:contributor>Craig Borowiak (cborowiakhaverford.edu)</dc:contributor>
+	    <dc:contributor>Alan Tygel (alantygel@gmail.com)</dc:contributor>
+	    <dc:contributor>Jason Nardi (jason.nardi@gmail.com)</dc:contributor>
+       <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-06</dcterms:created>
+       <dc:language>en-en</dc:language>
+        <dc:publisher rdf:resource="http://www.ripess.org/" />
+<dcterms:publisher>ESSGLOBAL</dcterms:publisher>
+       <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:ID="L1">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Grupo Informal</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Informal Group</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Grupo Informal</skos:prefLabel>
+        <skos:prefLabel xml:lang="IT">Grupo Informale</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="L2">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cooperativa</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Cooperative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Cooperativa</skos:prefLabel>
+			<skos:prefLabel xml:lang="IT">Cooperativa</skos:prefLabel>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="L3">
+        <skos:prefLabel xml:lang="FR">Entreprise</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Empresa</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Company </skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Empresa</skos:prefLabel>
+			<skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="L4">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Non-Profit Organisation </skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Organização Não Governamental </skos:prefLabel>
+			<skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:ID="L5">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Empresa Social</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Social Entreprise </skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Empresa Social</skos:prefLabel>
+			<skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+</rdf:RDF>

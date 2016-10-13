@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://purl.org/essglobal/standard/themes/">
+
+
+<skos:ConceptScheme rdf:about="">
+<dc:title>Themes</dc:title>
+       <dc:description>Themes controlled vocabulary for SSE</dc:description>
+       <dc:creator>César Araújo (cesar_araujo@sapo.pt)</dc:creator>
+       <dc:creator>Leonardo Cruz (leonardopscruz@gmail.com)</dc:creator>
+       <dc:creator>Rodrigo Alves (rasalves@gmail.com)</dc:creator>
+       <dc:creator>Sérgio Vale (gks_sergio@hotmail.com)</dc:creator>
+       <dc:contributor>Daniel Tygel (dtygel@gmail.com)</dc:contributor>
+		 <dc:contributor>Jason Nardi (jason.nardi@gmail.com)</dc:contributor>
+		 <dc:contributor>Marc Alphandery (marc.alphandery@wanadoo.fr)</dc:contributor>
+       <dc:contributor>Ana Alice Baptista (analice@dsi.uminho.pt)</dc:contributor>
+       <dc:contributor>Mariana Malta (mariana@iscap.ipp.pt)</dc:contributor>
+       <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-20</dcterms:created>
+       <dc:language>en-en</dc:language>
+        <dc:publisher rdf:resource="http://www.ripess.org/" />
+        <dcterms:publisher>ESSGLOBAL</dcterms:publisher>
+       <dc:relation rdf:resource="http://www.dsi.uminho.pt/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:ID="T1">
+        <skos:prefLabel xml:lang="FR">Villes en transition et droit a l'habitation</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Ciudades en transición y derecho a la vivienda</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Transition towns and housing rights</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Cidades em Transição e direito à moradia</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Housing and mobility</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur le logement et la mobilité</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre la vivienda y la movilidad</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about housing and mobility</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca da habitacao e mobilidade</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T2">
+        <skos:prefLabel xml:lang="FR">Souveraineté alimentaire et Agriculture paysanne</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Soberanía alimentaria y Agricultura campesina</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Food souvereignty and peasant's farming agriculture</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">A soberania alimentar e agricultura camponesa da agricultura</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Food and agriculture</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Il intègre la thématique sur l'alimentation et l'agriculture</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre la alimentación y la agricultura</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">It integrates the thematic on food and agriculture</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de alimento e agricultura</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T3">
+        <skos:prefLabel xml:lang="FR">Finances Solidaires</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Finanzas Solidarias</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Social and solidarity finances</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Finanças sociais e de solidariedade</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Finance</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur les finances</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática acerca de las finanzas</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about finances</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de finanças</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T4">
+        <skos:prefLabel xml:lang="FR">Concepts et valeurs sur l'Économie Solidaire</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Conceptos y valores sobre Economía Solidaria</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Concepts and values related to Solidarity Economy</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Conceitos e valores relacionados com a Economia Solidária</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Economies</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur les économies</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre las economías</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about economies</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de economias</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T5">
+        <skos:prefLabel xml:lang="FR">Environnement et biens communs</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Medio ambiente y bienes comunes</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Environment and commons</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Ambiente e terras comuns</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Environment, energy and commons</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur les biens environnement, l'énergie et des communes</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre los bienes medio ambiente, energía y común</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about environment, energy and common goods</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de ambiente, energia e bens comuns</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T6">
+        <skos:prefLabel xml:lang="FR">Politiques Publiques</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Politicas Publicas</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Public policies</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">As políticas públicas</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Public policies</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur les politiques publiques</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre la política pública</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about public policy</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de políticas públicas</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T7">
+        <skos:prefLabel xml:lang="FR">culture et connaissances (savoirs) libres</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cultura y conocimiento libres</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Free culture and knowledge</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Cultura e conhecimento livre</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Free culture and knowledge</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur la culture libre et la connaissance</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre la cultura y el conocimiento libres</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about free culture and knowledge</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de cultura livre e conhecimento</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T8">
+        <skos:prefLabel xml:lang="FR">Education populaire et apprentissage</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Educacion y asesoria popular</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Popular education and training</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">A educação popular e a formação</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Education and learning</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre sur l'éducation thématique et apredizagem</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra en la educación y la temática apredizagem</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates on thematic education and apredizagem</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de educação e apredizagem</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T9">
+        <skos:prefLabel xml:lang="FR">Production, Commerce et consommation solidaires et responsables</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Producción, Comercialización y consumo solidarios y responsables</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Solidarity and Responsible production, commerce and consumption</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Solidariedade e produção responsável, comércio e consumo</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Production, trade and consumption</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Il intègre la thématique sur la production, le commerce et la consommation</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra la temática de la producción, el comercio y el consumo</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">It integrates the thematic on production, trade and consumption</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de produção, comércio e consumo</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T10">
+        <skos:prefLabel xml:lang="FR">Développement territorial et bien vivir</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Desarrollo territorial y Bien Vivir</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Territorial development and "Bien Vivir"</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Desenvolvimento territorial e "Bem Viver"</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Local development and "Bien vivir"</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur le développement local et le bien-être</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática de desarrollo local y el bienestar</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about local development and wellbeing</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de desenvolvimento local e bem-viver</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T11">
+        <skos:prefLabel xml:lang="FR">Coopération internationale</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Cooperación internacional</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">International Cooperation</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Cooperação Internacional</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">International Cooperation</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Il intègre la coopération internationale sur la thématique</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra a la cooperación internacional en la temática</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">It integrates the international cooperation on thematic</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de cooperação internacional</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T12">
+        <skos:prefLabel xml:lang="FR">Justice et insertion sociales et combat contre la pauvreté</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Justicia e inserción social y lucha contra la pobreza</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Social Justice and insertion and fight against poverty</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Justiça Social e de inserção e luta contra a pobreza</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Social justice and fight against poverty</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur la justice sociale et lutte contre la pauvreté</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre la justicia social y la lucha contra la pobreza</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about social justice and poverty alleviation</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca da justiça social e luta contra a pobreza</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T13">
+        <skos:prefLabel xml:lang="FR">Travail décent/digne et Autogestion</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Trabajo decente/digno y Autogestión</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Decent work and Self-Management</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Trabalho decente e Autogestão</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Decent work and Self-Management</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Il intègre la thématique sur le travail décent et de l'autogestion</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra la temática sobre el trabajo decente y la autogestión</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">It integrates the thematic on decent work and self-management</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de trabalho decente e autogestão</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T14">
+        <skos:prefLabel xml:lang="FR">Femmes</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Mujeres</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Women</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Mulheres</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Women</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur les femmes</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática sobre la mujer</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about women</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de mulheres</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T15">
+        <skos:prefLabel xml:lang="FR">Réseautage et Organisation du mouvement de l'ÉSS (national et international)</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Redes y organización del movimiento de ESS (nacional y internacional)</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">SSE movement organizing and networking (national and international)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">SSE movimento de organização e trabalho em rede (nacional e internacional)</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Networking and social movements</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre la mise en réseau thématique et mouvements sociaux</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra en la creación de redes temáticas y los movimientos sociales</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates on thematic networking and social movements</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de networking e movimentos sociais</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T16">
+        <skos:prefLabel xml:lang="FR">Technologie et recherche</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Tecnología e investigación</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Research and technology</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Pesquisa e tecnologia</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Research and technology</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre la recherche thématique et de la technologie</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra en la investigación temática y la tecnología</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates on thematic research and technology</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de pesquisa e tecnologia</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T17">
+        <skos:prefLabel xml:lang="FR">Peuples et Communautés traditionnels/indigènes</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Pueblos y comunidades tradicionales/originarias</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Indigenous peoples and communities</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Os povos indígenas e comunidades</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Indigenous peoples and communities</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur les peuples autochtones et des communautés</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática acerca de los pueblos y comunidades indígenas</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about the indigenous peoples and communities</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca dos povos indígenas e comunidades</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T18">
+        <skos:prefLabel xml:lang="FR">Communication et information alternatives</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Comunicación e información alternativas</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Alternative communication and information</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Comunicação alternativa e informações</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Communication and information</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre thématique sur la communication et l'information</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Integra la temática de la comunicación y la información</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates thematic about communication and information</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de comunicação e informação</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:ID="T19">
+        <skos:prefLabel xml:lang="FR">Autres thématiques</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES">Otros temas</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Other themes</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT">Outros temas</skos:prefLabel>
+        <skos:altLabel xml:lang="EN">Other</skos:altLabel>
+        <skos:scopeNote xml:lang="FR">Intègre sur d'autres questions thématiques</skos:scopeNote>
+        <skos:scopeNote xml:lang="ES">Se integra sobre otras cuestiones temáticas</skos:scopeNote>
+        <skos:scopeNote xml:lang="EN">Integrates about other thematic issues</skos:scopeNote>
+        <skos:scopeNote xml:lang="PT">Integra as tematicas acerca de outros assuntos</skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+
+
+</rdf:RDF>
