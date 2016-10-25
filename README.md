@@ -15,7 +15,7 @@ Note: when tagging in a local checkout, you must explicitly push tags up to the 
 
 ## Release versions
 
-### V1.0 (git tag `1.0`)
+### V1.0 (git tag `v1.0`)
 
 Consists of `.ttl`, `.rdf` and `.skos` files copied from the `essglobal.org` server.
 
@@ -24,7 +24,7 @@ Consists of `.ttl`, `.rdf` and `.skos` files copied from the `essglobal.org` ser
 | `.ttl`, `.rdf` | `vocabs/vocab/v1.0` |
 | `.skos` | `vocabs/standard` |
 
-### V1.1 (git tag `1.1`)
+### V1.1 (git tag `v1.1`)
 
 Consists of `.ttl` and `.rdf` copied from the `essglobal.org` server.
 
