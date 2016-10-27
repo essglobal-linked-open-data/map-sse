@@ -64,7 +64,9 @@ $(TGT_FILE): $(SRC_FILE) | $(TGT_DIR)
 
 # TGT_RDFXML is made from TGT_FILE using rapper, 
 # but only if it will not be made directly from SRC_FILE by substitution
-# i.e. only if TGT_RDFXML is not identical to TGT_FILE:
+# i.e. only if TGT_RDFXML is not identical to TGT_FILE (hence the ifneq):
+# Documentation of the available serializations made by rapper can be found here: 
+#    http://librdf.org/raptor/api/raptor-serializers.html
 TGT_RDFXML := $(TGT_FILE:$(SRC_FILE_EXT)=.rdf)
 ifneq ($(TGT_RDFXML),$(TGT_FILE))
 $(GENERATE_target): $(TGT_RDFXML)
@@ -79,6 +81,12 @@ $(GENERATE_target): $(TGT_TURTLE)
 $(TGT_TURTLE): $(TGT_FILE)
 	rapper -i $(SRC_TYPE) -o turtle $< > $@
 endif
+
+# Might as well generate an HTML file too:
+TGT_HTML := $(TGT_FILE:$(SRC_FILE_EXT)=.html)
+$(GENERATE_target): $(TGT_HTML)
+$(TGT_HTML): $(TGT_FILE)
+	rapper -i $(SRC_TYPE) -o html $< > $@
 
 $(GENERATE_target):
 	@echo "Files generated for target version $(tgt_version) can be found in directory $(TGT_DIR)."
