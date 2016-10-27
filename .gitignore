@@ -1,2 +1,5 @@
 # vim files:
 *.swp
+
+# output directory for generators:
+generators/generated
