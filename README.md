@@ -1,7 +1,7 @@
-# dcap-sse
+# map-sse
 Metadata Application Profile for the Social and Solidarity Economy.
 
-This repository contains the source files for the DCAP-SSE. Until October 2016, these were maintained on a server at [essglobal.org](http://essglobal.org/dcap-sse/). A reason for moving them is to allow other people to get involved in the maintenance and development of the DCAP-SSE.
+This repository contains the source files for the MAP-SSE (previously referred to as DCAP-SSE). Until October 2016, these were maintained on a server at [essglobal.org](http://essglobal.org/dcap-sse/). A reason for moving them is to allow other people to get involved in the maintenance and development of the MAP-SSE.
 
 ## Use of branches in this repository
 
@@ -12,6 +12,11 @@ We are following exactly the process documented at http://nvie.com/posts/a-succe
   - The `develop` branch is the default branch for this repository.
 
 Note: when tagging in a local checkout, you must explicitly push tags up to the origin (just as for branches). See [Git Basics -- Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+## Generating and deploying RDF serializations
+
+There is a [makefile](generators/Makefile) for generating various RDF serialializations.
+For more information, see the [generating and deploying serializations](https://github.com/essglobal-linked-open-data/map-sse/wiki/Generating-and-deploying-serializations) in the Wiki.
 
 ## Release versions
 
