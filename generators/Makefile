@@ -46,7 +46,7 @@ else
   $(warning "Unrecognized tgt_version")
 endif
 
-# Output directory:
+# Directory for generated serializations (and maybe other files, like .htaccess?)
 TGT_DIR := generated/$(TGT_SUBDIR)
 $(TGT_DIR):
 	mkdir -p $@
