@@ -15,11 +15,12 @@ $(HELP_target):
 	@echo "\tPrint help about a specific target version."
 	@echo "\tValid target version are: $(TGT_VERSIONS)"
 	@echo "make $(GENERATE_target) tgt_version=x"
-	@echo "\tGenerate various RDF serializations in directory $(TGT_DIR)."
-	@echo "\tThese will be based on the contents of $(SRC_VOCAB_FILE), but with substitutions made for the base URI $(SRC_BASE_URI)."
+	@echo "\t1. Generate various RDF serializations in directory $(TGT_DIR)."
+	@echo "\t   These will be based on the contents of $(SRC_VOCAB_FILE), but with substitutions made for the base URI $(SRC_BASE_URI)."
+	@echo "\t2. Generate SKOS files from the ones in $(SRC_STANDARD_DIR), but with substitutions made for the base URI $(SRC_BASE_URI)."
 	@[ -n "$(TGT_BASE_URI)" ] && echo "\tWith tgt_version=$(tgt_version), $(SRC_BASE_URI) will be replaced by $(TGT_BASE_URI)." || true
 	@[ -z "$(TGT_BASE_URI)" ] && echo "\tThe substitution will depend on the tgt_version specified on the make command line" || true
-	@echo "make $(DEPLOY_target) tgt_version=x"
+	@echo "make $(DEPLOY_target) tgt_version=x server=y"
 	@echo "\tDeploy the generated data to the server."
 
 #ifndef base_uri
@@ -37,7 +38,7 @@ VOCAB_SUBDIR := vocab
 STANDARD_SUBDIR := standard
 TGT_SUBDIRS := $(VOCAB_SUBDIR) $(STANDARD_SUBDIR)
 
-# The SRC_VOCAB_FILE will have $(SRC_BASE_URI) substituted with $(TGT_BASE_URI) to create $(TGT_VOCAB_FILE)
+# The SRC_VOCAB_FILE and SRC_STANDARD_FILES will have $(SRC_BASE_URI) substituted with $(TGT_BASE_URI) when the GENERATE_target is made.
 SRC_VOCAB_FILE := ../vocabs/vocab/essglobal-vocab.ttl
 SRC_BASE_URI := http://purl.org/essglobal/
 SRC_VOCAB_FILE_EXT := $(suffix $(SRC_VOCAB_FILE))
@@ -51,9 +52,17 @@ SRC_STANDARD_FILES := activities.skos legal-form.skos products-services.skos qua
 TGT_SUBDIR := $(tgt_version)
 
 # Here we define variables that depend on the tgt_version.
-TGT_VERSIONS := experimental 1.1
+# Note that some of the variables defined above could be (re)defined here, if necessary.
+TGT_VERSIONS := ise experimental 1.1
 ifeq ($(tgt_version),experimental)
   TGT_BASE_URI := http://purl.org/essglobal/experimental/
+else ifeq ($(tgt_version),ise)
+  TGT_BASE_URI := http://purl.org/solidarityeconomics/experimental/essglobal/
+  # SERVER details are needed for deployment
+  SERVER_SSH_CONFIG_NAME := parecco
+  # www-vocabs is symboloc link on server:
+  SERVER_DIR := www-vocabs/
+  SERVER_SUB_DIR := experimental/essglobal
 else ifeq ($(tgt_version),1.1)
   TGT_BASE_URI := http://purl.org/essglobal/
 else
@@ -132,3 +141,14 @@ $(GENERATE_target): $(TGT_STANDARD_FILES)
 
 $(GENERATE_target):
 	@echo "Files generated for target version $(tgt_version) can be found in directory $(TGT_DIR)."
+
+###################
+# Deployment to server
+###################
+RSYNC := rsync -avz 
+# Define macro for executing commands on the server (here using ssh):
+SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
+
+$(DEPLOY_target): $(GENERATE_target)
+	$(call SERVER_CMD,'cd $(SERVER_DIR) && mkdir -p $(SERVER_SUB_DIR)')
+	$(RSYNC) $(TGT_DIR)/* $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)
