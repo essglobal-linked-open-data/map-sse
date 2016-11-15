@@ -6,7 +6,7 @@
  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
  xmlns:dc="http://purl.org/dc/elements/1.1/" 
  xmlns:dcterms="http://purl.org/dc/terms/"
- xml:base="http://www.essglobal.info/standard/legal-form/">
+ xml:base="http://purl.org/essglobal/standard/legal-form/">
 
 
 <skos:ConceptScheme rdf:about="">
