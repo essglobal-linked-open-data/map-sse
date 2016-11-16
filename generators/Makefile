@@ -34,7 +34,7 @@ $(HELP_target):
 # http://purl.org/essglobal/standard   standard
 # http://purl.org/essglobal/vocab      vocab
 
-VOCAB_SUBDIR := vocab
+VOCAB_SUBDIR := vocab-content
 STANDARD_SUBDIR := standard
 TGT_SUBDIRS := $(VOCAB_SUBDIR) $(STANDARD_SUBDIR)
 
@@ -139,6 +139,16 @@ $(TGT_STANDARD_DIR)/%: $(SRC_STANDARD_DIR)/% | $(TGT_STANDARD_DIR)
 # Add the list of STANDARD files to the generate target:
 $(GENERATE_target): $(TGT_STANDARD_FILES)
 
+TGT_HTACCESS := $(TGT_DIR)/.htaccess
+GEN_HTACCESS := generate-htaccess.rb
+RewriteBase := /$(SERVER_SUB_DIR)/
+VocabUrlSuffix := vocab
+VocabRdf := $(VOCAB_SUBDIR)/$(notdir $(TGT_RDFXML))
+$(TGT_HTACCESS): $(GEN_HTACCESS) Makefile
+	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(VocabRdf) > $@
+
+$(GENERATE_target): $(TGT_HTACCESS)
+
 $(GENERATE_target):
 	@echo "Files generated for target version $(tgt_version) can be found in directory $(TGT_DIR)."
 
@@ -151,4 +161,4 @@ SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
 
 $(DEPLOY_target): $(GENERATE_target)
 	$(call SERVER_CMD,'cd $(SERVER_DIR) && mkdir -p $(SERVER_SUB_DIR)')
-	$(RSYNC) $(TGT_DIR)/* $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)
+	$(RSYNC) $(TGT_DIR)/ $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)/
