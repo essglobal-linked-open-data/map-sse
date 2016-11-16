@@ -1,0 +1,4988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en" resource="http://purl.org/essglobal/" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>RIPESS | ESSGlobal RDF Vocabulary and other resources</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href=" default.css" type="text/css"/>
+<link rel="dcterms:tableOfContents" href="#contents" title="Table of Contents"/>
+<style type="text/css">
+
+
+                                tr.attribute th {
+                                        background-color: #fff;
+                                }
+                                table.legend,
+                                table.references {
+                                        margin-left: 2.5%;
+                                        margin-right: 2.5%;
+                                        width: 95%;
+                                        table-layout:fixed;
+                                        border-width: 0;
+                                        }
+                                .legend th.label,
+                                .references th.abbrev {
+                                        width: 20%;
+                                }
+                                .legend td.definition,
+                                .references td.citation {
+                                        width: 80%;
+                                }
+                                abbr.xmlns {
+                                        font-style: italic;
+                                        border-bottom: 0;
+                                }
+                                table.border.index td,
+                                table.border.index th {
+                                        border-spacing: 0;
+                                }
+                                table.index th {
+                                        border-right: 1px solid #CCC; border-bottom: 1px solid #CCC; padding: .5em; /* FIXME: if this selector gets added to table.border th, then these duplicate CSS settings won't be needed. The ones below are the overrides */
+                                        font-weight: normal;
+                                        background-color: transparent;
+                                }
+
+</style>
+</head>
+<body>
+
+<a name="maincontent" id="maincontent"></a>
+
+<h1>ESSGlobal RDF Vocabulary</h1>
+<table cellspacing="0" class="docinfo">
+    <tr>
+<th scope="row">Title:</th>
+<td property="dcterms:title">ESSGlobal RDF Vocabulary and other resources</td>
+</tr>
+    <tr>
+<th scope="row">Creator:</th>
+<td property="dcterms:creator" label="Mariana Curado Malta - ISCAP/IPP">Mariana Curado Malta - <a href="http://www.iscap.ipp.pt" target="new">ISCAP/IPP</a></td>
+</tr>
+
+    <tr>
+<th scope="row">Publisher:</th>
+<td property="dcterms:publisher" label="RIPESS -ESSGlobal working group"><a href="http://www.ripess.org" target="new">RIPESS</a> - <a href="http://purl.org/essglobal/website" target="new">ESSGlobal</a> Working group</td>
+</tr>
+
+    <tr>
+<th scope="row">Identifier:</th>
+<td>
+<a href="http://purl.org/essglobal/vocab/" property="dcterms:identifier">http://purl.org/essglobal/vocab/</a>
+</td>
+</tr>
+    <tr>
+<th scope="row">Date Issued:</th>
+<td>
+<time property="dcterms:issued">2014-08-16</time>
+</td>
+</tr>
+
+    <tr>
+<th scope="row">Latest Version:</th>
+<td>
+<a href="http://purl.org/essglobal/vocab/v1.2/" property="dcterms:isVersionOf">http://purl.org/essglobal/vocab/v1.2/</a>
+</td>
+</tr>
+	  <tr>
+<th scope="row">Replaces:</th>
+<td>
+None
+</td>
+</tr>
+
+      <tr>
+<th scope="row">Description:</th>
+<td property="dcterms:description">This document is an up-to-date specification of the ESSGlobal RDF vocabulary mantained by RIPESS ESSGlobal work-group.</td>
+</tr>
+
+</table>
+<div id="contents">
+<h2>Table of Contents</h2>
+<ol>
+<li>
+<a href="#H1">Introduction and Definitions</a>
+</li>
+<li>
+    <a href="#H2">Properties</a>
+</li>
+
+<li>
+<a href="#H3">Classes</a>
+</li>
+
+<li>
+<a href="#H4">Vocabulary Encoding Schemes (VES)</a>
+</li>
+<li>
+<a href="#H5">Economic Activities/Sectors Vocabulary Encoding Scheme</a>
+</li>
+
+<li>
+<a href="#H6">Legal Form Vocabulary Encoding Scheme</a>
+</li>
+
+
+<li>
+<a href="#H7">Qualifiers Vocabulary Encoding Scheme</a>
+</li>
+
+<li>
+<a href="#H8">Type of Labour Vocabulary Encoding Scheme</a>
+</li>
+
+
+
+<li>
+<a href="#H9">References</a>
+</li>
+
+
+    </ol>
+</div>
+<h2>Index of Terms</h2>
+<table class="border index">
+<tr>
+<th scope="row">Properties</th>
+<td>
+<a href="#terms-deliveryRangeDistance" class="term">deliveryRangeDistance</a>,
+<a href="#terms-economicSector" class="term">economicSector</a>,
+<a href="#terms-hasAddress" class="term">hasAddress</a>,
+<a href="#terms-hasCost" class="term">hasCost</a>,
+<a href="#terms-hasImpactOnCost" class="term">hasImpactOnCost</a>,
+<a href="#terms-hasProductOrService" class="term">hasProductOrService</a>,
+<a href="#terms-hasSaleOption" class="term">hasSaleOption</a>,
+<a href="#terms-isAvailable" class="term">isAvailable</a>,
+<a href="#terms-isAvailableAt" class="term">isAvailableAt</a>,
+<a href="#terms-isComposedBy" class="term">isComposedBy</a>,
+<a href="#terms-isMain" class="term">isMain</a>,
+<a href="#terms-isSSE" class="term">isSSE</a>,
+<a href="#terms-legalForm" class="term">legalForm</a>,
+<a href="#terms-mission" class="term">mission</a>,
+<a href="#terms-objective" class="term">objective</a>,
+<a href="#terms-qualifier" class="term">qualifier</a>,
+<a href="#terms-quantityPerProductOrServiceUnit" class="term">quantityPerProductOrServiceUnit</a>,
+<a href="#terms-salesMarginPercentage" class="term">salesMarginPercentage</a>,
+<a href="#terms-salesMarginValue" class="term">salesMarginValue</a>,
+<a href="#terms-state" class="term">state</a>,
+<a href="#terms-totalMen" class="term">totalMen</a>,
+<a href="#terms-totalOfMembers" class="term">totalOfMembers</a>,
+<a href="#terms-totalWomen" class="term">totalWomen</a>,
+<a href="#terms-typeOfLabour" class="term">typeOfLabour</a>,
+<a href="#terms-unit" class="term">unit</a>,
+<a href="#terms-CostPerUnit" class="term">CostPerUnit</a>
+</td>
+</tr>
+
+    <tr>
+<th scope="row">Classes</th>
+<td>
+<a href="#terms-Address" class="term">Address</a>,
+<a href="#terms-Cost" class="term">Cost</a>,
+<a href="#terms-CostComposition" class="term">CostComposition</a>,
+<a href="#terms-Input" class="term">Input</a>,
+<a href="#terms-Labour" class="term">Labour</a>,
+<a href="#terms-LocationOfSale" class="term">LocationOfSale</a>,
+<a href="#terms-Network" class="term">Network</a>,
+<a href="#terms-OtherCosts" class="term">OtherCosts</a>,
+<a href="#terms-ProductOrService" class="term">ProductOrService</a>,
+<a href="#terms-SaleOption" class="term">SaleOption</a>,
+<a href="#terms-SSEInitiative" class="term">SSEInitiative</a>
+</td>
+</tr>
+
+
+<tr>
+<th scope="row">Vocabulary Encoding Schemes</th>
+<td>
+<a href="#terms-Activities" class="term">activities (Economic Activities/Sectors)</a>,
+<a href="#terms-Legal-form" class="term">legal-form</a>,
+<a href="#terms-Qualifiers" class="term">qualifiers</a>,
+<a href="#terms-Type-of-labour" class="term">type-of-labour</a>
+</td>
+</tr>
+
+<tr>
+<th scope="row">Economic Activities/Sectors Vocabulary Encoding Scheme</th>
+<td>
+<a href="#activities-A01" class="term">A01</a>, <a href="#activities-A02" class="term">A02</a>, <a href="#activities-A03" class="term">A03</a>, <a href="#activities-A04" class="term">A04</a>,
+<a href="#activities-A05" class="term">A05</a>, <a href="#activities-A06" class="term">A06</a>, <a href="#activities-A07" class="term">A07</a>, <a href="#activities-A08" class="term">A08</a>,
+<a href="#activities-A09" class="term">A09</a>, <a href="#activities-A10" class="term">A10</a>, <a href="#activities-A11" class="term">A11</a>, <a href="#activities-A12" class="term">A12</a>,
+<a href="#activities-A13" class="term">A13</a>, <a href="#activities-A14" class="term">A14</a>, <a href="#activities-A15" class="term">A15</a>, <a href="#activities-A16" class="term">A16</a>,
+<a href="#activities-A17" class="term">A17</a>, <a href="#activities-A18" class="term">A18</a>, <a href="#activities-A19" class="term">A19</a>, <a href="#activities-A20" class="term">A20</a>,
+<a href="#activities-A21" class="term">A21</a>
+
+</td>
+</tr>
+
+<tr>
+<th scope="row">Legal Form Vocabulary Encoding Scheme</th>
+<td>
+<a href="#legal-form-L1" class="term">L1</a>, <a href="#legal-form-L2" class="term">L2</a>, <a href="#legal-form-L3" class="term">L3</a>, <a href="#legal-form-L4" class="term">L4</a>, 
+<a href="#legal-form-L5" class="term">L5</a>
+</td>
+</tr>
+
+
+<tr>
+<th scope="row">Qualifiers Vocabulary Encoding Scheme</th>
+<td>
+<a href="#qualifiers-Q01" class="term">Q01</a>, <a href="#qualifiers-Agroecological" class="term">Agroecological</a>,  <a href="#qualifiers-Agroextrativism" class="term">Agroextrativism</a>, 
+<a href="#qualifiers-Animalwelfare" class="term">Animalwelfare</a>,  <a href="#qualifiers-Madefromrecycledorrecoveredmaterial" class="term">Madefromrecycledorrecoveredmaterial</a>, 
+<a href="#qualifiers-Naturalcosmeticsandherbalmedicines" class="term">Naturalcosmeticsandherbalmedicines</a>,  <a href="#qualifiers-Organic" class="term">Organic</a>, 
+<a href="#qualifiers-Q02" class="term">Q02</a>,  <a href="#qualifiers-Selfmanagement" class="term">Selfmanagement</a>, <a href="#qualifiers-Q03" class="term">Q03</a>,  
+<a href="#qualifiers-Socialinsertioninitiatives" class="term">Socialinsertioninitiatives</a>, 
+<a href="#qualifiers-Q04" class="term">Q04</a>,  <a href="#qualifiers-Fairtrade" class="term">Fairtrade</a>,  <a href="#qualifiers-LocalorFromCommunity" class="term">LocalorFromCommunity</a>,  
+<a href="#qualifiers-Q05" class="term">Q05</a>,  <a href="#qualifiers-Q06" class="term">Q06</a>,  <a href="#qualifiers-FromOriginalorIndigenousPeople" class="term">FromOriginalorIndigenousPeople</a>, 
+<a href="#qualifiers-PeasantorFamilyAgriculture" class="term">PeasantorFamilyAgriculture</a>,  <a href="#qualifiers-Q07" class="term">Q07</a>,    
+ <a href="#qualifiers-FreeCulture" class="term">FreeCulture</a>,  <a href="#qualifiers-FreeKnowledgeorSoftware" class="term">FreeKnowledgeorSoftware</a>,  <a href="#qualifiers-Q08" class="term">Q08</a>
+</td>
+</tr>
+
+
+
+<tr>
+<th scope="row">Type of labour Vocabulary Encoding Scheme</th>
+<td>
+<a href="#Type-of-labour-T1" class="term">T1</a>, <a href="#Type-of-labour-T2" class="term">T2</a>, <a href="#Type-of-labour-T3" class="term">T3</a>, <a href="#Type-of-labour-T4" class="term">T4</a>, 
+<a href="#Type-of-labour-T5" class="term">T5</a>
+</td>
+</tr>
+
+
+</table>
+<p>&nbsp;&nbsp;</p>
+<div id="H1">
+<h2>Section 1: Introduction and Definitions</h2>
+<div id="introduction">
+	<p>This document is an up-to-date, authoritative specification
+of all metadata terms maintained by the Intercontinental Network for the promotion of the Social and Solidarity Economy (RIPESS). </p>
+
+<p>Each term is specified with the following minimal set of attributes:</p>
+<p/>
+
+<table width="95%" border="0" align="center">
+
+<tr>
+<td width="20%">
+<b>Name:</b>
+</td>
+<td width="80%">
+A token appended to the URI of a DCMI namespace to create the URI of the term.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Label:</b>
+</td>
+<td width="80%">
+The human-readable label assigned to the term.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>URI:</b>
+</td>
+<td width="80%">
+The Uniform Resource Identifier used to uniquely identify a term.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Definition:</b>
+</td>
+<td width="80%">
+A statement that represents the concept and essential nature of the term.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Type of Term:</b>
+</td>
+<td width="80%">
+The type of term as described in the DCMI Abstract Model [<a href="#DCAM">DCAM</a>].
+</td>
+</tr>
+</table>
+
+<p>Where applicable, the following attributes provide additional information about a term:</p>
+<p/>
+<table width="95%" border="0" align="center">
+
+<tr>
+<td width="20%">
+<b>Comment:</b>
+</td>
+<td width="80%">
+Additional information about the term or its application.
+</td>
+</tr>
+
+    <tr>
+<td width="20%">
+<b>Broader Than:</b>
+</td>
+<td width="80%">
+A Class of which the described term is a Super-Class.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Narrower Than:</b>
+</td>
+<td width="80%">
+A Class of which the described term is a Sub-Class.
+</td>
+</tr>
+<tr>
+<td width="20%">
+<b>Has Domain:</b>
+</td>
+<td width="80%">
+A Class of which a resource described by the term is an Instance.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Has Range:</b>
+</td>
+<td width="80%">
+A Class of which a value described by the term is an Instance.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Member Of:</b>
+</td>
+<td width="80%">
+An enumerated set of resources (Vocabulary Encoding Scheme) of which the term is a Member.
+</td>
+</tr>
+
+<tr>
+<td width="20%">
+<b>Equivalent<br/>Property:</b>
+</td>
+<td width="80%">
+A Property to which the described term is equivalent.
+</td>
+</tr>
+
+</table>
+
+
+
+</div>
+</div>
+<p>&nbsp;&nbsp;</p>
+<div id="H2">
+<h2>Section 2: Properties</h2>
+<table cellspacing="0" class="border">
+
+<tbody id="terms-deliveryRangeDistance" class="term" resource="http://purl.org/essglobal/vocab/deliveryRangeDistance">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>deliveryRangeDistance</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/deliveryRangeDistance">http://purl.org/essglobal/vocab/deliveryRangeDistance</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Delivery Range Distance</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Delivery range of a product or service, in kilometers or miles.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+    <td axis="Comment" property="dcterms:description">If this term is defined, the term  “Delivery Range Geographic Area”, defined in the context of the DCAP-SSE with the property deliveryRangeDistance, has to be left empty.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/LocationOfSale</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/XMLSchema#decimall">http://www.w3.org/2001/XMLSchema#decimal</a>
+</td>
+</tr>
+
+</tbody>
+
+
+<tbody id="terms-economicSector" class="term" resource="http://purl.org/essglobal/vocab/economicSector">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>economicSector</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/accessRights">http://purl.org/essglobal/vocab/economicSector</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Economic Sector</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A categorization of the type of activities carried on by SSE initiatives, depending of its nature, raw materials and methodology.
+</td>
+</tr>
+
+ <tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+    <a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-hasAddress" class="term" resource="http://purl.org/essglobal/vocab/hasAddress">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>hasAddress</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2015-05-04"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/accrualMethod">http://purl.org/essglobal/vocab/hasAddress</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Has address</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The address of a SSEInitiative, of a Location of Sale or of a Network.</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Network">http://purl.org/essglobal/vocab/Network</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/LocationOfSale</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://purl.org/essglobal/vocab/Address">http://purl.org/essglobal/vocab/Address</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-hasCost" class="term" resource="http://purl.org/essglobal/vocab/hasCost">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>hasCost</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/accrualPeriodicity">http://purl.org/essglobal/vocab/hasCost</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">has Cost</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The cost for a particular product or service produced by a SSE initiative or by a Network.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/dc/dcmitype/Collection">http://purl.org/essglobal/vocab/ProductOrService</a>
+</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Has Range:
+		</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://purl.org/essglobal/vocab/Cost">http://purl.org/essglobal/vocab/Cost</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-hasImpactOnCost" class="term" resource="http://purl.org/essglobal/vocab/hasImpactOnCost">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>hasImpactOnCost</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/hasImpactOnCost">http://purl.org/essglobal/vocab/hasImpactOnCost</a>
+</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">has Impact On Cost</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">States if the input contributes to the monetary price of the final product. Whereas many (perhaps most) inputs do contribute to the monetary price of the final product or service, some don't.
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/OtherCosts">http://purl.org/essglobal/vocab/OtherCosts</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Input">http://purl.org/essglobal/vocab/Input</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/XMLSchema#boolean">http://www.w3.org/2001/XMLSchema#boolean</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-hasProductOrService" class="term" resource="http://purl.org/essglobal/vocab/hasProductOrService">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>hasProductOrService</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/alternative">http://purl.org/essglobal/vocab/hasProductOrService</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">has Product Or Service</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The good offered by an SSE initiative or a Network.</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+ <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Network">http://purl.org/essglobal/vocab/Network</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:
+		</th>
+<td axis="Has-Range">
+    <a property="rdfs:range" href="http://purl.org/essglobal/vocab/ProductOrService">http://purl.org/essglobal/vocab/ProductOrService</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">EquivalentProperty:</th>
+<td axis="EquivalentProperty">
+<a property="owl:equivalentProperty" href="http://purl.org/goodrelations/v1#offers">http://purl.org/goodrelations/v1#offers</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-hasSaleOption" class="term" resource="http://purl.org/essglobal/vocab/hasSaleOption">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>hasSaleOption</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06<"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/audience">http://purl.org/essglobal/vocab/hasSaleOption</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">has Sale Option</td>
+</tr>
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A sale option is a good sold at a certain price, under specific properties, in a certain Location.
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/ProductOrService">http://purl.org/essglobal/vocab/ProductOrService</a>
+</td>
+
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://purl.org/essglobal/vocab/SaleOption">http://purl.org/essglobal/vocab/SaleOption</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-isAvailable" class="term" resource="http://purl.org/essglobal/vocab/isAvailable">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>isAvailable</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06<"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/available">http://purl.org/essglobal/vocab/isAvailable</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">is Available</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">If the Sale Option (the good at a certain price, under specific properties, in a specific Sale Location) is available.
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+
+</tr>
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+    <a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SaleOption">http://purl.org/essglobal/vocab/SaleOption</a>
+</td>
+
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/XMLSchema#boolean">http://www.w3.org/2001/XMLSchema#boolean</a>
+</td>
+</tr>
+
+
+</tbody>
+<tbody id="terms-isAvailableAt" class="term" resource="http://purl.org/essglobal/vocab/isAvailableAt">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>isAvailableAt</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/isAvailableAt">http://purl.org/essglobal/vocab/isAvailableAt</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">is Available At</td>
+</tr>
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A sale option is connected to a place where the good or service is provided.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SaleOption">http://purl.org/essglobal/vocab/SaleOption</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/LocationOfSale</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-isComposedBy" class="term" resource="http://purl.org/essglobal/vocab/isComposedBy">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>isComposedBy</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/conformsTo">http://purl.org/essglobal/vocab/isComposedBy</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">is Composed By</td>
+</tr>
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A breakdown of all inputs (as taxes and raw materials) and labour costs that make up the g oood's final cost. An open cost is a pre-requisite for solidarity fair trade systems.
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Cost">http://purl.org/essglobal/vocab/Cost</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://purl.org/essglobal/vocab/CostComposition">http://purl.org/essglobal/vocab/CostComposition</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-isMain" class="term" resource="http://purl.org/essglobal/vocab/isMain">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>isMain</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/isMain">http://purl.org/essglobal/vocab/isMain</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">is Main</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:	</th>
+<td axis="Definition" property="rdfs:comment">If the Location of Sale is the headquarter of the SSE initiative.</td>
+</tr>
+
+ <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/LocationOfSale</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/XMLSchema#boolean">http://www.w3.org/2001/XMLSchema#boolean</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-isSSE" class="term" resource="http://purl.org/essglobal/vocab/isSSE">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>isSSE</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/coverage">http://purl.org/essglobal/vocab/isSSE</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">is SSE</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">If the Location of Sale is a place belonging to the SSE.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/LocationOfSale</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/XMLSchema#boolean">http://www.w3.org/2001/XMLSchema#boolean</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-legalForm" class="term" resource="http://purl.org/essglobal/vocab/legalForm">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>legalForm</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/created">http://purl.org/essglobal/vocab/legalForm</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">legal Form</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The legal form of a SSE Inititative of of a Network.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Network">http://purl.org/essglobal/vocab/Network</a>
+</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+    <a property="dcam:memberOf" href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-mission" class="term" resource="http://purl.org/essglobal/vocab/mission">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>mission</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/mission">http://purl.org/essglobal/vocab/mission</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">mission</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The initiative's vision, values, and principles. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Network">http://purl.org/essglobal/vocab/Network</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-objective" class="term" resource="http://purl.org/essglobal/vocab/objective">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>objective</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/date">http://purl.org/essglobal/vocab/objective</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">objective</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Actionable and measurable steps the initiative is taking to carry out its mission. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Network">http://purl.org/essglobal/vocab/Network</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-qualifier" class="term" resource="http://purl.org/essglobal/vocab/qualifier">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>qualifier</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/objective">http://purl.org/essglobal/vocab/qualifier</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Label:	</th>
+<td axis="Label" property="rdfs:label">qualifier</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Aspect that differentiates the product or service of an SSE
+initiative which is related to the form of production, the actors involved, the use of only organic materials, etc.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Examples of values that this property can take are “organic”, “permacultural”, “made with recycled raw materials”, “indigenous”, “made by women”, etc.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/ProductOrService">http://purl.org/essglobal/vocab/ProductOrService</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Input">http://purl.org/essglobal/vocab/Input</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+    <a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+
+
+</tbody>
+<tbody id="terms-quantityPerProductOrServiceUnit" class="term" resource="http://purl.org/essglobal/vocab/quantityPerProductOrServiceUnit">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>quantityPerProductOrServiceUnit</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/quantityPerProductOrServiceUnit">http://purl.org/essglobal/vocab/quantityPerProductOrServiceUnit</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Quantity per Product or Service</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:	</th>
+<td axis="Definition" property="rdfs:comment">The quantity of the input that goes into providing one unit of the final product or service.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Input">http://purl.org/essglobal/vocab/Input</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2001/XMLSchema#decimal</a>
+</td>
+</tr>
+
+
+</tbody>
+<tbody id="terms-salesMarginPercentage" class="term" resource="http://purl.org/essglobal/vocab/salesMarginPercentage">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>salesMarginPercentage</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/dateSubmitted">http://purl.org/essglobal/vocab/salesMarginPercentage</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">sales margin percentage</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Margin (on sales) is the difference between selling price and cost. This difference is typically expressed either as a percentage of selling price or on a per-unit basis. This attribute is the percentage sales margin.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">If this property is used, the <a href="#terms-salesMarginValue" class="term">SalesMarginValue</A> property should not be used</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/SaleOption</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2001/XMLSchema#decimal</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-state" class="term" resource="http://purl.org/essglobal/vocab/salesMarginValue">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>salesMarginValue</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/description">http://purl.org/essglobal/vocab/salesMarginValue</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">salesMarginValue</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Margin (on sales) is the difference between selling price and cost.
+    This difference is typically expressed either as a percentage of selling price or on a per-unit basis.
+    The present attribute is an absolute value for sales margin on each unit of the product or service offered in the location.
+</td>
+
+</tr>
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"> If this property is used, the, the <a href="#terms-salesMarginPercentage" class="term">SalesMarginPercentage</a> property should not be used.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/SaleOption</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2001/XMLSchema#decimal</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-state" class="term" resource="http://purl.org/essglobal/vocab/state">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>state</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/state">http://purl.org/essglobal/vocab/state</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">state</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">State where the Location of Sale, SSE Initiative or Network is located.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/Address</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-totalMen" class="term" resource="http://purl.org/essglobal/vocab/totalMen">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>totalMen</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/totalMen">http://purl.org/essglobal/vocab/totalMen</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">total of Men</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The number of men that are members of the SSE Initiative. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/nonNegativeInteger">http://www.w3.org/2001/XMLSchema#nonNegativeInteger</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-totalOfMembers" class="term" resource="http://purl.org/essglobal/vocab/totalOfMembers">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>totalOfMembers</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/format">http://purl.org/essglobal/vocab/totalOfMembers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">total of members</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The total number of members of the SSE Initiative.
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">The value of this property should be the sum of the values of the propertie totalMen and totalWomen, if they are defined.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/nonNegativeInteger">http://www.w3.org/2001/XMLSchema#nonNegativeInteger</a>
+</td>
+</tr>
+
+</tbody>
+
+
+<tbody id="terms-totalWomen" class="term" resource="http://purl.org/essglobal/vocab/totalWomen">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>totalWomen</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/totalWomen">http://purl.org/essglobal/vocab/totalWomen</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">total of Women</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The number of women that are members of the SSE Initiative. .</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2001/XMLSchema#integer</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-typeOfLabour" class="term" resource="http://purl.org/essglobal/vocab/typeOfLabour">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>typeOfLabour</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/hasFormat">http://purl.org/essglobal/vocab/typeOfLabour</a>
+</td>
+</tr>
+
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">type of labour</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The human labour dedicated for providing goods or services can be of different types, depending
+    on the established labour relations.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">This property can have values such as associative (i.e., the worker is one of the collective owners of the SSE initiative), subordinated work (an employee of the SSE initiative), volunteer work or externally hired work (like a freelancer or a partner initiative).</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/Labour</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+    <a property="dcam:memberOf" href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+
+
+</tbody>
+
+<tbody id="terms-unit" class="term" resource="http://purl.org/essglobal/vocab/unit">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name: &nbsp;&nbsp;
+<span>unit</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/hasPart">http://purl.org/essglobal/vocab/unit</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">unit</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The unit that a product or service is measured in, in the Universal Unit System (e.g., kilograms, hours)
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+    <td axis="Comment" property="dcterms:description">RIPESS recomends the use of the UN/CEFACT common Coding System [1] for this property.</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Inout">http://purl.org/essglobal/vocab/Input</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">EquivalentProperty:</th>
+<td axis="EquivalentProperty">
+<a property="owl:equivalentProperty" href="http://purl.org/goodrelations/v1#hasUnitOfMeasurement">http://purl.org/goodrelations/v1#hasUnitOfMeasurement</a>
+</td>
+</tr>
+
+</tbody>
+
+
+<tbody id="terms-CostPerUnit" class="term" resource="http://purl.org/essglobal/vocab/CostPerUnit">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>inputCostPerUnit</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/identifier">http://purl.org/essglobal/vocab/CostPerUnit</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Cost per unit</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:</th>
+        <td axis="Definition" property="rdfs:comment">The cost per unit of input. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Domain:</th>
+<td axis="Has-Domain">
+<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/LocationOfSale">http://purl.org/essglobal/vocab/Input</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Has Range:</th>
+<td axis="Has-Range">
+<a property="rdfs:range" href="http://www.w3.org/2001/XMLSchema#decimal">http://www.w3.org/2001/XMLSchema#decimal</a>
+</td>
+</tr>
+
+
+</tbody>
+
+</table>
+</div>
+<p>&nbsp;&nbsp;</p>
+<div id="H3">
+<h2>Section 3: Classes</h2>
+<table cellspacing="0" class="border">
+<tbody id="terms-Address" class="term" resource="http://purl.org/essglobal/vocab/Address">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;
+<span>Address</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/contributor">http://purl.org/essglobal/vocab/Address</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Address</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A phisical address of a Location of sale, of a SSE Initiative or of a Network.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-Cost" class="term" resource="http://purl.org/essglobal/vocab/Cost">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>Cost</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/Cost">http://purl.org/essglobal/vocab/Cost</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Cost</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The cost for a particular product or service produced by an SSE initiative or network, including all costs.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">The price will be this cost added to delivery costs and sales margin as can be seen in the sale-option class.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="terms-CostComposition" class="term" resource="http://purl.org/essglobal/vocab/CostComposition">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>CostComposition</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="1999-07-02"> </time>
+<time property="dcterms:modified" datetime="2008-01-14"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/creator">http://purl.org/essglobal/vocab/CostComposition</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">CostComposition</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A breakdown of all inputs (as taxes and raw materials) and labour costs that make up the product or service's final cost. An open cost is a pre-requisite for solidarity fair trade systems.
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-Input" class="term" resource="http://purl.org/essglobal/vocab/Input">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>Input</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"></time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/date">http://purl.org/essglobal/vocab/Input</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Input</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">A product, service, or activity that goes into making the final product or service. 
+</td>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-Labour" class="term" resource="http://purl.org/essglobal/vocab/Labour">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>Labour</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/description">http://purl.org/essglobal/vocab/Labour</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Labour</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">Work done for specific tasks related to the provision of goods or services offered by the SSE initiative. Generally it can be human, animal or machine labour, but in ESSglobal it's human labour only.
+</td>
+</tr>
+ 
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-LocationOfSale" class="term" resource="http://purl.org/essglobal/vocab/LocationOfSale">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>LocationOfSale</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/format">http://purl.org/essglobal/vocab/LocationOfSale</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">LocationOfSale</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">Place where the goods or services of an SSE initiative are provided. It can be self owned shops, but also partner places where the products or services are available among those from other initiatives.</td>
+</tr>
+    <tr class="attribute">
+
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/goodrelations/v1#Location">http://purl.org/goodrelations/v1#Location</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-Network" class="term" resource="http://purl.org/essglobal/vocab/Network">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span>Network</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/identifier">http://purl.org/essglobal/vocab/Network</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Network</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">A network of individuals and/or organisations that participate in the SSE.</td>
+</tr>
+    
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/goodrelations/v1#OrganizationColaboration">http://purl.org/goodrelations/v1#OrganizationColaboration</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-OtherCosts" class="term" resource="http://purl.org/essglobal/vocab/OtherCosts">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>OtherCosts</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/OtherCosts">http://purl.org/essglobal/vocab/OtherCosts</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">OtherCosts</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">Other costs which impact on the final cost of a product or service provided by an SSE initiative, other than input or labour, like taxes, deprecation of machinery, funds, etc. The delivery costs are not included in these costs: they are included in the sale-options class.</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class">Class</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-ProductOrService" class="term" resource="http://purl.org/essglobal/vocab/ProductOrService">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>ProductOrService</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"></time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/publisher">http://purl.org/essglobal/vocab/ProductOrService</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">ProductOrService</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The good offered by a SSE initiative or a Network. It may be material goods or provision of services. </td>
+</tr>
+   
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/goodrelations/v1#ProductOrService">http://purl.org/goodrelations/v1#ProductOrService</a>
+</td>
+</tr>
+
+
+   
+</tbody>
+<tbody id="terms-SaleOption" class="term" resource="http://purl.org/essglobal/vocab/SaleOption">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>SaleOption</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/relation">http://purl.org/essglobal/vocab/SaleOption</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">SaleOption</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">A Product sold at a certain price, under specific properties, in a certain Location.</td>
+</tr>
+ 
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class">Class</a>
+</td>
+</tr>
+
+</tbody>
+<tbody id="terms-SSEInitiative" class="term" resource="http://purl.org/essglobal/vocab/SSEInitiative">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span>SSEInitiative</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/vocab/rights">http://purl.org/essglobal/vocab/SSEInititive</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">SSEInitiative</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">An organization, practice, network, or other initiative that is recognized as belonging within the social solidarity economy.</td>
+</tr>
+    
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/goodrelations/v1#OrganizationColaboration">http://purl.org/goodrelations/v1#OrganizationColaboration</a>
+</td>
+</tr>
+
+</tbody>
+
+
+</table>
+</div>
+<p>&nbsp;&nbsp;</p>
+<div id="H4">
+<h2>Section 4: Vocabulary Encoding Schemes</h2>
+<table cellspacing="0" class="border">
+<tbody id="terms-Activities" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:
+
+&nbsp;&nbsp;
+<span><a href="#H5">Economic activities / Sectors </a></span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard/activities/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">Economic activities/Sectors Vocabulary</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The set of economic activities defined by ESSGLOBAL to be used with the term <a href="#terms-economicSector">economicSector</a>.</td>
+</tr>
+  
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://purl.org/dc/dcam/VocabularyEncodingScheme">http://purl.org/dc/dcam/VocabularyEncodingScheme</a>
+</td>
+</tr>
+
+
+
+</tbody>
+<tbody id="terms-Legal-form" class="term" resource="http://purl.org/essglobal/standard/legal-form">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<a href="#H6"><span>Legal Form</span></a>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">Legal Form RDF vocabulary</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The set of types of legal forms of an organisation. Defined by ESSGLOBAL to be used with the term <a href="#terms-legalForm">legalForm</a>.</td>
+</tr>
+    
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://purl.org/dc/dcam/VocabularyEncodingScheme">http://purl.org/dc/dcam/VocabularyEncodingScheme</a>
+</td>
+</tr>
+</tbody>
+
+
+
+<tbody id="terms-Qualifiers" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<span><a href="#H7">Qualifiers</a></span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">Qualifiers</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The set of terms that define the type of context of an economic activity of an organisation. Defined by ESSGLOBAL to be used with the term <a href="#terms-qualifier">qualifier</a>.</td>
+</tr>
+   
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://purl.org/dc/dcam/VocabularyEncodingScheme">http://purl.org/dc/dcam/VocabularyEncodingScheme</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="terms-Type-of-labour" class="term" resource="http://purl.org/essglobal/standard/type-of-labour">
+<tr>
+<th colspan="2" scope="rowgroup">
+Term Name:&nbsp;&nbsp;<a href="#H8">
+<span>Type of Labour</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard/"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2015-05-04"> </time>
+</th>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">URI:
+		</th>
+<td axis="URI">
+<a href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+
+
+
+    <tr class="attribute">
+<th scope="row">Label:
+		</th>
+<td axis="Label" property="rdfs:label">Type of Labour</td>
+</tr>
+    <tr class="attribute">
+<th scope="row">Definition:
+		</th>
+<td axis="Definition" property="rdfs:comment">The set of possible types of labour defined by RIPESS to be used with the term <a href="#terms-typeOfLabour">typeOfLabour</a>.</td>
+</tr>
+
+    <tr class="attribute">
+<th scope="row">Type of Term:
+		</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://purl.org/dc/dcam/VocabularyEncodingScheme">http://purl.org/dc/dcam/VocabularyEncodingScheme</a>
+</td>
+</tr>
+
+
+</tbody>
+</table>
+<p>&nbsp;&nbsp;</p>
+<div id="H5">
+<h2>Section 5: Economic Activities/Sectors VES</h2>
+<table cellspacing="0" class="border">
+
+
+<tbody id="activities-A01" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A01</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A01">http://purl.org/essglobal/standard/activities/A01</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A01</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Agriculture and environment.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Agriculture, forestry and fishing</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A02" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A02</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A02">http://purl.org/essglobal/standard/activities/A02</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A02</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Natural resources extraction.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Mining and quarrying </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A03" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A03</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A03">http://purl.org/essglobal/standard/activities/A03</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A03</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Craftmanship and manufacturing.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Manufacturing. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A04" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A04</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A04">http://purl.org/essglobal/standard/activities/A04</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A04</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Energy production and distribution.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Electricity, gas, steam and air conditioning supply. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A05" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A05</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A05">http://purl.org/essglobal/standard/activities/a5</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A05</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Water cicle, waste treatment and ecological restoration .</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Water supply; sewerage, waste management and remediation activities. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A06" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A06</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A06">http://purl.org/essglobal/standard/activities/A06</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A06</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Construction, public works and refurbishing.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Construction. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A07" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A07</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A07">http://purl.org/essglobal/standard/activities/A07</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A07</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Trade and distribution .</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Wholesale and retail trade; repair of motor vehicles and motorcycles </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A08" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A08</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A08">http://purl.org/essglobal/standard/activities/A08</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A08</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Transport, logistics and storage.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature:Transportation and storage.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A09" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A09</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A09">http://purl.org/essglobal/standard/activities/A09</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A09</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Hospitality and food service activities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Accommodation and food service activities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A10" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A10</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A10">http://purl.org/essglobal/standard/activities/A10</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A10</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Information, communication and technologies.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Information and communication.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A11" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A11</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A11">http://purl.org/essglobal/standard/activities/A11</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A11</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Financial, insurance and related services.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Financial and insurance activities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A12" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A12</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A12">http://purl.org/essglobal/standard/activities/A12</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A12</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Habitat and housing.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Real estate activities. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A13" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A13</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A13">http://purl.org/essglobal/standard/activities/A13</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A13</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Professional, scientific and technical activities.</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A14" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A14</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A14">http://purl.org/essglobal/standard/activities/A14</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A14</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Administration and management, tourism, rentals.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Administrative and support service activities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A15" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A15</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A15">http://purl.org/essglobal/standard/activities/A15</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A15</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Public administration, social security.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Public administration and defence; compulsory social security.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A16" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A16</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A16">http://purl.org/essglobal/standard/activities/A16</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A16</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Education and training.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Education.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A17" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A17</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A17">http://purl.org/essglobal/standard/activities/A17</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A17</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Health, social services, employment.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Human health and social work activities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A18" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A18</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A18">http://purl.org/essglobal/standard/activities/A18</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A18</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Arts, culture, recreation, sports.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Arts, entertainment and recreation.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="activities-A19" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A19</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A19">http://purl.org/essglobal/standard/activities/A19</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A19</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Membership activities, repairing, wellness.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Other service activities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A20" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A20</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A20">http://purl.org/essglobal/standard/activities/A20</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A20</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Household activities, self-production, domestic work.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+<tbody id="activities-A21" class="term" resource="http://purl.org/essglobal/standard/activities">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>A21</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/activities/A21">http://purl.org/essglobal/standard/activities/A21</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">A21</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">International diplomacy and cooperation.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Original ISIC nomenclature: Activities of extraterritorial organizations and bodies.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/activities">http://purl.org/essglobal/standard/activities</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>&nbsp;&nbsp;</p>
+<div id="H6">
+<h2>Section 6: Legal Form VES</h2>
+<table cellspacing="0" class="border">
+
+
+<tbody id="legal-form-L1" class="term" resource="http://purl.org/essglobal/standard/legal-form">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>L1</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/legal-form/L1">http://purl.org/essglobal/standard/legal-form/L1</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">L1</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Informal Group.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+</tbody>
+
+
+<tbody id="legal-form-L2" class="term" resource="http://purl.org/essglobal/standard/legal-form">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>L2</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/legal-form/L2">http://purl.org/essglobal/standard/legal-form/L2</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">L2</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Cooperative.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="legal-form-L3" class="term" resource="http://purl.org/essglobal/standard/legal-form">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>L3</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/legal-form/L3">http://purl.org/essglobal/standard/legal-form/L3</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">L3</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Company.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+</tbody>
+<tbody id="legal-form-L4" class="term" resource="http://purl.org/essglobal/standard/legal-form">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>L4</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/legal-form/L4">http://purl.org/essglobal/standard/legal-form/L4</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">L4</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Non-Profit Organisation.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+</tbody>
+<tbody id="legal-form-L5" class="term" resource="http://purl.org/essglobal/standard/legal-form">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>L5</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/legal-form/L5">http://purl.org/essglobal/standard/legal-form/L5</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">L5</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Social Entreprise.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/legal-form">http://purl.org/essglobal/standard/legal-form</a>
+</td>
+</tr>
+</tbody>
+
+
+</table>
+
+
+<p>&nbsp;&nbsp;</p>
+<div id="H7">
+<h2>Section 7: Qualifiers VES</h2>
+<table cellspacing="0" class="border">
+<tbody id="qualifiers-Q01" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q01</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q01</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Ecologically or Environmentally Sustainable.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Products and Services which are developed in a process that is focused on environmental sustainability, like the usage of renewable energy, recycling, ecologic packing, reused inputs, etc. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Agroecological">http://purl.org/essglobal/standard/qualifiers/Agroecological</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Agroextrativism">http://purl.org/essglobal/standard/qualifiers/Agroextrativism</a>
+</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Animalwelfare">http://purl.org/essglobal/standard/qualifiers/Animalwelfare</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Madefromrecycledorrecoveredmaterial">http://purl.org/essglobal/standard/qualifiers/Madefromrecycledorrecoveredmaterial </a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Naturalcosmeticsandherbalmedicines">http://purl.org/essglobal/standard/qualifiers/Naturalcosmeticsandherbalmedicines  </a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Organic">http://purl.org/essglobal/standard/qualifiers/Organic</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="qualifiers-Agroecological" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Agroecological</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Agroecological">http://purl.org/essglobal/standard/qualifiers/Agroecological</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Agroecological</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Agriculture Products or Services that ally social justice (no workers exploration) and organic farming..</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Agroextrativism" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Agroextrativism</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Agroextrativism">http://purl.org/essglobal/standard/qualifiers/Agroextrativism</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Agroextrativism</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Extractivism of natural fruits, seeds and other plants that's done in a traditional manner without harming the biodiversity and natural environment.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">. </td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Animalwelfare" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Animalwelfare</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Animalwelfare">http://purl.org/essglobal/standard/qualifiers/Animalwelfare</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Animal Welfare</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services which are developped in a process that doesn't do any harm to animals, like animal testing or the usage of animal material as inputs.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Madefromrecycledorrecoveredmaterial" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Madefromrecycledorrecoveredmaterial</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Madefromrecycledorrecoveredmaterial">http://purl.org/essglobal/standard/qualifiers/Madefromrecycledorrecoveredmaterial</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Made from recycled or recovered material</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services that use inputs that are recovered or recycled, totally or partially.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Naturalcosmeticsandherbalmedicines" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Naturalcosmeticsandherbalmedicines</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Naturalcosmeticsandherbalmedicines">http://purl.org/essglobal/standard/qualifiers/Naturalcosmeticsandherbalmedicines</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Natural cosmetics and herbal medicines</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Medicinal os Cosmetic Products and Services that use only natural essences, without human made chemical compounds.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Organic" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Organic</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Organic">http://purl.org/essglobal/standard/qualifiers/Organic</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Organic</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Agricultural Products issued from organic farming, without the usage of agrotoxics and other chemical based seeds, fertilizer or other inputs. It might also be Products and Services that use only organic agricultural products as inputs.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q01</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Q02" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q02</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q02">http://purl.org/essglobal/standard/qualifiers/Q02</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q02</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Work relations, structure and conditions which are democratic and decent.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Democratic and decent working conditions.</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Selfmanagement">http://purl.org/essglobal/standard/qualifiers/Selfmanagement</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Selfmanagement" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Selfmanagement</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Selfmanagement">http://purl.org/essglobal/standard/qualifiers/Selfmanagement</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Self Management</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">SSE enterprise owned by the workers. Decisions about the initiative and the work are done by the same people.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q02">http://purl.org/essglobal/standard/qualifiers/Q02</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Q03" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q03</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q03">http://purl.org/essglobal/standard/qualifiers/Q03</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q03</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services developed by people normally marginalised from society and the work market, like for example unemployed people, immigrants, disabled, ex-prisonners.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Socially fair.</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Socialinsertioninitiatives">http://purl.org/essglobal/standard/qualifiers/Socialinsertioninitiatives</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Socialinsertioninitiatives" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Socialinsertioninitiatives</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Socialinsertioninitiatives">http://purl.org/essglobal/standard/qualifiers/Socialinsertioninitiatives</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Social insertion initiatives</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Unemployed people work during a established timespan in an insertion enterprise to be better qualified for the market.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q03">http://purl.org/essglobal/standard/qualifiers/Q03</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Q04" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q04</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q04">http://purl.org/essglobal/standard/qualifiers/Q04</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q04</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services which are democratic and fair in the economic level, bringing autonomy to local SSE enterprises, fair relations along chains and contributing for a sovreign, territorial and solidarity development.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Economically democratic and sovereign.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Fairtrade">http://purl.org/essglobal/standard/qualifiers/Fairtrade</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/LocalorFromCommunity">http://purl.org/essglobal/standard/qualifiers/LocalorFromCommunity</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="qualifiers-Fairtrade" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Fairtrade</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Fairtrade">http://purl.org/essglobal/standard/qualifiers/Fairtrade</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Fair trade</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services which are offered in a trading chain that respects several criteria and code of conducts from production to the consumption, like direct relationship among consumers and producers, international fair trade, open/transparent price composition, trading process owned by the producers, etc..</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q04">http://purl.org/essglobal/standard/qualifiers/Q04</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-LocalorFromCommunity" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>LocalorFromCommunity</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/LocalorFromCommunity">http://purl.org/essglobal/standard/qualifiers/LocalorFromCommunity</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Local or From Community</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services issued and traded locally.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:
+		</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q01">http://purl.org/essglobal/standard/qualifiers/Q04</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Q05" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q05</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q05">http://purl.org/essglobal/standard/qualifiers/Q05</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q05</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services developed in a way where women are empowered, as in women owned SSE initiatives or initiatives that have an internal charter granting gender equity in all steps of the economic activity.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Gender Equity.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="qualifiers-Q06" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q06</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q06">http://purl.org/essglobal/standard/qualifiers/Q06</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q06</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">From local and traditional communities, indigenous people, "campesinat".</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">From original / indigenous people or traditional communities.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/FromOriginalorIndigenousPeople">http://purl.org/essglobal/standard/qualifiers/FromOriginalorIndigenousPeople</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/PeasantorFamilyAgriculture">http://purl.org/essglobal/standard/qualifiers/PeasantorFamilyAgriculture</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="qualifiers-FromOriginalorIndigenousPeople" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>FromOriginalorIndigenousPeople</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/FromOriginalorIndigenousPeople">http://purl.org/essglobal/standard/qualifiers/FromOriginalorIndigenousPeople</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">From Original or Indigenous People</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services developped by original or indigenous people.</td>
+</tr>
+
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q06">http://purl.org/essglobal/standard/qualifiers/Q06</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="qualifiers-PeasantorFamilyAgriculture" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>PeasantorFamilyAgriculture</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/PeasantorFamilyAgriculture">http://purl.org/essglobal/standard/qualifiers/PeasantorFamilyAgriculture</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Peasant or Family Agriculture</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services developped by small farmers, normally organised in the community, and normally families, that might be using traditional ways to do farming.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/PeasantorFamilyAgriculture">http://purl.org/essglobal/standard/qualifiers/PeasantorFamilyAgriculture</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Q07" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q07</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q07">http://purl.org/essglobal/standard/qualifiers/Q07</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q07</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">The outcomes of the work have licenses which allow for reproduction and sharing of knowledge and culture.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Commons and free knowledge/free culture.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/FreeCulture">http://purl.org/essglobal/standard/qualifiers/FreeCulture</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Broader Than:
+		</th>
+<td axis="Broader-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/FreeKnowledgeorSoftware">http://purl.org/essglobal/standard/qualifiers/FreeKnowledgeorSoftware</a>
+</td>
+</tr>
+
+</tbody>
+
+<tbody id="qualifiers-FreeCulture" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>FreeCulture</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/FreeCulture">http://purl.org/essglobal/standard/qualifiers/FreeCulture</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Free Culture</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Artistic and Cultural Products which have licenses like the Creative Commons and similars, where it can be copied and in some times transformed with some conditions that vary, like citing the original author, prohibition of commercial trading, etc.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q07">http://purl.org/essglobal/standard/qualifiers/Q07</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-FreeKnowledgeorSoftware" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>FreeKnowledgeorSoftware</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/FreeKnowledgeorSoftware">http://purl.org/essglobal/standard/qualifiers/FreeKnowledgeorSoftware</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Free Knowledge or Software</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products, like software and machinery, that are licensed in a way that allows the public to know the source code (the way it has been produced) and to produce derivatives, under some conditions like citing the original author and having to also use the same license,as in GPL.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Narrower Than:</th>
+<td axis="Narrower-Than">
+<a property="rdfs:subClassOf" href="http://purl.org/essglobal/standard/qualifiers/Q07">http://purl.org/essglobal/standard/qualifiers/Q07</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="qualifiers-Q08" class="term" resource="http://purl.org/essglobal/standard/qualifiers">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>Q08</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/qualifiers/Q08">http://purl.org/essglobal/standard/qualifiers/Q08</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">Q08</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Products and Services that are not industrial, being made in a traditional and artisanal way..</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description">Handicraft.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/qualifiers">http://purl.org/essglobal/standard/qualifiers</a>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>&nbsp;&nbsp;</p>
+<div id="H8">
+<h2>Section 8: Type of Labour VES</h2>
+<table cellspacing="0" class="border">
+<tbody id="type-of-labour-T1" class="term" resource="http://purl.org/essglobal/standard/type-of-labour">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>T1</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/type-of-labour/T1">http://purl.org/essglobal/standard/type-of-labour/T1</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">T1</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Associative.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="type-of-labour-T2" class="term" resource="http://purl.org/essglobal/standard/type-of-labour">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>T2</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/type-of-labour/T2">http://purl.org/essglobal/standard/type-of-labour/T2</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">T2</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Subordinate.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="type-of-labour-T3" class="term" resource="http://purl.org/essglobal/standard/type-of-labour">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>T3</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/type-of-labour/T3">http://purl.org/essglobal/standard/type-of-labour/T3</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">T3</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Voluntary Work.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="type-of-labour-T4" class="term" resource="http://purl.org/essglobal/standard/type-of-labour">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>T4</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/type-of-labour/T4">http://purl.org/essglobal/standard/type-of-labour/T4</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">T4</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Reproductive Labour/Care Work.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+</tbody>
+
+<tbody id="type-of-labour-T5" class="term" resource="http://purl.org/essglobal/standard/type-of-labour">
+<tr>
+<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>T5</span>
+<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+<time property="dcterms:issued" datetime="2014-02-06"> </time>
+<time property="dcterms:modified" datetime="2016-01-11"> </time></th>
+</tr>
+
+<tr class="attribute">
+<th scope="row">URI:</th>
+<td axis="URI"><a href="http://purl.org/essglobal/standard/type-of-labour/T5">http://purl.org/essglobal/standard/type-of-labour/T5</a></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Label:</th>
+<td axis="Label" property="rdfs:label">T5</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Definition:</th>
+<td axis="Definition" property="rdfs:comment">Externally hired.</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Comment:</th>
+<td axis="Comment" property="dcterms:description"></td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Type of Term:</th>
+<td axis="Type-of-Term">
+<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+</td>
+</tr>
+
+<tr class="attribute">
+<th scope="row">Member Of:</th>
+<td axis="Member-Of">
+<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/type-of-labour">http://purl.org/essglobal/standard/type-of-labour</a>
+</td>
+</tr>
+</tbody>
+
+</table>
+
+<div id="H9">
+    <H2>Section 9: References</H2>
+    [1] <a href="http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev9e_2014.xls" target="_blank">UN/CEFACT Common Coding System</A>
+
+<hr>
+
+<div class="footer">
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+</p>
+<p>ESSGlobal documents are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. </p>
+
+</p>
+
+<p><a href="/about/copyright/#copyright">Copyright</a> &#169; 2016 <acronym title="RIPESS-ESSGlobal"><a href="http://purl.org/essglobal/website/">RIPESS-ESSGlobal</a></acronym>. All Rights Reserved. 
+
+<p>ESSGlobal is a project of the <a href="http://www.ripess.org" target="new">Intercontinental network for the promotion of Social and Solidarity Economy</a> (RIPESS).<br />
+
+
+<p></p>
+</div>
+
+<div class="dcmiprint"><p>Copyright &#169; 2016 ESSGLOBAL. All Rights Reserved.</p>
+</div>
+
+
+</body>
+</html>
+
