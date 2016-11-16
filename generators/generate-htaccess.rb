@@ -1,6 +1,6 @@
 
-$rewrite_base, $vocab_url_suffix, $vocab_rdf = ARGV
-$nargs = 3
+$rewrite_base, $vocab_url_suffix, $vocab_rdf, $html_file = ARGV
+$nargs = 4
 raise "#{$0}: Wrong number of command line parameters. expected #{$nargs}." unless ARGV.size == $nargs
 
 # CAUTION: Be really careful about escaping hashes that are intended to end up in a rewritten URL!
@@ -9,6 +9,7 @@ puts <<-HERE
 #    rewrite_base: #{$rewrite_base}
 #    vocab_url_suffix: #{$vocab_url_suffix}
 #    vocab_rdf: #{$vocab_rdf}
+#    html_file: #{$html_file}
 #
 # Turn off MultiViews
 Options -MultiViews
@@ -31,14 +32,16 @@ RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+
 RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
-RewriteRule ^example4a/$ example4a-content/2005-10-31.html [R=303]
+#RewriteRule ^example4a/$ example4a-content/2005-10-31.html [R=303]
+RewriteRule ^#{$vocab_url_suffix}/$ #{$html_file} [R=303]
 
 # Rewrite rule to serve directed HTML content from class/prop URIs
 RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
 RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
-RewriteRule ^example4a/(.+) example4a-content/2005-10-31.html\#$1 [R=303,NE]
+#RewriteRule ^example4a/(.+) example4a-content/2005-10-31.html\#$1 [R=303,NE]
+RewriteRule ^#{$vocab_url_suffix}/(.+) #{$html_file}\#$1 [R=303]
 
 # Rewrite rule to serve RDF/XML content from the namespace URI by default
 #RewriteRule ^example4a/ example4a-content/2005-10-31.rdf [R=303]

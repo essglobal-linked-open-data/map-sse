@@ -35,8 +35,9 @@ $(HELP_target):
 # http://purl.org/essglobal/vocab      vocab
 
 VOCAB_SUBDIR := vocab-content
-STANDARD_SUBDIR := standard
-TGT_SUBDIRS := $(VOCAB_SUBDIR) $(STANDARD_SUBDIR)
+STANDARD_SUBDIR := standard-content
+HTML_SUBDIR := html-content
+TGT_SUBDIRS := $(VOCAB_SUBDIR) $(STANDARD_SUBDIR) $(HTML_SUBDIR)
 
 # The SRC_VOCAB_FILE and SRC_STANDARD_FILES will have $(SRC_BASE_URI) substituted with $(TGT_BASE_URI) when the GENERATE_target is made.
 SRC_VOCAB_FILE := ../vocabs/vocab/essglobal-vocab.ttl
@@ -48,6 +49,11 @@ SRC_TYPE := turtle
 
 SRC_STANDARD_DIR := ../vocabs/standard
 SRC_STANDARD_FILES := activities.skos legal-form.skos products-services.skos qualifiers.skos themes.skos type-of-labour.skos
+
+SRC_HTML_DIR := ../vocabs/html
+SRC_HTML_FILE := 2015.01.11.html
+SRC_CSS_FILE := default.css
+SRC_HTML_FILES := $(SRC_HTML_FILE) $(SRC_CSS_FILE)
 
 TGT_SUBDIR := $(tgt_version)
 
@@ -79,13 +85,18 @@ TGT_STANDARD_DIR := $(TGT_DIR)/$(STANDARD_SUBDIR)
 $(TGT_STANDARD_DIR):
 	mkdir -p $@
 
+TGT_HTML_DIR := $(TGT_DIR)/$(HTML_SUBDIR)
+$(TGT_HTML_DIR):
+	mkdir -p $@
+
 # Target file has the same name as SRC_VOCAB_FILE, but is in a different dir:
 TGT_VOCAB_FILE := $(TGT_VOCAB_DIR)/$(notdir $(SRC_VOCAB_FILE))
 
 # Similarly for the SKOS files in STANDARD:
 TGT_STANDARD_FILES := $(addprefix $(TGT_STANDARD_DIR)/,$(SRC_STANDARD_FILES))
-$(info TGT_STANDARD_FILES: $(TGT_STANDARD_FILES))
-$(info TGT_STANDARD_FILES: $(TGT_STANDARD_FILES))
+
+# And for HTML files too:
+TGT_HTML_FILES := $(addprefix $(TGT_HTML_DIR)/,$(SRC_HTML_FILES))
 
 # The TGT_VOCAB_FILE and the TGT_STANDARD_FILES are all generated using string substitution (with sed).
 # This is a gnu make canned recipe (see https://www.gnu.org/software/make/manual/html_node/Canned-Recipes.html#Canned-Recipes)
@@ -139,15 +150,31 @@ $(TGT_STANDARD_DIR)/%: $(SRC_STANDARD_DIR)/% | $(TGT_STANDARD_DIR)
 # Add the list of STANDARD files to the generate target:
 $(GENERATE_target): $(TGT_STANDARD_FILES)
 
+# HTML files are straight copies froj source to target:
+$(TGT_HTML_DIR)/%: $(SRC_HTML_DIR)/% | $(TGT_HTML_DIR)
+	cp $< $@
+
+# Add the list of HTML files to the generate target:
+$(GENERATE_target): $(TGT_HTML_FILES)
+
 TGT_HTACCESS := $(TGT_DIR)/.htaccess
 GEN_HTACCESS := generate-htaccess.rb
 RewriteBase := /$(SERVER_SUB_DIR)/
 VocabUrlSuffix := vocab
 VocabRdf := $(VOCAB_SUBDIR)/$(notdir $(TGT_RDFXML))
+HtmlFile := $(HTML_SUBDIR)/$(SRC_HTML_FILE)
 $(TGT_HTACCESS): $(GEN_HTACCESS) Makefile
-	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(VocabRdf) > $@
+	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(VocabRdf) $(HtmlFile) > $@
 
 $(GENERATE_target): $(TGT_HTACCESS)
+
+README := $(TGT_DIR)/DO_NOT_EDIT_HERE.txt 
+$(README):
+	echo "This directory and subdirectories are generated from a script." > $@
+	echo "Any changes you make here will be lost next time that script is run." >> $@
+	echo "The script is https://github.com/essglobal-linked-open-data/map-sse/blob/develop/generators/Makefile" >> $@
+
+$(GENERATE_target): $(README)
 
 $(GENERATE_target):
 	@echo "Files generated for target version $(tgt_version) can be found in directory $(TGT_DIR)."
@@ -159,6 +186,7 @@ RSYNC := rsync -avz
 # Define macro for executing commands on the server (here using ssh):
 SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
 
+# Careful! The --delete option will remove any files on the server that are not also in TGT_DIR
 $(DEPLOY_target): $(GENERATE_target)
 	$(call SERVER_CMD,'cd $(SERVER_DIR) && mkdir -p $(SERVER_SUB_DIR)')
-	$(RSYNC) $(TGT_DIR)/ $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)/
+	$(RSYNC) --delete $(TGT_DIR)/ $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)/
