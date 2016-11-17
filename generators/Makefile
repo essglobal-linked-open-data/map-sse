@@ -3,7 +3,8 @@
 GENERATE_target := generate-vocab
 DEPLOY_target := deploy
 HELP_target := help
-.PHONY: $(HELP_target) $(GENERATE_target) $(DEPLOY_target)
+TEST_target := test
+.PHONY: $(HELP_target) $(GENERATE_target) $(DEPLOY_target) $(TEST_target)
 .DEFAULT_GOAL: $(HELP_target)
 
 $(HELP_target):
@@ -18,34 +19,33 @@ $(HELP_target):
 	@echo "\t1. Generate various RDF serializations in directory $(TGT_DIR)."
 	@echo "\t   These will be based on the contents of $(SRC_VOCAB_FILE), but with substitutions made for the base URI $(SRC_BASE_URI)."
 	@echo "\t2. Generate SKOS files from the ones in $(SRC_STANDARD_DIR), but with substitutions made for the base URI $(SRC_BASE_URI)."
+	@echo "\t3. Generate HTML files from the ones in $(SRC_HTML_DIR), but with substitutions made for the base URI $(SRC_BASE_URI)."
 	@[ -n "$(TGT_BASE_URI)" ] && echo "\tWith tgt_version=$(tgt_version), $(SRC_BASE_URI) will be replaced by $(TGT_BASE_URI)." || true
 	@[ -z "$(TGT_BASE_URI)" ] && echo "\tThe substitution will depend on the tgt_version specified on the make command line" || true
-	@echo "make $(DEPLOY_target) tgt_version=x server=y"
-	@echo "\tDeploy the generated data to the server."
+	@echo "make $(DEPLOY_target) tgt_version=x"
+	@echo "\tDeploy the generated data to a server."
+	@echo "make $(TEST_target) tgt_version=x"
+	@echo "\tRun post-deployment tests."
 
 #ifndef base_uri
   #$(info "You must set the variable base_uri on the command line. e.g. 'make target base_uri=http:foo.org/bar'")
 #endif
 
-# We create files in different subdirectories, corresponding to the URIs used in the vocabulary.
-# For example
-# URI                                  SUBDIR
-# ---                                  ------
-# http://purl.org/essglobal/standard   standard
-# http://purl.org/essglobal/vocab      vocab
-
+# The directories where files end up (locally, through GENERATE_target, and on a server, through DEPLOY_target)
+# may not be the same as the corresponding parts of the URI. 
+# The differences (and other things) are sorted out by content negotiation via a .htaccess file.
+# Target directories:
 VOCAB_SUBDIR := vocab-content
 STANDARD_SUBDIR := standard-content
 HTML_SUBDIR := html-content
 TGT_SUBDIRS := $(VOCAB_SUBDIR) $(STANDARD_SUBDIR) $(HTML_SUBDIR)
 
-# The SRC_VOCAB_FILE and SRC_STANDARD_FILES will have $(SRC_BASE_URI) substituted with $(TGT_BASE_URI) when the GENERATE_target is made.
-SRC_VOCAB_FILE := ../vocabs/vocab/essglobal-vocab.ttl
+# Various file will have $(SRC_BASE_URI) substituted with $(TGT_BASE_URI) when the GENERATE_target is made.
 SRC_BASE_URI := http://purl.org/essglobal/
-SRC_VOCAB_FILE_EXT := $(suffix $(SRC_VOCAB_FILE))
 
-# SRC_TYPE is an argument for the -i flag of rapper
+SRC_VOCAB_FILE := ../vocabs/vocab/essglobal-vocab.ttl
 SRC_TYPE := turtle
+SRC_VOCAB_FILE_EXT := $(suffix $(SRC_VOCAB_FILE))
 
 SRC_STANDARD_DIR := ../vocabs/standard
 SRC_STANDARD_FILES := activities.skos legal-form.skos products-services.skos qualifiers.skos themes.skos type-of-labour.skos
@@ -168,10 +168,12 @@ TGT_HTACCESS := $(TGT_DIR)/.htaccess
 GEN_HTACCESS := generate-htaccess.rb
 RewriteBase := /$(SERVER_SUB_DIR)/
 VocabUrlSuffix := vocab
+StandardUrlSuffix := standard
 VocabRdf := $(VOCAB_SUBDIR)/$(notdir $(TGT_RDFXML))
+VocabTtl := $(VOCAB_SUBDIR)/$(notdir $(TGT_TURTLE))
 HtmlFile := $(HTML_SUBDIR)/$(SRC_HTML_FILE)
 $(TGT_HTACCESS): $(GEN_HTACCESS) Makefile
-	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(VocabRdf) $(HtmlFile) > $@
+	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(StandardUrlSuffix) $(VocabRdf) $(VocabTtl) $(HtmlFile) > $@
 
 $(GENERATE_target): $(TGT_HTACCESS)
 
@@ -197,3 +199,7 @@ SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
 $(DEPLOY_target): $(GENERATE_target)
 	$(call SERVER_CMD,'cd $(SERVER_DIR) && mkdir -p $(SERVER_SUB_DIR)')
 	$(RSYNC) --delete $(TGT_DIR)/ $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)/
+
+$(TEST_target):
+	@echo "Test $(TGT_BASE_URI)"
+
