@@ -4,9 +4,9 @@
 # Some commented-out code from their example .htaccess file may persist here.
 #
 # The following command line parameters are substituted into the generated file.
-$rewrite_base, $vocab_url_suffix, $standard_url_suffix, $vocab_rdf, $vocab_ttl, $html_file = ARGV
+$rewrite_base, $vocab_url_suffix, $standard_url_suffix, $vocab_rdf, $vocab_ttl, $standard_subdir, $html_file = ARGV
 
-$nargs = 6
+$nargs = 7
 raise "#{$0}: Wrong number of command line parameters. expected #{$nargs}." unless ARGV.size == $nargs
 
 # CAUTION: Be really careful about escaping hashes that are intended to end up in a rewritten URL!
@@ -22,14 +22,16 @@ puts <<-HERE
 #    standard_url_suffix: #{$standard_url_suffix}
 #    vocab_rdf: #{$vocab_rdf}
 #    vocab_ttl: #{$vocab_ttl}
+#    standard_subdir: #{$standard_subdir}
 #    html_file: #{$html_file}
 #
 # Turn off MultiViews
 Options -MultiViews
 
-# Directive to ensure *.rdf files served as appropriate content type,
+# Directive to ensure *.rdf and *.skos files served as appropriate content type,
 # if not present in main apache config
 AddType application/rdf+xml .rdf
+AddType application/rdf+xml .skos
 
 # Rewrite engine setup
 RewriteEngine On
@@ -68,7 +70,16 @@ RewriteRule ^#{$standard_url_suffix} #{$html_file}\#H4 [R=303,NE]
 RewriteCond %{HTTP_ACCEPT} text/turtle
 RewriteRule ^#{$vocab_url_suffix}/ #{$vocab_ttl} [R=303]
 
-
+# Rewrite rule to serve SKOS files. 
+# There is an assumption here (in the RewriteRule pattern that filenames of the skos files
+# contain only certain characters.
+# The Rewrite rule ia intended to match all of:
+#   #{$standard_url_suffix}/activities
+#   #{$standard_url_suffix}/activities/
+#   #{$standard_url_suffix}/activities/A01
+# and similar constructions for SKOS files other than activities.
+RewriteCond %{HTTP_ACCEPT} application/rdf\\+xml
+RewriteRule ^#{$standard_url_suffix}/([-a-z]+) #{$standard_subdir}/$1.skos [R=303]
 
 # Rewrite rule to serve RDF/XML content from the namespace URI by default
 #RewriteRule ^example4a/ example4a-content/2005-10-31.rdf [R=303]

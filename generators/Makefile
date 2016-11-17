@@ -169,11 +169,12 @@ GEN_HTACCESS := generate-htaccess.rb
 RewriteBase := /$(SERVER_SUB_DIR)/
 VocabUrlSuffix := vocab
 StandardUrlSuffix := standard
+StandardSubDir := $(STANDARD_SUBDIR)
 VocabRdf := $(VOCAB_SUBDIR)/$(notdir $(TGT_RDFXML))
 VocabTtl := $(VOCAB_SUBDIR)/$(notdir $(TGT_TURTLE))
 HtmlFile := $(HTML_SUBDIR)/$(SRC_HTML_FILE)
 $(TGT_HTACCESS): $(GEN_HTACCESS) Makefile
-	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(StandardUrlSuffix) $(VocabRdf) $(VocabTtl) $(HtmlFile) > $@
+	ruby $< $(RewriteBase) $(VocabUrlSuffix) $(StandardUrlSuffix) $(VocabRdf) $(VocabTtl) $(StandardSubDir) $(HtmlFile) > $@
 
 $(GENERATE_target): $(TGT_HTACCESS)
 
