@@ -51,7 +51,10 @@ SRC_STANDARD_DIR := ../vocabs/standard
 SRC_STANDARD_FILES := activities.skos legal-form.skos products-services.skos qualifiers.skos themes.skos type-of-labour.skos
 
 SRC_HTML_DIR := ../vocabs/html
-SRC_HTML_FILE := 2015.01.11.html
+# The original HTML file from essglobal.org was 2015.01.11.html:
+#SRC_HTML_FILE := 2015.01.11.html
+# We are now going ongoing development on the HTML file essglobal.html, which started as a copy of 2015.01.11.html:
+SRC_HTML_FILE := essglobal.html
 SRC_CSS_FILE := default.css
 SRC_HTML_FILES := $(SRC_HTML_FILE) $(SRC_CSS_FILE)
 
@@ -150,9 +153,13 @@ $(TGT_STANDARD_DIR)/%: $(SRC_STANDARD_DIR)/% | $(TGT_STANDARD_DIR)
 # Add the list of STANDARD files to the generate target:
 $(GENERATE_target): $(TGT_STANDARD_FILES)
 
-# HTML files are straight copies froj source to target:
-$(TGT_HTML_DIR)/%: $(SRC_HTML_DIR)/% | $(TGT_HTML_DIR)
+# CSS files are just copies from source to target:
+$(TGT_HTML_DIR)/%.css: $(SRC_HTML_DIR)/%.css | $(TGT_HTML_DIR)
 	cp $< $@
+
+# HTML files must have URIs substituted:
+$(TGT_HTML_DIR)/%.html: $(SRC_HTML_DIR)/%.html | $(TGT_HTML_DIR)
+	$(do_uri_subst)
 
 # Add the list of HTML files to the generate target:
 $(GENERATE_target): $(TGT_HTML_FILES)
