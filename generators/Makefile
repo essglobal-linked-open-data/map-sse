@@ -216,18 +216,35 @@ $(DEPLOY_target): $(GENERATE_target)
 # 1. Use curl to fetch something that we have deployed.
 # 2. Use diff to compare the response to the fetch with what we expect.
 
-CURL_FOR_RDF = echo "Fetching $(1)" && curl --silent -H "Accept: application/rdf+xml" -L $1 > $2
+CURL = echo "Fetching $(1) from $(2)" && curl --silent -H "Accept: $(1)" -L $2 > $3
 DO_DIFF_TEST = diff $(1) $(2) && echo "PASS - fetched response matches $(1)" || echo "FAIL! ************** \nFAIL! Expected $(1) and $(2) to be identical."
 
 # Note the use of $$f - this is in order to end up with $f, used by the shell for variable substitution in for loops.
 define do_test_skos
 for f in $(SRC_STANDARD_FILES:.skos=); do  \
-$(call CURL_FOR_RDF,$(TGT_BASE_URI)$(StandardUrlSuffix)/$$f,$(TEST_DIR)/$$f.out) ; \
+$(call CURL,application/rdf+xml,$(TGT_BASE_URI)$(StandardUrlSuffix)/$$f,$(TEST_DIR)/$$f.out) ; \
 $(call DO_DIFF_TEST,$(TGT_STANDARD_DIR)/$$f.skos,$(TEST_DIR)/$$f.out) ;\
 done
 endef
 
+TMP_RES_RDFXML_VOCAB := $(TEST_DIR)/vocab_rdfxml.out
+TMP_RES_TURTLE_VOCAB := $(TEST_DIR)/vocab_turtle.out
+define do_test_vocab
+$(call CURL,application/rdf+xml,$(TGT_BASE_URI)$(VocabUrlSuffix)/,$(TMP_RES_RDFXML_VOCAB)) ; \
+$(call DO_DIFF_TEST,$(TGT_RDFXML),$(TMP_RES_RDFXML_VOCAB)) ;
+$(call CURL,text/turtle,$(TGT_BASE_URI)$(VocabUrlSuffix)/,$(TMP_RES_TURTLE_VOCAB)) ; \
+$(call DO_DIFF_TEST,$(TGT_TURTLE),$(TMP_RES_TURTLE_VOCAB)) ;
+endef
+
+TMP_RES_TEXT_HTML := $(TEST_DIR)/texthtml.out
+define do_test_html
+$(call CURL,text/html,$(TGT_BASE_URI)$(VocabUrlSuffix)/,$(TMP_RES_TEXT_HTML)) ; \
+$(call DO_DIFF_TEST,$(TGT_DIR)/$(HtmlFile),$(TMP_RES_TEXT_HTML)) ;
+endef
+
 $(TEST_target): | $(TEST_DIR)
 	@echo "Test $(TGT_BASE_URI)"
-	$(do_test_skos)
+	@$(do_test_skos)
+	@$(do_test_vocab)
+	@$(do_test_html)
 
