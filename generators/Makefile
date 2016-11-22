@@ -1,6 +1,6 @@
 # Hint: type 'make' to get the usage message.
 
-GENERATE_target := generate-vocab
+GENERATE_target := generate
 DEPLOY_target := deploy
 HELP_target := help
 TEST_target := test
@@ -24,6 +24,8 @@ $(HELP_target):
 	@[ -z "$(TGT_BASE_URI)" ] && echo "\tThe substitution will depend on the tgt_version specified on the make command line" || true
 	@echo "make $(DEPLOY_target) tgt_version=x"
 	@echo "\tDeploy the generated data to a server."
+	@echo "\tCAUTION! The target directory on the server will be synchronized with your local directory, made by 'make $(DEPLOY_target),"
+	@echo "\t         and any files in the target directory on the server, but not in the local directory will be deleted!"
 	@echo "make $(TEST_target) tgt_version=x"
 	@echo "\tRun post-deployment tests."
 
@@ -53,7 +55,7 @@ SRC_STANDARD_FILES := activities.skos legal-form.skos products-services.skos qua
 SRC_HTML_DIR := ../vocabs/html
 # The original HTML file from essglobal.org was 2015.01.11.html:
 #SRC_HTML_FILE := 2015.01.11.html
-# We are now going ongoing development on the HTML file essglobal.html, which started as a copy of 2015.01.11.html:
+# We are now doing ongoing development on the HTML file essglobal.html, which started as a copy of 2015.01.11.html:
 SRC_HTML_FILE := essglobal.html
 SRC_CSS_FILE := default.css
 SRC_HTML_FILES := $(SRC_HTML_FILE) $(SRC_CSS_FILE)
@@ -90,6 +92,10 @@ $(TGT_STANDARD_DIR):
 
 TGT_HTML_DIR := $(TGT_DIR)/$(HTML_SUBDIR)
 $(TGT_HTML_DIR):
+	mkdir -p $@
+
+TEST_DIR := tmp_test_results
+$(TEST_DIR):
 	mkdir -p $@
 
 # Target file has the same name as SRC_VOCAB_FILE, but is in a different dir:
@@ -192,6 +198,7 @@ $(GENERATE_target):
 ###################
 # Deployment to server
 ###################
+
 RSYNC := rsync -avz 
 # Define macro for executing commands on the server (here using ssh):
 SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
@@ -201,6 +208,26 @@ $(DEPLOY_target): $(GENERATE_target)
 	$(call SERVER_CMD,'cd $(SERVER_DIR) && mkdir -p $(SERVER_SUB_DIR)')
 	$(RSYNC) --delete $(TGT_DIR)/ $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)/
 
-$(TEST_target):
+###################
+# TESTING
+###################
+
+# The pattern of these tests is as follows:
+# 1. Use curl to fetch something that we have deployed.
+# 2. Use diff to compare the response to the fetch with what we expect.
+
+CURL_FOR_RDF = echo "Fetching $(1)" && curl --silent -H "Accept: application/rdf+xml" -L $1 > $2
+DO_DIFF_TEST = diff $(1) $(2) && echo "PASS - fetched response matches $(1)" || echo "FAIL! ************** \nFAIL! Expected $(1) and $(2) to be identical."
+
+# Note the use of $$f - this is in order to end up with $f, used by the shell for variable substitution in for loops.
+define do_test_skos
+for f in $(SRC_STANDARD_FILES:.skos=); do  \
+$(call CURL_FOR_RDF,$(TGT_BASE_URI)$(StandardUrlSuffix)/$$f,$(TEST_DIR)/$$f.out) ; \
+$(call DO_DIFF_TEST,$(TGT_STANDARD_DIR)/$$f.skos,$(TEST_DIR)/$$f.out) ;\
+done
+endef
+
+$(TEST_target): | $(TEST_DIR)
 	@echo "Test $(TGT_BASE_URI)"
+	$(do_test_skos)
 
