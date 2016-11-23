@@ -10,7 +10,7 @@
  xml:base="http://purl.org/essglobal/standard/activities/">
 
 
-<skos:ConceptScheme rdf:about="activities">
+<skos:ConceptScheme rdf:about="">
 <dc:title>Activities</dc:title>
        <dc:description>Activities controlled vocabulary for SSE</dc:description>
        <dc:creator>César Araújo (cesar_araujo@sapo.pt)</dc:creator>
@@ -42,7 +42,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de la agricultura, la silvicultura y la pesca</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre les secteurs de l'agriculture, la sylviculture et la pêche</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores da agricultura, silvicultura e pesca</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -57,7 +57,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de la industria extractiva</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Integra secteurs de l'industrie extractive</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores da Indústria extrativista</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -72,7 +72,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores manufactureros</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre les secteurs de la fabrication</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de fabrico</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -87,7 +87,7 @@
         <skos:scopeNote xml:lang="ES">Corresponde a los sectores de acondicionamiento de electricidad, gas, vapor y aire</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs du conditionnement d'électricité, de gaz, de vapeur et d'air</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de electricidade, gás, vapor e ar condicionado</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -102,7 +102,7 @@
         <skos:scopeNote xml:lang="ES">Corresponde a los sectores de las actividades de saneamiento de agua de abastecimiento, la gestión de residuos y descontaminación</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs d'activités d'approvisionnement en eau assainissement, gestion des déchets et d'assainissement</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de abastecimento de água. atividades de saneamento, gestão de resíduos, e remediação</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -117,7 +117,7 @@
         <skos:scopeNote xml:lang="ES">Incluye los sectores de la construcción</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs de la construction</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de construção</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -132,7 +132,7 @@
         <skos:scopeNote xml:lang="ES">Corresponde a los sectores del comercio y el comercio al por menor, reparación de vehículos de motor y motocicletas</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs du commerce et du commerce de détail, réparation de véhicules automobiles et de motocycles</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de comércio e retalho, reparação de veículos automóveis e motociclos</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -147,7 +147,7 @@
         <skos:scopeNote xml:lang="ES">Corresponde a los sectores de transporte y almacenamiento</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs du transport et de stockage</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de transporte e armazenamento</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -162,7 +162,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de la industria de servicios de alojamiento y comida</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre les secteurs de l'industrie des services d'hébergement et de nourriture</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de atividades dos serviços de alojamento e restauração</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -177,7 +177,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de información y comunicación</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre secteurs de l'information et de la communication</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de informação e comunicação</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -192,7 +192,7 @@
         <skos:scopeNote xml:lang="ES">Incluye los sectores de actividades financieras y de seguros</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs des activités financières et d'assurance</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de atividades financeiras e de seguros</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -207,7 +207,7 @@
         <skos:scopeNote xml:lang="ES">Incluye los sectores de la actividad inmobiliaria</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs d'activités immobilières</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de atividades imobiliárias</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -222,7 +222,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de servicios profesionales, científicos y técnicos</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre les secteurs de services professionnels, scientifiques et techniques</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de atividades profissionais, científicas e técnicas</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -237,7 +237,7 @@
         <skos:scopeNote xml:lang="ES">Incluye los sectores de actividades administrativas y servicios auxiliares</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs d'activités de services administratifs et de soutien</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de administrativas e de apoio as atividades de serviços</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -252,7 +252,7 @@
         <skos:scopeNote xml:lang="ES">Incluye los sectores de la administración pública, defensa y seguridad social obligatoria</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs de l'administration publique, la défense et de sécurité sociale obligatoire</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de administração pública, defesa e segurança social obrigatória</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -267,7 +267,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de educación</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre secteurs de l'éducation</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de educação</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -282,7 +282,7 @@
         <skos:scopeNote xml:lang="ES">Incluye los sectores de salud y sociales</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs de la santé et social</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de saúde humana e acção social</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -297,7 +297,7 @@
         <skos:scopeNote xml:lang="ES">Corresponde a los sectores de las artes, el entretenimiento y la recreación</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Comprend les secteurs des arts, spectacles et loisirs</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de artes, entretenimento e recreação</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -312,7 +312,7 @@
         <skos:scopeNote xml:lang="ES">Integra las actividades de otros sectores de servicios</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Intègre les activités d'autres secteurs de services</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de outras atividades de serviços</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -327,7 +327,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de las actividades de los hogares como empleadores</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Integra secteurs d'activités des ménages en tant qu'employeurs</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de atividades das famílias empregadoras</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
@@ -342,7 +342,7 @@
         <skos:scopeNote xml:lang="ES">Integra los sectores de actividades de las organizaciones y organismos</skos:scopeNote>
         <skos:scopeNote xml:lang="FR">Integra secteurs d'activités des organisations et organismes</skos:scopeNote>
         <skos:scopeNote xml:lang="PT">Integra os setores de atividades de organizações e entidades extraterritoriais</skos:scopeNote>
-        <skos:inScheme rdf:resource="activities"/>
+        <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
