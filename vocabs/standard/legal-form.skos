@@ -26,7 +26,7 @@
 </skos:ConceptScheme>
 
 
-<skos:Concept rdf:ID="L1">
+<skos:Concept rdf:about="L1">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Grupo Informal</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Informal Group</skos:prefLabel>
@@ -41,7 +41,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="L2">
+<skos:Concept rdf:about="L2">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Cooperativa</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Cooperative</skos:prefLabel>
@@ -56,7 +56,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="L3">
+<skos:Concept rdf:about="L3">
         <skos:prefLabel xml:lang="FR">Entreprise</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Empresa</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Company </skos:prefLabel>
@@ -72,7 +72,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="L4">
+<skos:Concept rdf:about="L4">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Non-Profit Organisation </skos:prefLabel>
@@ -87,7 +87,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:ID="L5">
+<skos:Concept rdf:about="L5">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Empresa Social</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Social Entreprise </skos:prefLabel>

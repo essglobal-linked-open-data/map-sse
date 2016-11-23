@@ -30,7 +30,7 @@
 </skos:ConceptScheme>
 
 
-<skos:Concept rdf:ID="T1">
+<skos:Concept rdf:about="T1">
         <skos:prefLabel xml:lang="FR">Villes en transition et droit a l'habitation</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Ciudades en transición y derecho a la vivienda</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Transition towns and housing rights</skos:prefLabel>
@@ -44,7 +44,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T2">
+<skos:Concept rdf:about="T2">
         <skos:prefLabel xml:lang="FR">Souveraineté alimentaire et Agriculture paysanne</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Soberanía alimentaria y Agricultura campesina</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Food souvereignty and peasant's farming agriculture</skos:prefLabel>
@@ -58,7 +58,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T3">
+<skos:Concept rdf:about="T3">
         <skos:prefLabel xml:lang="FR">Finances Solidaires</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Finanzas Solidarias</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Social and solidarity finances</skos:prefLabel>
@@ -72,7 +72,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T4">
+<skos:Concept rdf:about="T4">
         <skos:prefLabel xml:lang="FR">Concepts et valeurs sur l'Économie Solidaire</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Conceptos y valores sobre Economía Solidaria</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Concepts and values related to Solidarity Economy</skos:prefLabel>
@@ -86,7 +86,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T5">
+<skos:Concept rdf:about="T5">
         <skos:prefLabel xml:lang="FR">Environnement et biens communs</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Medio ambiente y bienes comunes</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Environment and commons</skos:prefLabel>
@@ -100,7 +100,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T6">
+<skos:Concept rdf:about="T6">
         <skos:prefLabel xml:lang="FR">Politiques Publiques</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Politicas Publicas</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Public policies</skos:prefLabel>
@@ -114,7 +114,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T7">
+<skos:Concept rdf:about="T7">
         <skos:prefLabel xml:lang="FR">culture et connaissances (savoirs) libres</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Cultura y conocimiento libres</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Free culture and knowledge</skos:prefLabel>
@@ -128,7 +128,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T8">
+<skos:Concept rdf:about="T8">
         <skos:prefLabel xml:lang="FR">Education populaire et apprentissage</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Educacion y asesoria popular</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Popular education and training</skos:prefLabel>
@@ -142,7 +142,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T9">
+<skos:Concept rdf:about="T9">
         <skos:prefLabel xml:lang="FR">Production, Commerce et consommation solidaires et responsables</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Producción, Comercialización y consumo solidarios y responsables</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Solidarity and Responsible production, commerce and consumption</skos:prefLabel>
@@ -156,7 +156,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T10">
+<skos:Concept rdf:about="T10">
         <skos:prefLabel xml:lang="FR">Développement territorial et bien vivir</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Desarrollo territorial y Bien Vivir</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Territorial development and "Bien Vivir"</skos:prefLabel>
@@ -170,7 +170,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T11">
+<skos:Concept rdf:about="T11">
         <skos:prefLabel xml:lang="FR">Coopération internationale</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Cooperación internacional</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">International Cooperation</skos:prefLabel>
@@ -184,7 +184,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T12">
+<skos:Concept rdf:about="T12">
         <skos:prefLabel xml:lang="FR">Justice et insertion sociales et combat contre la pauvreté</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Justicia e inserción social y lucha contra la pobreza</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Social Justice and insertion and fight against poverty</skos:prefLabel>
@@ -198,7 +198,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T13">
+<skos:Concept rdf:about="T13">
         <skos:prefLabel xml:lang="FR">Travail décent/digne et Autogestion</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Trabajo decente/digno y Autogestión</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Decent work and Self-Management</skos:prefLabel>
@@ -212,7 +212,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T14">
+<skos:Concept rdf:about="T14">
         <skos:prefLabel xml:lang="FR">Femmes</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Mujeres</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Women</skos:prefLabel>
@@ -226,7 +226,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T15">
+<skos:Concept rdf:about="T15">
         <skos:prefLabel xml:lang="FR">Réseautage et Organisation du mouvement de l'ÉSS (national et international)</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Redes y organización del movimiento de ESS (nacional y internacional)</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">SSE movement organizing and networking (national and international)</skos:prefLabel>
@@ -240,7 +240,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T16">
+<skos:Concept rdf:about="T16">
         <skos:prefLabel xml:lang="FR">Technologie et recherche</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Tecnología e investigación</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Research and technology</skos:prefLabel>
@@ -254,7 +254,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T17">
+<skos:Concept rdf:about="T17">
         <skos:prefLabel xml:lang="FR">Peuples et Communautés traditionnels/indigènes</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Pueblos y comunidades tradicionales/originarias</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Indigenous peoples and communities</skos:prefLabel>
@@ -268,7 +268,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T18">
+<skos:Concept rdf:about="T18">
         <skos:prefLabel xml:lang="FR">Communication et information alternatives</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Comunicación e información alternativas</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Alternative communication and information</skos:prefLabel>
@@ -282,7 +282,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="T19">
+<skos:Concept rdf:about="T19">
         <skos:prefLabel xml:lang="FR">Autres thématiques</skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Otros temas</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Other themes</skos:prefLabel>

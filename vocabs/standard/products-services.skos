@@ -45,7 +45,7 @@
        
 </skos:ConceptScheme>
 
-<skos:Concept rdf:ID="70000000">
+<skos:Concept rdf:about="70000000">
        <skos:definition xml:lang="EN">Farming and Fishing and Forestry and Wildlife Contracting Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Farming and Fishing and Forestry and Wildlife Contracting Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -112,7 +112,7 @@
 
 
 
-<skos:Concept rdf:ID="71000000">
+<skos:Concept rdf:about="71000000">
        <skos:definition xml:lang="EN">Mining and oil and gas services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Mining and oil and gas services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -171,7 +171,7 @@
 
 
 
-<skos:Concept rdf:ID="72000000">
+<skos:Concept rdf:about="72000000">
        <skos:definition xml:lang="EN">Building and Facility Construction and Maintenance Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Building and Facility Construction and Maintenance Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -217,7 +217,7 @@
 
 
 
-<skos:Concept rdf:ID="73000000">
+<skos:Concept rdf:about="73000000">
        <skos:definition xml:lang="EN">Industrial Production and Manufacturing Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Industrial Production and Manufacturing Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -290,7 +290,7 @@
 
 
 
-<skos:Concept rdf:ID="76000000">
+<skos:Concept rdf:about="76000000">
        <skos:definition xml:lang="EN">Industrial Cleaning Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Industrial Cleaning Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -329,7 +329,7 @@
 
 
 
-<skos:Concept rdf:ID="77000000">
+<skos:Concept rdf:about="77000000">
        <skos:definition xml:lang="EN"></skos:definition>
 	   <skos:prefLabel xml:lang="EN">Environmental Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN">Environmental Services</skos:scopeNote>
@@ -365,7 +365,7 @@
 
 
 
-<skos:Concept rdf:ID="78000000">
+<skos:Concept rdf:about="78000000">
        <skos:definition xml:lang="EN">Transportation and Storage and Mail Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Transportation and Storage and Mail Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -416,7 +416,7 @@
 
 
 
-<skos:Concept rdf:ID="80000000">
+<skos:Concept rdf:about="80000000">
        <skos:definition xml:lang="EN">Management and Business Professionals and Administrative Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Management and Business Professionals and Administrative Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -481,7 +481,7 @@
 
 
 
-<skos:Concept rdf:ID="81000000">
+<skos:Concept rdf:about="81000000">
        <skos:definition xml:lang="EN">Engineering and Research and Technology Based Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Engineering and Research and Technology Based Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -539,7 +539,7 @@
 
 
 
-<skos:Concept rdf:ID="82000000">
+<skos:Concept rdf:about="82000000">
        <skos:definition xml:lang="EN">Editorial and Design and Graphic and Fine Art Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Editorial and Design and Graphic and Fine Art Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -591,7 +591,7 @@
 
 
 
-<skos:Concept rdf:ID="83000000">
+<skos:Concept rdf:about="83000000">
        <skos:definition xml:lang="EN">Public Utilities and Public Sector Related Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Public Utilities and Public Sector Related Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -624,7 +624,7 @@
 
 
 
-<skos:Concept rdf:ID="84000000">
+<skos:Concept rdf:about="84000000">
        <skos:definition xml:lang="EN">Financial and Insurance Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Financial and Insurance Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -677,7 +677,7 @@
 
 
 
-<skos:Concept rdf:ID="85000000">
+<skos:Concept rdf:about="85000000">
        <skos:definition xml:lang="EN">Healthcare Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Healthcare Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -750,7 +750,7 @@
 
 
 
-<skos:Concept rdf:ID="86000000">
+<skos:Concept rdf:about="86000000">
        <skos:definition xml:lang="EN">Education and Training Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Education and Training Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -799,7 +799,7 @@
 
 
 
-<skos:Concept rdf:ID="90000000">
+<skos:Concept rdf:about="90000000">
        <skos:definition xml:lang="EN">Travel and Food and Lodging and Entertainment Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Travel and Food and Lodging and Entertainment Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -855,7 +855,7 @@
 
 
 
-<skos:Concept rdf:ID="91000000">
+<skos:Concept rdf:about="91000000">
        <skos:definition xml:lang="EN">Personal and Domestic Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Personal and Domestic Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -880,7 +880,7 @@
 
 
 
-<skos:Concept rdf:ID="92000000">
+<skos:Concept rdf:about="92000000">
        <skos:definition xml:lang="EN">Security and Safety Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Security and Safety Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -898,7 +898,7 @@
 
 
 
-<skos:Concept rdf:ID="93000000">
+<skos:Concept rdf:about="93000000">
        <skos:definition xml:lang="EN">Politics and Civic Affairs Services</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Politics and Civic Affairs Services</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -967,7 +967,7 @@
 
 
 
-<skos:Concept rdf:ID="94000000">
+<skos:Concept rdf:about="94000000">
        <skos:definition xml:lang="EN">Organizations and Clubs</skos:definition>
 	   <skos:prefLabel xml:lang="EN"></skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
@@ -1014,7 +1014,7 @@
 
 
 
-<skos:Concept rdf:ID="95000000">
+<skos:Concept rdf:about="95000000">
        <skos:definition xml:lang="EN">Land and Buildings and Structures and Thoroughfares</skos:definition>
 	   <skos:prefLabel xml:lang="EN">Land and Buildings and Structures and Thoroughfares</skos:prefLabel>
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>

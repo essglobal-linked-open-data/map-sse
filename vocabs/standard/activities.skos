@@ -31,7 +31,7 @@
 </skos:ConceptScheme>
 
 
-<skos:Concept rdf:ID="a01">
+<skos:Concept rdf:about="a01">
         <skos:altLabel>A</skos:altLabel>
         <skos:altLabel>Agriculture, forestry and fishing</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Agriculture and environment</skos:prefLabel>
@@ -46,7 +46,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a02">
+<skos:Concept rdf:about="a02">
         <skos:altLabel>B</skos:altLabel>
         <skos:altLabel>Mining and quarrying</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Mining and quarrying</skos:prefLabel>
@@ -61,7 +61,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a03">
+<skos:Concept rdf:about="a03">
         <skos:altLabel>C</skos:altLabel>
         <skos:altLabel>Manufacturing</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Craftmanship and manufacturing</skos:prefLabel>
@@ -76,7 +76,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a04">
+<skos:Concept rdf:about="a04">
         <skos:altLabel>D</skos:altLabel>
         <skos:altLabel>Electricity, gas, steam and air conditioning supply</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Energy production and distribution</skos:prefLabel>
@@ -91,7 +91,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a05">
+<skos:Concept rdf:about="a05">
         <skos:altLabel>E</skos:altLabel>
         <skos:altLabel>Water supply; sewerage, waste management and remediation activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Recycling, waste treatment, water cycle and ecological restoration</skos:prefLabel>
@@ -106,7 +106,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a06">
+<skos:Concept rdf:about="a06">
         <skos:altLabel>F</skos:altLabel>
         <skos:altLabel>Construction</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Construction, public works and refurbishing</skos:prefLabel>
@@ -121,7 +121,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a07">
+<skos:Concept rdf:about="a07">
         <skos:altLabel>G</skos:altLabel>
         <skos:altLabel>Wholesale and retail trade; repair of motor vehicles and motorcycles</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Trade and distribution</skos:prefLabel>
@@ -136,7 +136,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a08">
+<skos:Concept rdf:about="a08">
         <skos:altLabel>H</skos:altLabel>
         <skos:altLabel>Transportation and storage</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Transport, logistics and storage</skos:prefLabel>
@@ -151,7 +151,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a09">
+<skos:Concept rdf:about="a09">
         <skos:altLabel>I</skos:altLabel>
         <skos:altLabel>Accommodation and food service activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Hospitality and food service activities</skos:prefLabel>
@@ -166,7 +166,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a10">
+<skos:Concept rdf:about="a10">
         <skos:altLabel>J</skos:altLabel>
         <skos:altLabel>Information and communication</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Information, communication and technologies</skos:prefLabel>
@@ -181,7 +181,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a11">
+<skos:Concept rdf:about="a11">
         <skos:altLabel>K</skos:altLabel>
         <skos:altLabel>Financial and insurance activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Financial, insurance and related activities</skos:prefLabel>
@@ -196,7 +196,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a12">
+<skos:Concept rdf:about="a12">
         <skos:altLabel>L</skos:altLabel>
         <skos:altLabel>Real estate activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Habitat and housing</skos:prefLabel>
@@ -211,7 +211,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a13">
+<skos:Concept rdf:about="a13">
         <skos:altLabel>M</skos:altLabel>
         <skos:altLabel>Professional, scientific and technical activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Professional, scientific and technical activities</skos:prefLabel>
@@ -226,7 +226,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a14">
+<skos:Concept rdf:about="a14">
         <skos:altLabel>N</skos:altLabel>
         <skos:altLabel>Administrative and support service activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Administration and management, tourism, rentals</skos:prefLabel>
@@ -241,7 +241,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a15">
+<skos:Concept rdf:about="a15">
         <skos:altLabel>O</skos:altLabel>
         <skos:altLabel>Public administration and defence; compulsory social security</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Public administration and social security</skos:prefLabel>
@@ -256,7 +256,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a16">
+<skos:Concept rdf:about="a16">
         <skos:altLabel>P</skos:altLabel>
         <skos:altLabel>Education</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Education and training</skos:prefLabel>
@@ -271,7 +271,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a17">
+<skos:Concept rdf:about="a17">
         <skos:altLabel>Q</skos:altLabel>
         <skos:altLabel>Human health and social work activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Social services, health and employment</skos:prefLabel>
@@ -286,7 +286,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a18">
+<skos:Concept rdf:about="a18">
         <skos:altLabel>R</skos:altLabel>
         <skos:altLabel>Arts, entertainment and recreation</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Arts, culture, recreation and sports</skos:prefLabel>
@@ -301,7 +301,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a19">
+<skos:Concept rdf:about="a19">
         <skos:altLabel>S</skos:altLabel>
         <skos:altLabel>Other service activities</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Membership activities, repairing and wellness</skos:prefLabel>
@@ -316,7 +316,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a20">
+<skos:Concept rdf:about="a20">
         <skos:altLabel>T</skos:altLabel>
         <skos:altLabel>Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Household activities, self-production, domestic work</skos:prefLabel>
@@ -331,7 +331,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:ID="a21">
+<skos:Concept rdf:about="a21">
         <skos:altLabel>U</skos:altLabel>
         <skos:altLabel>Activities of extraterritorial organizations and bodies</skos:altLabel>
         <skos:prefLabel xml:lang="EN">International diplomacy and cooperation</skos:prefLabel>

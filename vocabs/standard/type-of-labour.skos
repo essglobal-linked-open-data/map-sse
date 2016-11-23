@@ -26,7 +26,7 @@
 </skos:ConceptScheme>
 
 
-<skos:Concept rdf:ID="T1">
+<skos:Concept rdf:about="T1">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES">Associativo</skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Associative</skos:prefLabel>
@@ -40,7 +40,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:ID="T2">
+<skos:Concept rdf:about="T2">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Subordinate</skos:prefLabel>
@@ -54,7 +54,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:ID="T3">
+<skos:Concept rdf:about="T3">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Voluntary Work </skos:prefLabel>
@@ -68,7 +68,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:ID="T4">
+<skos:Concept rdf:about="T4">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Reproductive Labour/Care Work </skos:prefLabel>
@@ -82,7 +82,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:ID="T5">
+<skos:Concept rdf:about="T5">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Externally hired </skos:prefLabel>
@@ -96,7 +96,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:ID="T1">
+<skos:Concept rdf:about="T1">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN"></skos:prefLabel>
