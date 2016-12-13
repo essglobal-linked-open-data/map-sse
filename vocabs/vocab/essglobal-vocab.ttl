@@ -1,5 +1,5 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
@@ -7,13 +7,14 @@
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix essglobal: <http://purl.org/essglobal/vocab/> .
 
 ### Vocabulary metadata ###
 
 <http://purl.org/essglobal/vocab/>
   a owl:Ontology, <http://purl.org/vocommons/voaf#Vocabulary> ;
-  ns0:preferredNamespacePrefix "essglobal" ;
-  ns0:preferredNamespaceUri "http://purl.org/essglobal/vocab/" ;
+  vann:preferredNamespacePrefix "essglobal" ;
+  vann:preferredNamespaceUri "http://purl.org/essglobal/vocab/" ;
   dc:title "ESSGlobal Vocabulary"@en ;
   dc:title "Vocabulário ESSGlobal"@pt ;
   dc:title "Vocabulario ESSGlobal"@es ;
