@@ -42,7 +42,7 @@
   dc:issued "2014-02-06"^^xsd:date ;
   dc:modified "2015-05-04"^^xsd:date ;
   a rdfs:Class ;
-  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationUnit> .
+  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalUnit> .
 
 <http://purl.org/essglobal/vocab/Network>
   rdfs:label "Network"@en ;
@@ -53,7 +53,7 @@
   dc:issued "2014-02-06"^^xsd:date ;
   dc:modified "2015-05-04"^^xsd:date ;
   a rdfs:Class ;
-  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationColaboration> .
+  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalCollaboration> .
   
   <http://purl.org/essglobal/vocab/Address>
   rdfs:label "Address"@en ;
