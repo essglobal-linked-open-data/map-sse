@@ -207,6 +207,11 @@ SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
 $(DEPLOY_target): $(GENERATE_target)
 	$(call SERVER_CMD,'cd $(SERVER_DIR) && mkdir -p $(SERVER_SUB_DIR)')
 	$(RSYNC) --delete $(TGT_DIR)/ $(SERVER_SSH_CONFIG_NAME):$(SERVER_DIR)$(SERVER_SUB_DIR)/
+	@echo "If the server is set up properly, the vocab should be available at URIs"
+	@echo "\t$(TGT_BASE_URI)$(VocabUrlSuffix)"
+	@echo "\t$(TGT_BASE_URI)$(StandardUrlSuffix)"
+	@echo "Consider running test using "
+	@echo "\tmake tgt_version=$(tgt_version) $(TEST_target)"
 
 ###################
 # TESTING
