@@ -3,7 +3,30 @@ Metadata Application Profile for the Social and Solidarity Economy.
 
 This repository contains the source files for the MAP-SSE (previously referred to as DCAP-SSE). Until October 2016, these were maintained on a server at [essglobal.org](http://essglobal.org/dcap-sse/). A reason for moving them is to allow other people to get involved in the maintenance and development of the MAP-SSE.
 
-See also [Documentation](doc). 
+## Documentation sources
+
+### ESSGLOBAL Technical Guidelines
+
+[ESSGLOBAL technical guidelines](doc/2014-07-ESSglobal_interop_guidelines.pdf), July 2014.
+
+This is a copy of the [document on the ripess.eu site](http://ripess.eu/wp-content/uploads/2014/07/ESSglobal_interop_guidelines.pdf), retained here for safe keeping.
+
+The Technical Guidelines document describes the reasoning behind the ESSGLOBAL vocab, and the thinking on how it is intended to be used.
+
+### Taxonomy overview
+
+There is a simple overview of the [English version of the taxonomies](viewers/views).
+
+| Taxonomy | Overview (English) | Linked Data definition |
+| -------- | ------------------ | --------------- |
+| Products and services | [Simple list](viewers/views/products-services.md) | [SKOS](vocabs/standard/products-services.skos) |
+| Activities | [Simple list](viewers/views/activities.md) | [SKOS](vocabs/standard/activities.skos) |
+| Themes | [Simple list](viewers/views/themes.md) | [SKOS](vocabs/standard/themes.skos) |
+| Qualifiers | [Simple list](viewers/views/qualifiers.md) | [SKOS](vocabs/standard/qualifiers.skos) |
+| Type of labour | [Simple list](viewers/views/type-of-labour.md) | [SKOS](vocabs/standard/type-of-labour.skos) |
+| Legal form | [Simple list](viewers/views/legal-form.md) | [SKOS](vocabs/standard/legal-form.skos) |
+
+
 
 
 ## Generating and deploying RDF serializations
