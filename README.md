@@ -21,7 +21,7 @@ The Technical Guidelines document describes the reasoning behind the ESSGLOBAL v
 
 ### Taxonomy overview
 
-There is a simple overview of the [English version of the taxonomies](viewers/views).
+Each taxonomy describes a different facet of an SSE Initiative.
 
 | Taxonomy | Overview (English) | Linked Data definition |
 | -------- | ------------------ | --------------- |
