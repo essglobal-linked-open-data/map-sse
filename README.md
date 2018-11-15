@@ -5,6 +5,12 @@ This repository contains the source files for the MAP-SSE (previously referred t
 
 ## Documentation sources
 
+### ESSGlobal RDF Vocabulary
+
+[ESSGlobal RDF Vocabulary](vocabs/html/essglobal.html) - HTML source view.
+
+_TODO: add link to view in browser_
+
 ### ESSGLOBAL Technical Guidelines
 
 [ESSGLOBAL technical guidelines](doc/2014-07-ESSglobal_interop_guidelines.pdf), July 2014.
@@ -26,7 +32,7 @@ There is a simple overview of the [English version of the taxonomies](viewers/vi
 | Type of labour | [Simple list](viewers/views/type-of-labour.md) | [SKOS](vocabs/standard/type-of-labour.skos) |
 | Legal form | [Simple list](viewers/views/legal-form.md) | [SKOS](vocabs/standard/legal-form.skos) |
 
-
+Each of these is described in detail in the [ESSGLOBAL technical guidelines](doc/2014-07-ESSglobal_interop_guidelines.pdf).
 
 
 ## Generating and deploying RDF serializations
