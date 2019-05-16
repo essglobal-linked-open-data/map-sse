@@ -259,7 +259,7 @@
   dc:description ""@pt ;
   rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
   dc:issued "2019-05-16"^^xsd:date ;
-  dc:modified "2019-05-15"^^xsd:date ;
+  dc:modified "2019-05-16"^^xsd:date ;
   a owl:DatatypeProperty ;
   rdfs:range <http://purl.org/essglobal/vocab/ActivitiesMod> ;  
   rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
