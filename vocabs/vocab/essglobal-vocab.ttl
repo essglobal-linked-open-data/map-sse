@@ -161,6 +161,17 @@
   dc:modified "2014-08-05"^^xsd:date ; 
   rdfs:subClassOf skos:Concept ;
   owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/activities> ] .
+
+
+  <http://purl.org/essglobal/vocab/ActivitiesMod>
+  rdfs:label "Activities Modified VES"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The alternative activities vocabulary encoding scheme"@en ;
+  dc:description ""@pt ;
+  dc:issued "2019-05-16"^^xsd:date ;
+  dc:modified "2019-05-16"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/activities-mod> ] .
   
     
  <http://purl.org/essglobal/vocab/LegalForm>
@@ -172,6 +183,16 @@
   dc:modified "2014-08-05"^^xsd:date ;
   rdfs:subClassOf skos:Concept ;
   owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/legal-form> ] .
+
+  <http://purl.org/essglobal/vocab/OrganisationalStructure>
+  rdfs:label "Legal Form Modified VES"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The alternative legal form vocabulary encoding scheme"@en ;
+  dc:description ""@pt ;
+  dc:issued "2019-05-16"^^xsd:date ;
+  dc:modified "2019-05-16"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/organisational-structure> ] .
 
  <http://purl.org/essglobal/vocab/Qualifiers>
   rdfs:label "Qualifiers VES"@en ;
@@ -231,6 +252,18 @@
   rdfs:range <http://purl.org/essglobal/vocab/Activities> ;  
   rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
 
+<http://purl.org/essglobal/vocab/primarySector>
+  rdfs:label "Primary Sector"@en ;
+  rdfs:label ""@pt ;
+  dc:description "A categorization of the primary activity carried out by SSE initiatives."@en ;
+  dc:description ""@pt ;
+  rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
+  dc:issued "2019-05-16"^^xsd:date ;
+  dc:modified "2019-05-15"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesMod> ;  
+  rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
+
 <http://purl.org/essglobal/vocab/totalWomen>
   rdfs:label "Total of Women"@en ;
   rdfs:label "Total de Mulheres"@pt ;
@@ -277,6 +310,18 @@
   dc:modified "2014-08-05"^^xsd:date ;
   a owl:DatatypeProperty ;
   rdfs:range <http://purl.org/essglobal/vocab/LegalForm> ;
+  rdfs:domain [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/SSEInitiative> <http://purl.org/essglobal/vocab/Network>) ] .
+
+  <http://purl.org/essglobal/vocab/organisationalStructure>
+  rdfs:label "Organisational Structure"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The organisational structure of a SSE Initiative or Network."@en ;
+  dc:description ""@pt ;
+  rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
+  dc:issued "2019-05-16"^^xsd:date ;
+  dc:modified "2019-05-16"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/essglobal/vocab/OrganisationalStructure> ;
   rdfs:domain [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/SSEInitiative> <http://purl.org/essglobal/vocab/Network>) ] .
 
 <http://purl.org/essglobal/vocab/qualifier>
