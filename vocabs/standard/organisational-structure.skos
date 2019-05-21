@@ -6,7 +6,7 @@
  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
  xmlns:dc="http://purl.org/dc/elements/1.1/" 
  xmlns:dcterms="http://purl.org/dc/terms/"
- xml:base="http://purl.org/essglobal/standard/legal-form-mod/">
+ xml:base="http://purl.org/essglobal/standard/organisational-structure/">
 
 
 <skos:ConceptScheme rdf:about="">
@@ -20,7 +20,7 @@
 </skos:ConceptScheme>
 
 
-<skos:Concept rdf:about="LM10">
+<skos:Concept rdf:about="OS10">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Community group (formal or informal)</skos:prefLabel>
@@ -36,10 +36,10 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:about="LM20">
+<skos:Concept rdf:about="OS20">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
-        <skos:prefLabel xml:lang="EN">Not-for-­profit organisation</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Not-for-profit organisation</skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
 	<skos:prefLabel xml:lang="IT"></skos:prefLabel>
 
@@ -47,12 +47,12 @@
         <skos:scopeNote xml:lang="ES"></skos:scopeNote>
         <skos:scopeNote xml:lang="EN"></skos:scopeNote>
         <skos:scopeNote xml:lang="PT"></skos:scopeNote>
-         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:scopeNote xml:lang="IT"></skos:scopeNote>
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
 
-<skos:Concept rdf:about="LM30">
+<skos:Concept rdf:about="OS30">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Social enterprise</skos:prefLabel>
@@ -68,7 +68,7 @@
 </skos:Concept>
 
 
-<skos:Concept rdf:about="LM40">
+<skos:Concept rdf:about="OS40">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Charity</skos:prefLabel>
@@ -83,7 +83,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM50">
+<skos:Concept rdf:about="OS50">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Company (Other)</skos:prefLabel>
@@ -98,7 +98,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM60">
+<skos:Concept rdf:about="OS60">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Workers co-operative</skos:prefLabel>
@@ -113,7 +113,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM70">
+<skos:Concept rdf:about="OS70">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Housing co-operative</skos:prefLabel>
@@ -128,7 +128,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM80">
+<skos:Concept rdf:about="OS80">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Consumer co-operative</skos:prefLabel>
@@ -143,7 +143,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM90">
+<skos:Concept rdf:about="OS90">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Producer co-operative</skos:prefLabel>
@@ -158,7 +158,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM100">
+<skos:Concept rdf:about="OS100">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Multi-stakeholder co-operative</skos:prefLabel>
@@ -173,7 +173,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM110">
+<skos:Concept rdf:about="OS110">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Community Interest Company (CIC)</skos:prefLabel>
@@ -188,7 +188,7 @@
         <skos:inScheme rdf:resource=""/>
 </skos:Concept>
 
-<skos:Concept rdf:about="LM120">
+<skos:Concept rdf:about="OS120">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Community Benefit Society / Industrial and Provident Society (IPS)</skos:prefLabel>
