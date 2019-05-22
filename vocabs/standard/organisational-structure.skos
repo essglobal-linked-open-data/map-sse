@@ -176,7 +176,7 @@
 <skos:Concept rdf:about="OS110">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
-        <skos:prefLabel xml:lang="EN">Community Interest Company (CIC)</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Secondary co-operative</skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
         <skos:prefLabel xml:lang="IT"></skos:prefLabel>
 			
@@ -191,7 +191,67 @@
 <skos:Concept rdf:about="OS120">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Community Interest Company (CIC)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS130">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="EN">Community Benefit Society / Industrial and Provident Society (IPS)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS140">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Employee trust</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS150">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Self-employed</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS160">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Unincorporated</skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
         <skos:prefLabel xml:lang="IT"></skos:prefLabel>
 			

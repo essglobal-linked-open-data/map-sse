@@ -75,12 +75,12 @@ else ifeq ($(tgt_version),ise)
   SERVER_DIR := www-vocabs/
   SERVER_SUB_DIR := experimental/essglobal
 else ifeq ($(tgt_version),sea)
-  TGT_BASE_URI := https://w3id2.solidarityeconomics.coop/essglobal/v2a/
+  TGT_BASE_URI := https://w3id2.solidarityeconomy.coop/essglobal/V2a/
   # SERVER details are needed for deployment
   SERVER_SSH_CONFIG_NAME := sea-0-joe
   # www-vocabs is symboloc link on server:
-  SERVER_DIR := /var/www/html/vocabs/
-  SERVER_SUB_DIR := essglobal/v2a
+  SERVER_DIR := www-vocabs/
+  SERVER_SUB_DIR := essglobal/V2a
 else ifeq ($(tgt_version),1.1)
   TGT_BASE_URI := http://purl.org/essglobal/
 else
@@ -206,7 +206,7 @@ $(GENERATE_target):
 # Deployment to server
 ###################
 
-RSYNC := rsync -avz
+RSYNC := rsync -avz --rsync-path="sudo rsync" --owner --group
 # Define macro for executing commands on the server (here using ssh):
 SERVER_CMD = ssh $(SERVER_SSH_CONFIG_NAME) $(1)
 
