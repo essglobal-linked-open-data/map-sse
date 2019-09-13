@@ -48,7 +48,7 @@ RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\\+xml [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
 #RewriteRule ^example4a/$ example4a-content/2005-10-31.html [R=303]
-RewriteRule ^#{$vocab_url_suffix}/$ #{$html_file} [R=303]
+RewriteRule ^#{$vocab_url_suffix}/$ https://%{SERVER_NAME}#{$rewrite_base}#{$html_file} [R=303]
 
 # Rewrite rule to serve directed HTML content from class/prop URIs
 RewriteCond %{HTTP_ACCEPT} !application/rdf\\+xml.*(text/html|application/xhtml\\+xml)
@@ -56,7 +56,7 @@ RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\\+xml [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
 #RewriteRule ^example4a/(.+) example4a-content/2005-10-31.html\#$1 [R=303,NE]
-RewriteRule ^#{$vocab_url_suffix}/(.+) #{$html_file}\#$1 [R=303,NE]
+RewriteRule ^#{$vocab_url_suffix}/(.+) https://%{SERVER_NAME}#{$rewrite_base}#{$html_file}\#$1 [R=303,NE]
 
 RewriteCond %{HTTP_ACCEPT} !application/rdf\\+xml.*(text/html|application/xhtml\\+xml)
 RewriteCond %{HTTP_ACCEPT} text/html [OR]
@@ -64,11 +64,11 @@ RewriteCond %{HTTP_ACCEPT} application/xhtml\\+xml [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
 # For now, for any URI that mentions the standard, we just point to the same section of the html doc:
 # We could do a lot better than this ... in the future.
-RewriteRule ^#{$standard_url_suffix} #{$html_file}\#H4 [R=303,NE]
+RewriteRule ^#{$standard_url_suffix} https://%{SERVER_NAME}#{$rewrite_base}#{$html_file}\#H4 [R=303,NE]
 
 # Rewrite rule to serve Turtle content if requested
 RewriteCond %{HTTP_ACCEPT} text/turtle
-RewriteRule ^#{$vocab_url_suffix}/ #{$vocab_ttl} [R=303]
+RewriteRule ^#{$vocab_url_suffix}/ https://%{SERVER_NAME}#{$rewrite_base}#{$vocab_ttl} [R=303]
 
 # Rewrite rule to serve SKOS files. 
 # There is an assumption here (in the RewriteRule pattern that filenames of the skos files
@@ -79,9 +79,9 @@ RewriteRule ^#{$vocab_url_suffix}/ #{$vocab_ttl} [R=303]
 #   #{$standard_url_suffix}/activities/A01
 # and similar constructions for SKOS files other than activities.
 RewriteCond %{HTTP_ACCEPT} application/rdf\\+xml
-RewriteRule ^#{$standard_url_suffix}/([-a-z]+) #{$standard_subdir}/$1.skos [R=303]
+RewriteRule ^#{$standard_url_suffix}/([-a-z]+) https://%{SERVER_NAME}#{$rewrite_base}#{$standard_subdir}/$1.skos [R=303]
 
 # Rewrite rule to serve RDF/XML content from the namespace URI by default
 #RewriteRule ^example4a/ example4a-content/2005-10-31.rdf [R=303]
-RewriteRule ^#{$vocab_url_suffix}/ #{$vocab_rdf} [R=303]
+RewriteRule ^#{$vocab_url_suffix}/ https://%{SERVER_NAME}#{$rewrite_base}#{$vocab_rdf} [R=303]
 HERE

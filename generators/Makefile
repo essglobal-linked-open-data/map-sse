@@ -75,7 +75,7 @@ else ifeq ($(tgt_version),ise)
   SERVER_DIR := www-vocabs/
   SERVER_SUB_DIR := experimental/essglobal
 else ifeq ($(tgt_version),sea)
-  TGT_BASE_URI := https://w3id2.solidarityeconomy.coop/essglobal/V2a/
+  TGT_BASE_URI := https://w3id.solidarityeconomy.coop/essglobal/V2a/
   # SERVER details are needed for deployment
   SERVER_SSH_CONFIG_NAME := sea-0-joe
   # www-vocabs is symboloc link on server:
