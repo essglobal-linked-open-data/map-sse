@@ -64,7 +64,7 @@ TGT_SUBDIR := $(tgt_version)
 
 # Here we define variables that depend on the tgt_version.
 # Note that some of the variables defined above could be (re)defined here, if necessary.
-TGT_VERSIONS := ise experimental 1.1
+TGT_VERSIONS := ise experimental 1.1 sea
 ifeq ($(tgt_version),experimental)
   TGT_BASE_URI := http://purl.org/essglobal/experimental/
 else ifeq ($(tgt_version),ise)
@@ -77,9 +77,9 @@ else ifeq ($(tgt_version),ise)
 else ifeq ($(tgt_version),sea)
   TGT_BASE_URI := https://w3id.solidarityeconomy.coop/essglobal/V2a/
   # SERVER details are needed for deployment
-  SERVER_SSH_CONFIG_NAME := sea-0-joe
+  SERVER_SSH_CONFIG_NAME := sea-0
   # www-vocabs is symboloc link on server:
-  SERVER_DIR := www-vocabs/
+  SERVER_DIR := /var/www/html/vocabs/
   SERVER_SUB_DIR := essglobal/V2a
 else ifeq ($(tgt_version),1.1)
   TGT_BASE_URI := http://purl.org/essglobal/
