@@ -173,6 +173,17 @@
   rdfs:subClassOf skos:Concept ;
   owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/activities-modified> ] .
   
+
+  <http://purl.org/essglobal/vocab/ActivitiesICA>
+  rdfs:label "Activities ICA VES"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The set of economic activities defined by the ICA to be used with the terms economicSector, primarySector"@en ;
+  dc:description ""@pt ;
+  dc:issued "2020-07-29"^^xsd:date ;
+  dc:modified "2020-07-29"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/activities-ica> ] .
+  
     
  <http://purl.org/essglobal/vocab/LegalForm>
   rdfs:label "Legal Form VES"@en ;
@@ -247,9 +258,9 @@
   dc:description "Categorização do tipo de atividades exercidas por iniciativas da ESS."@pt ;
   rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
   dc:issued "2014-02-06"^^xsd:date ;
-  dc:modified "2019-05-28"^^xsd:date ;
-  a owl:DatatypeProperty ;
-  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesModified> ;  
+  dc:modified "2020-07-29"^^xsd:date ;
+  a owl:DatatypeProperty ; 
+  rdfs:range [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/ActivitiesModified> <http://purl.org/essglobal/vocab/ActivitiesICA>) ] ;  
   rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
 
 <http://purl.org/essglobal/vocab/primarySector>
@@ -257,9 +268,9 @@
   dc:description "The primary activity carried out by SSE initiatives."@en ;
   rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
   dc:issued "2019-05-20"^^xsd:date ;
-  dc:modified "2019-05-20"^^xsd:date ;
+  dc:modified "2020-07-29"^^xsd:date ;
   a owl:DatatypeProperty ;
-  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesModified> ;  
+  rdfs:range [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/ActivitiesModified> <http://purl.org/essglobal/vocab/ActivitiesICA>) ] ;  
   rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
 
   <http://purl.org/essglobal/vocab/additionalSectors>
@@ -267,9 +278,9 @@
   dc:description "Additional activities carried out by SSE initiatives."@en ;
   rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
   dc:issued "2019-05-20"^^xsd:date ;
-  dc:modified "2019-05-20"^^xsd:date ;
+  dc:modified "2020-07-29"^^xsd:date ;
   a owl:DatatypeProperty ;
-  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesModified> ;  
+  rdfs:range [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/ActivitiesModified> <http://purl.org/essglobal/vocab/ActivitiesICA>) ] ;  
   rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
 
 <http://purl.org/essglobal/vocab/totalWomen>

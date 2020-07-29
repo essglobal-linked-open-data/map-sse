@@ -50,7 +50,7 @@ SRC_TYPE := turtle
 SRC_VOCAB_FILE_EXT := $(suffix $(SRC_VOCAB_FILE))
 
 SRC_STANDARD_DIR := ../vocabs/standard
-SRC_STANDARD_FILES := activities.skos activities-modified.skos legal-form.skos organisational-structure.skos products-services.skos qualifiers.skos themes.skos type-of-labour.skos
+SRC_STANDARD_FILES := activities.skos activities-modified.skos activities-ica.skos legal-form.skos organisational-structure.skos products-services.skos qualifiers.skos themes.skos type-of-labour.skos
 
 SRC_HTML_DIR := ../vocabs/html
 # The original HTML file from essglobal.org was 2015.01.11.html:
