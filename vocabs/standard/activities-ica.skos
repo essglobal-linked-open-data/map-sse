@@ -261,7 +261,7 @@
 
 
 <skos:Concept rdf:about="ICA170">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>Q</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Health</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -276,7 +276,7 @@
 
 
 <skos:Concept rdf:about="ICA180">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>R</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Community</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -291,7 +291,7 @@
 
 
 <skos:Concept rdf:about="ICA190">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>S</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Social</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -306,7 +306,7 @@
 
 
 <skos:Concept rdf:about="ICA200">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>T</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Social Service</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -321,7 +321,7 @@
 
 
 <skos:Concept rdf:about="ICA210">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>U</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Housing</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -336,7 +336,7 @@
 
 
 <skos:Concept rdf:about="ICA220">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>V</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Transport</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -351,7 +351,7 @@
 
 
 <skos:Concept rdf:about="ICA230">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>W</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Utility</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -366,7 +366,7 @@
 
 
 <skos:Concept rdf:about="ICA240">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>X</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Retail</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
@@ -381,8 +381,64 @@
 
 
 <skos:Concept rdf:about="ICA250">
-        <skos:altLabel>P</skos:altLabel>
+        <skos:altLabel>Y</skos:altLabel>
         <skos:prefLabel xml:lang="EN">Production</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA260">
+        <skos:altLabel>Z</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Wholesale and Retail</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA270">
+        <skos:altLabel>AA</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Education / Health / Social Work</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA280">
+        <skos:altLabel>AB</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Other Services</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA290">
+        <skos:altLabel>AC</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">All</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
