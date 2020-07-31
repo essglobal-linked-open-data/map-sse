@@ -32,7 +32,9 @@
 	    <skos:hasTopConcept rdf:resource="q05"/>  
 	    <skos:hasTopConcept rdf:resource="q06"/>  
 	    <skos:hasTopConcept rdf:resource="q07"/>
-       <skos:hasTopConcept rdf:resource="q08"/>
+       	<skos:hasTopConcept rdf:resource="q08"/>
+		<skos:hasTopConcept rdf:resource="q09"/>
+
 </skos:ConceptScheme>
 
 <skos:Concept rdf:about="q01">
@@ -201,5 +203,14 @@
 	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
 	   <skos:inScheme rdf:resource=""/>
 </skos:Concept>
+
+
+<skos:Concept rdf:about="q09">
+       <skos:definition xml:lang="EN">Major supporters of co-ops.</skos:definition>
+	   <skos:prefLabel xml:lang="EN">Coop Promoter/Supporter</skos:prefLabel>
+	   <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+	   <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
 
 </rdf:RDF>
