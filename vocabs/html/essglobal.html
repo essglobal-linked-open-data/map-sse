@@ -141,6 +141,10 @@
 				</li>
 
 				<li>
+					<a href="#H6.2">Base Membership Type Vocabulary Encoding Scheme</a>
+				</li>
+
+				<li>
 					<a href="#H7">Qualifiers Vocabulary Encoding Scheme</a>
 				</li>
 
@@ -179,6 +183,7 @@
 					<a href="#mission" class="term">mission</a>,
 					<a href="#objective" class="term">objective</a>,
 					<a href="#organisationalStructure" class="term">organisationalStructure</a>,
+					<a href="#baseMembershipType" class="term">baseMembershipType/a>,
 					<a href="#primarySector" class="term">primarySector</a>,
 					<a href="#qualifier" class="term">qualifier</a>,
 					<a href="#quantityPerProductOrServiceUnit" class="term">quantityPerProductOrServiceUnit</a>,
@@ -220,6 +225,7 @@
 					<a href="#Activities-ica" class="term">activities-ica (Economic Activities/Sectors (ICA - L2))</a>,
 					<a href="#Legal-form" class="term">legal-form</a>,
 					<a href="#Organisational-structure" class="term">organisational-structure</a>,
+					<a href="#Base-membership-type" class="term">base-membership-type</a>,
 					<a href="#Qualifiers" class="term">qualifiers</a>,
 					<a href="#Type-of-labour" class="term">type-of-labour</a>
 				</td>
@@ -271,7 +277,7 @@
 					<a href="#legal-form-L5" class="term">L5</a>
 				</td>
 			</tr>
-
+			
 			<tr>
 				<th scope="row">Organisational Structure Vocabulary Encoding Scheme</th>
 				<td>
@@ -285,6 +291,14 @@
 					<a href="#organisational-structure-OS190" class="term">OS190</a>, <a href="#organisational-structure-OS200" class="term">OS200</a>,
 					<a href="#organisational-structure-OS210" class="term">OS210</a>, <a href="#organisational-structure-OS220" class="term">OS220</a>,
 					<a href="#organisational-structure-OS230" class="term">OS230</a>, <a href="#organisational-structure-OS240" class="term">OS240</a>
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">Base Membership Type Vocabulary Encoding Scheme</th>
+				<td>
+					<a href="#base-membership-type-BMT10" class="term">BMT10</a>, <a href="#base-membership-type-BMT20" class="term">BMT20</a>, <a href="#base-membership-type-BMT30" class="term">BMT30</a>, <a href="#base-membership-type-BMT40" class="term">BMT40</a>, 
+					<a href="#base-membership-type-BMT50" class="term">BMT50</a>, <a href="#base-membership-type-BMT60" class="term">BMT60</a>
 				</td>
 			</tr>
 
@@ -1366,6 +1380,69 @@
 											<th scope="row">Member Of:</th>
 											<td axis="Member-Of">
 												<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/organisational-structure">http://purl.org/essglobal/standard/organisational-structure</a>
+											</td>
+										</tr>
+
+									</tbody>
+
+
+									<a id="terms-baseMembershipType"></a>
+									<tbody id="baseMembershipType" class="term" resource="http://purl.org/essglobal/vocab/baseMembershipType">
+										<tr>
+											<th colspan="2" scope="rowgroup">
+												Term Name:
+
+												&nbsp;&nbsp;
+												<span>baseMembershipType</span>
+												<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/vocab/"/>
+												<time property="dcterms:issued" datetime="2020-10-07"></time>
+												<time property="dcterms:modified" datetime="2020-10-07"> </time>
+											</th>
+										</tr>
+
+										<tr class="attribute">
+											<th scope="row">URI:</th>
+											<td axis="URI">
+												<a href="http://purl.org/essglobal/vocab/baseMembershipType">http://purl.org/essglobal/vocab/baseMembershipType/a>
+											</td>
+										</tr>
+
+
+										<tr class="attribute">
+											<th scope="row">Label:</th>
+											<td axis="Label" property="rdfs:label">base membership type</td>
+										</tr>
+
+										<tr class="attribute">
+											<th scope="row">Definition:</th>
+											<td axis="Definition" property="rdfs:comment">The type of membership of an SSE Initiative or Network.</td>
+										</tr>
+
+										<tr class="attribute">
+											<th scope="row">Type of Term:</th>
+											<td axis="Type-of-Term">
+												<a property="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
+											</td>
+										</tr>
+
+										<tr class="attribute">
+											<th scope="row">Has Domain:</th>
+											<td axis="Has-Domain">
+												<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/SSEInitiative">http://purl.org/essglobal/vocab/SSEInitiative</a>
+											</td>
+										</tr>
+
+										<tr class="attribute">
+											<th scope="row">Has Domain:</th>
+											<td axis="Has-Domain">
+												<a property="rdfs:domain" href="http://purl.org/essglobal/vocab/Network">http://purl.org/essglobal/vocab/Network</a>
+											</td>
+										</tr>
+
+										<tr class="attribute">
+											<th scope="row">Member Of:</th>
+											<td axis="Member-Of">
+												<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
 											</td>
 										</tr>
 
@@ -2748,6 +2825,45 @@
 														<th scope="row">Definition:
 														</th>
 														<td axis="Definition" property="rdfs:comment">The set of organisation structure types. Defined by ESSGLOBAL to be used with the term <a href="#organisationalStructure">organisationalStructure</a>.</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:
+														</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://purl.org/dc/dcam/VocabularyEncodingScheme">http://purl.org/dc/dcam/VocabularyEncodingScheme</a>
+														</td>
+													</tr>
+												</tbody>
+
+												<a id="terms-Base-membership-type"></a>
+												<tbody id="Base-membership-type class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">
+															Term Name:&nbsp;&nbsp;<a href="#H6.2"><span>Base Membership Type</span></a>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard/"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time>
+														</th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:
+														</th>
+														<td axis="URI">
+															<a href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:
+														</th>
+														<td axis="Label" property="rdfs:label">Base Membership Type RDF vocabulary</td>
+													</tr>
+													<tr class="attribute">
+														<th scope="row">Definition:
+														</th>
+														<td axis="Definition" property="rdfs:comment">The set of types of memberships. Defined by ESSGLOBAL to be used with the term <a href="#baseMembershipType">baseMembershipType</a>.</td>
 													</tr>
 
 													<tr class="attribute">
@@ -6883,6 +6999,279 @@
 													</tr>
 												</tbody>
 
+
+											</table>
+
+										</div>
+
+										<p>&nbsp;&nbsp;</p>
+										<div id="H6.2">
+											<h2>Section 6.2 Base Membership Type VES</h2>
+											<table cellspacing="0" class="border">
+
+
+												<a id="terms-base-membership-type-BMT10"></a>
+												<tbody id="base-membership-type-BMT10" class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>BMT10</span>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time></th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:</th>
+														<td axis="URI"><a href="http://purl.org/essglobal/standard/base-membership-type/BMT10">http://purl.org/essglobal/standard/base-membership-type/BMT10</a></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:</th>
+														<td axis="Label" property="rdfs:label">BMT10</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Definition:</th>
+														<td axis="Definition" property="rdfs:comment">Consumer/Users</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Comment:</th>
+														<td axis="Comment" property="dcterms:description"></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Member Of:</th>
+														<td axis="Member-Of">
+															<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+												</tbody>
+
+
+												<a id="terms-base-membership-type-BMT20"></a>
+												<tbody id="base-membership-type-BMT20" class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>BMT20</span>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time></th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:</th>
+														<td axis="URI"><a href="http://purl.org/essglobal/standard/base-membership-type/BMT20">http://purl.org/essglobal/standard/base-membership-type/BMT20</a></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:</th>
+														<td axis="Label" property="rdfs:label">BMT20</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Definition:</th>
+														<td axis="Definition" property="rdfs:comment">Producers</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Comment:</th>
+														<td axis="Comment" property="dcterms:description"></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Member Of:</th>
+														<td axis="Member-Of">
+															<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+												</tbody>
+
+												<a id="terms-base-membership-type-BMT30"></a>
+												<tbody id="base-membership-type-BMT30" class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>BMT30</span>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time></th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:</th>
+														<td axis="URI"><a href="http://purl.org/essglobal/standard/base-membership-type/BMT30">http://purl.org/essglobal/standard/base-membership-type/BMT30</a></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:</th>
+														<td axis="Label" property="rdfs:label">BMT30</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Definition:</th>
+														<td axis="Definition" property="rdfs:comment">Workers</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Comment:</th>
+														<td axis="Comment" property="dcterms:description"></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Member Of:</th>
+														<td axis="Member-Of">
+															<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+												</tbody>
+												<a id="terms-base-membership-type-BMT40"></a>
+												<tbody id="base-membership-type-BMT40" class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>BMT40</span>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time></th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:</th>
+														<td axis="URI"><a href="http://purl.org/essglobal/standard/base-membership-type/BMT40">http://purl.org/essglobal/standard/base-membership-type/BMT40</a></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:</th>
+														<td axis="Label" property="rdfs:label">BMT40</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Definition:</th>
+														<td axis="Definition" property="rdfs:comment">Multi-stakeholders</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Comment:</th>
+														<td axis="Comment" property="dcterms:description"></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Member Of:</th>
+														<td axis="Member-Of">
+															<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+												</tbody>
+												<a id="terms-base-membership-type-BMT50"></a>
+												<tbody id="base-membership-type-BMT50" class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>BMT50</span>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time></th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:</th>
+														<td axis="URI"><a href="http://purl.org/essglobal/standard/base-membership-type/BMT50">http://purl.org/essglobal/standard/base-membership-type/BMT50</a></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:</th>
+														<td axis="Label" property="rdfs:label">BMT50</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Definition:</th>
+														<td axis="Definition" property="rdfs:comment">Residents</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Comment:</th>
+														<td axis="Comment" property="dcterms:description"></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Member Of:</th>
+														<td axis="Member-Of">
+															<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+												</tbody>
+
+												<a id="terms-base-membership-type-BMT60"></a>
+												<tbody id="base-membership-type-BMT60" class="term" resource="http://purl.org/essglobal/standard/base-membership-type">
+													<tr>
+														<th colspan="2" scope="rowgroup">Term Name:&nbsp;&nbsp;<span>BMT60</span>
+															<link property="rdfs:isDefinedBy" href="http://purl.org/essglobal/standard"/>
+															<time property="dcterms:issued" datetime="2020-10-07"> </time>
+															<time property="dcterms:modified" datetime="2020-10-07"> </time></th>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">URI:</th>
+														<td axis="URI"><a href="http://purl.org/essglobal/standard/base-membership-type/BMT60">http://purl.org/essglobal/standard/base-membership-type/BMT60</a></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Label:</th>
+														<td axis="Label" property="rdfs:label">BMT60</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Definition:</th>
+														<td axis="Definition" property="rdfs:comment">Others</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Comment:</th>
+														<td axis="Comment" property="dcterms:description"></td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Type of Term:</th>
+														<td axis="Type-of-Term">
+															<a property="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+														</td>
+													</tr>
+
+													<tr class="attribute">
+														<th scope="row">Member Of:</th>
+														<td axis="Member-Of">
+															<a property="dcam:memberOf" href="http://purl.org/essglobal/standard/base-membership-type">http://purl.org/essglobal/standard/base-membership-type</a>
+														</td>
+													</tr>
+												</tbody>
 
 											</table>
 
