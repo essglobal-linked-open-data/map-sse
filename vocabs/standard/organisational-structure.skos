@@ -131,7 +131,7 @@
 <skos:Concept rdf:about="OS80">
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
-        <skos:prefLabel xml:lang="EN">Consumer co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Consumer/User coop</skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
         <skos:prefLabel xml:lang="IT"></skos:prefLabel>
 			

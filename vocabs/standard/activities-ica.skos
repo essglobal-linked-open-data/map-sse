@@ -82,7 +82,7 @@
 
 <skos:Concept rdf:about="ICA50">
         <skos:altLabel>E</skos:altLabel>
-        <skos:prefLabel xml:lang="EN">Fishery</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Fishing</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
@@ -352,7 +352,7 @@
 
 <skos:Concept rdf:about="ICA230">
         <skos:altLabel>W</skos:altLabel>
-        <skos:prefLabel xml:lang="EN">Utility</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Utilities</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
@@ -396,7 +396,7 @@
 
 <skos:Concept rdf:about="ICA260">
         <skos:altLabel>Z</skos:altLabel>
-        <skos:prefLabel xml:lang="EN">Wholesale and Retail</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Wholesale and retail trade</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
