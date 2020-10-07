@@ -205,6 +205,16 @@
   rdfs:subClassOf skos:Concept ;
   owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/organisational-structure> ] .
 
+  <http://purl.org/essglobal/vocab/BaseMembershipType>
+  rdfs:label "Base Membership Type VES"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The type of membership of the organisation"@en ;
+  dc:description ""@pt ;
+  dc:issued "2020-10-07"^^xsd:date ;
+  dc:modified "2020-10-07"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/base-membership-type> ] .
+
  <http://purl.org/essglobal/vocab/Qualifiers>
   rdfs:label "Qualifiers VES"@en ;
   rdfs:label "Qualificadores VES"@pt ;
@@ -341,6 +351,18 @@
   dc:modified "2019-05-16"^^xsd:date ;
   a owl:DatatypeProperty ;
   rdfs:range <http://purl.org/essglobal/vocab/OrganisationalStructure> ;
+  rdfs:domain [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/SSEInitiative> <http://purl.org/essglobal/vocab/Network>) ] .
+
+  <http://purl.org/essglobal/vocab/baseMembershipType>
+  rdfs:label "Base Membership Type"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The type of membership of an SSE Initiative or Network"@en ;
+  dc:description ""@pt ;
+  rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
+  dc:issued "2020-10-07"^^xsd:date ;
+  dc:modified "2020-10-07"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/essglobal/vocab/BaseMembershipType> ;
   rdfs:domain [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/SSEInitiative> <http://purl.org/essglobal/vocab/Network>) ] .
 
 <http://purl.org/essglobal/vocab/qualifier>
