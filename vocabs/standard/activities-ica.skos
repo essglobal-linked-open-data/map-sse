@@ -410,7 +410,7 @@
 
 <skos:Concept rdf:about="ICA270">
         <skos:altLabel>AA</skos:altLabel>
-        <skos:prefLabel xml:lang="EN">Education / Health / Social Work</skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Education / health / social work</skos:prefLabel>
         <skos:prefLabel xml:lang="ES"></skos:prefLabel>
         <skos:prefLabel xml:lang="FR"></skos:prefLabel>
         <skos:prefLabel xml:lang="PT"></skos:prefLabel>
