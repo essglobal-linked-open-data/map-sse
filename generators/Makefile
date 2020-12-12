@@ -7,27 +7,10 @@ TEST_target := test
 .PHONY: $(HELP_target) $(GENERATE_target) $(DEPLOY_target) $(TEST_target)
 .DEFAULT_GOAL: $(HELP_target)
 
+export # for print-help
+
 $(HELP_target):
-	@echo USAGE
-	@echo -----
-	@echo "make $(HELP_target)"
-	@echo "\tPrint help."
-	@echo "make $(HELP_target) tgt_version=x"
-	@echo "\tPrint help about a specific target version."
-	@echo "\tValid target version are: $(TGT_VERSIONS)"
-	@echo "make $(GENERATE_target) tgt_version=x"
-	@echo "\t1. Generate various RDF serializations in directory $(TGT_DIR)."
-	@echo "\t   These will be based on the contents of $(SRC_VOCAB_FILE), but with substitutions made for the base URI $(SRC_BASE_URI)."
-	@echo "\t2. Generate SKOS files from the ones in $(SRC_STANDARD_DIR), but with substitutions made for the base URI $(SRC_BASE_URI)."
-	@echo "\t3. Generate HTML files from the ones in $(SRC_HTML_DIR), but with substitutions made for the base URI $(SRC_BASE_URI)."
-	@[ -n "$(TGT_BASE_URI)" ] && echo "\tWith tgt_version=$(tgt_version), $(SRC_BASE_URI) will be replaced by $(TGT_BASE_URI)." || true
-	@[ -z "$(TGT_BASE_URI)" ] && echo "\tThe substitution will depend on the tgt_version specified on the make command line" || true
-	@echo "make $(DEPLOY_target) tgt_version=x"
-	@echo "\tDeploy the generated data to a server."
-	@echo "\tCAUTION! The target directory on the server will be synchronized with your local directory, made by 'make $(DEPLOY_target),"
-	@echo "\t         and any files in the target directory on the server, but not in the local directory will be deleted!"
-	@echo "make $(TEST_target) tgt_version=x"
-	@echo "\tRun post-deployment tests."
+	./print-help
 
 #ifndef base_uri
   #$(info "You must set the variable base_uri on the command line. e.g. 'make target base_uri=http:foo.org/bar'")

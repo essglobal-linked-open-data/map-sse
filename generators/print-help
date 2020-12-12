@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+
+# Print help in a slightly more readable way than the Makefile
+# And a first step to Ruby.
+
+class Help
+  def method_missing(m, *args)
+    ENV[m.to_s.delete_prefix "_"]
+  end
+
+  def get_help
+    return <<"HELP"
+USAGE
+-----
+Make #{_HELP_target}
+    Print help.
+
+make #{_HELP_target} tgt_version=x
+    Print help about a specific target version.
+    Valid target version are: #{_TGT_VERSIONS}
+
+make #{_GENERATE_target} tgt_version=x
+    1. Generate various RDF serializations in directory #{_TGT_DIR}.
+       These will be based on the contents of #{_SRC_VOCAB_FILE}, but with substitutions made for the base URI #{_SRC_BASE_URI}.
+    2. Generate SKOS files from the ones in #{_SRC_STANDARD_DIR}, but with substitutions made for the base URI #{_SRC_BASE_URI}.
+    3. Generate HTML files from the ones in #{_SRC_HTML_DIR}, but with substitutions made for the base URI #{_SRC_BASE_URI}.
+#{
+        _TGT_BASE_URI ?
+        "With tgt_version=#{_tgt_version}, #{_SRC_BASE_URI} will be replaced by #{_TGT_BASE_URI}." :
+        "The substitution will depend on the tgt_version specified on the make command line."
+}  
+
+make #{_DEPLOY_target} tgt_version=x
+    Deploy the generated data to a server.
+
+    CAUTION! The target directory on the server will be synchronized
+    with your local directory, made by 'make #{_DEPLOY_target}, and any
+    files in the target directory on the server, but not in the local
+    directory will be deleted!
+
+make #{_TEST_target} tgt_version=x
+    Run post-deployment tests.
+
+HELP
+  end
+end
+
+puts Help.new.get_help
