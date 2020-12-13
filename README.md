@@ -37,7 +37,7 @@ Each of these is described in detail in the [ESSGLOBAL technical guidelines](doc
 
 ## Generating and deploying RDF serializations
 
-There is a [makefile](generators/Makefile) for generating various RDF serialializations.
+There is a [script](generators/build) for generating various RDF serialializations.
 For more information, see the [generating and deploying serializations](https://github.com/essglobal-linked-open-data/map-sse/wiki/Generating-and-deploying-serializations) in the Wiki.
 
 ## Release versions
