@@ -15,6 +15,14 @@ case $target_version in
 	subdir=essglobal/V2a
 	essglobal_url=https://w3id.solidarityeconomy.coop/$subdir/
 	;;
+    dev)
+	subdir=essglobal/V2a
+	essglobal_url=https://dev.lod.coop/$subdir/
+	;;
+    prod)
+	subdir=essglobal/V2a
+	essglobal_url=https://lod.coop/$subdir/
+	;;
     1.1)
 	essglobal_url=http://purl.org/essglobal/
 	;;		
