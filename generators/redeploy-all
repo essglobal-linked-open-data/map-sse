@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This is what we normally need to do to rebuild and deploy
+
+./build dev
+./build sea
+
+./deploy generated/dev/ dev-0:/var/www/vhosts/vocabs.solidarityeconomy.coop/www/essglobal/V2a
+./deploy generated/sea/ prod-0:/var/www/vhosts/vocabs.solidarityeconomy.coop/www/essglobal/V2a

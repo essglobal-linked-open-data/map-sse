@@ -1,0 +1,75 @@
+#!/bin/bash
+
+set -xv
+
+target_version=${1?Please set the target version}
+case $target_version in
+    experimental)
+	essglobal_url
+	essglobal_url=http://purl.org/essglobal/experimental/;;
+    ise)
+	subdir=experimental/essglobal
+	essglobal_url=http://purl.org/solidarityeconomics/$subdir/
+	;;
+    sea)
+	subdir=essglobal/V2a
+	essglobal_url=https://w3id.solidarityeconomy.coop/$subdir/
+	;;
+    dev)
+	subdir=essglobal/V2a
+	essglobal_url=https://dev.lod.coop/$subdir/
+	;;
+    prod)
+	subdir=essglobal/V2a
+	essglobal_url=https://lod.coop/$subdir/
+	;;
+    1.1)
+	essglobal_url=http://purl.org/essglobal/
+	;;		
+    *) echo "Unrecognised target version: $target_version"
+       exit 1;;
+esac
+
+orig_essglobal_url=http://purl.org/essglobal/
+output_dir=generated/$target_version
+
+# Clean out old output
+rm -rf $output_dir
+
+# Recreate dirs
+mkdir -p $output_dir/{vocab,standard,html}-content
+
+# Rewrite $orig_essglobal_url to $essglobal_url in template SKOS, HTML and TTL files
+for src in ../vocabs/{vocab/*.ttl,standard/*.skos,html/essglobal.html}; do
+    # extract the content name from ../vocabs/<content>/*.*
+    content=${src#../vocabs/}
+    content=${content%/*}
+    filename=${src##*/}
+    dest=$output_dir/$content-content/$filename
+    # Warn if expected pattern is not present
+    grep -q "$orig_essglobal_url" $src || cat >&2 <<EOF
+$orig_essglobal_url not found in file $src.
+Perhaps there's an error the definition of orig_essglobal_url in $0?
+EOF
+
+    sed "s|$orig_essglobal_url|$essglobal_url|g" $src > $dest
+done
+
+# Copy css verbatim
+cp ../vocabs/html/*.css $output_dir/html-content/
+
+# Translate TTL into RDF
+rapper -i turtle -o rdfxml-abbrev $output_dir/vocab-content/essglobal-vocab.ttl > $output_dir/vocab-content/essglobal-vocab.rdf
+
+# Translate TTL into HTML
+rapper -i turtle -o html $output_dir/vocab-content/essglobal-vocab.ttl > $output_dir/vocab-content/essglobal-vocab.html
+
+# Generate the .htaccess
+ruby generate-htaccess.rb /$subdir/ vocab standard vocab-content/essglobal-vocab.{rdf,ttl} standard-content html-content/essglobal.html > $output_dir/.htaccess
+
+# Generate a warning not to edit
+cat > $output_dir/DO_NOT_EDIT_HERE.txt <<EOF
+This directory and subdirectories are generated from a script.
+Any changes you make here will be lost next time that script is run.
+Files generated for target version $target_version can be found in directory $output_dir.
+EOF

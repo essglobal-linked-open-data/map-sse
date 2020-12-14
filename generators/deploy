@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -vx
+
+src=${1?Please supply the source directory}
+[[ -d "$src" ]] || {
+   echo "Not a directory: $src" >&2
+   exit
+}
+
+rsync_url=${2?Please supply the destination RSYNC URL}
+host_login=${rsync_url%%:*}
+host_path=${rsync_url#*:}
+
+ssh $host_login "mkdir -p '$host_path'"
+rsync -avzc --delete --rsync-path='sudo rsync' --usermap="*:www-data" --groupmap="*:www-data" "${src%%/}/" "$rsync_url"
+
