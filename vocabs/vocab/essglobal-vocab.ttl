@@ -161,6 +161,17 @@
   dc:modified "2014-08-05"^^xsd:date ; 
   rdfs:subClassOf skos:Concept ;
   owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/activities> ] .
+
+
+  <http://purl.org/essglobal/vocab/ActivitiesModified>
+  rdfs:label "Activities Modified VES"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The modified activities vocabulary encoding scheme"@en ;
+  dc:description ""@pt ;
+  dc:issued "2019-05-20"^^xsd:date ;
+  dc:modified "2019-05-20"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/activities-modified> ] .
   
     
  <http://purl.org/essglobal/vocab/LegalForm>
@@ -172,6 +183,16 @@
   dc:modified "2014-08-05"^^xsd:date ;
   rdfs:subClassOf skos:Concept ;
   owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/legal-form> ] .
+
+  <http://purl.org/essglobal/vocab/OrganisationalStructure>
+  rdfs:label "Organisational Structure VES"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The organisational structure vocabulary encoding scheme"@en ;
+  dc:description ""@pt ;
+  dc:issued "2019-05-16"^^xsd:date ;
+  dc:modified "2019-05-16"^^xsd:date ; 
+  rdfs:subClassOf skos:Concept ;
+  owl:equivalentClass [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <http://purl.org/essglobal/standard/organisational-structure> ] .
 
  <http://purl.org/essglobal/vocab/Qualifiers>
   rdfs:label "Qualifiers VES"@en ;
@@ -222,13 +243,33 @@
 <http://purl.org/essglobal/vocab/economicSector>
   rdfs:label "Economic Sector"@en ;
   rdfs:label "Setor Económico"@pt ;
-  dc:description "A categorization of the type of activities carried on by SSE initiatives, depending of its nature, raw materials and methodology."@en ;
-  dc:description "Categorização do tipo de atividades exercidas por iniciativas da ESS, dependendo da sua natureza, das matérias-primas e da metodologia."@pt ;
+  dc:description "A categorization of the type of activities carried on by SSE initiatives."@en ;
+  dc:description "Categorização do tipo de atividades exercidas por iniciativas da ESS."@pt ;
   rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
   dc:issued "2014-02-06"^^xsd:date ;
-  dc:modified "2014-08-05"^^xsd:date ;
+  dc:modified "2019-05-28"^^xsd:date ;
   a owl:DatatypeProperty ;
-  rdfs:range <http://purl.org/essglobal/vocab/Activities> ;  
+  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesModified> ;  
+  rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
+
+<http://purl.org/essglobal/vocab/primarySector>
+  rdfs:label "Primary Sector"@en ;
+  dc:description "The primary activity carried out by SSE initiatives."@en ;
+  rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
+  dc:issued "2019-05-20"^^xsd:date ;
+  dc:modified "2019-05-20"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesModified> ;  
+  rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
+
+  <http://purl.org/essglobal/vocab/additionalSectors>
+  rdfs:label "Additional Sectors"@en ;
+  dc:description "Additional activities carried out by SSE initiatives."@en ;
+  rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
+  dc:issued "2019-05-20"^^xsd:date ;
+  dc:modified "2019-05-20"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/essglobal/vocab/ActivitiesModified> ;  
   rdfs:domain <http://purl.org/essglobal/vocab/SSEInitiative> .
 
 <http://purl.org/essglobal/vocab/totalWomen>
@@ -277,6 +318,18 @@
   dc:modified "2014-08-05"^^xsd:date ;
   a owl:DatatypeProperty ;
   rdfs:range <http://purl.org/essglobal/vocab/LegalForm> ;
+  rdfs:domain [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/SSEInitiative> <http://purl.org/essglobal/vocab/Network>) ] .
+
+  <http://purl.org/essglobal/vocab/organisationalStructure>
+  rdfs:label "Organisational Structure"@en ;
+  rdfs:label ""@pt ;
+  dc:description "The organisational structure of a SSE Initiative or Network."@en ;
+  dc:description ""@pt ;
+  rdfs:isDefinedBy <http://purl.org/essglobal/vocab/> ;
+  dc:issued "2019-05-16"^^xsd:date ;
+  dc:modified "2019-05-16"^^xsd:date ;
+  a owl:DatatypeProperty ;
+  rdfs:range <http://purl.org/essglobal/vocab/OrganisationalStructure> ;
   rdfs:domain [a owl:Class; owl:unionOf (<http://purl.org/essglobal/vocab/SSEInitiative> <http://purl.org/essglobal/vocab/Network>) ] .
 
 <http://purl.org/essglobal/vocab/qualifier>

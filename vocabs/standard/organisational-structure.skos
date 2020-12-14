@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://purl.org/essglobal/standard/organisational-structure/">
+
+
+<skos:ConceptScheme rdf:about="">
+<dc:title>Legal Form Modified</dc:title>
+        <dc:description>Alternative SSE Initiative or SSE Network Legal form controlled vocabulary for SSE</dc:description>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-16</dcterms:created>
+        <dc:language>en-en</dc:language>
+        <dc:publisher rdf:resource="https://solidarityeconomy.coop/" />
+        <dcterms:publisher>ESSGLOBAL</dcterms:publisher>
+        <dc:relation rdf:resource="http://www.ripess.org/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:about="OS10">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Community group (formal or informal)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+         <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="OS20">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Not-for-profit organisation</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+	<skos:prefLabel xml:lang="IT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:scopeNote xml:lang="IT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="OS30">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Social enterprise</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+	<skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="OS40">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Charity</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+	<skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS50">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Company (Other)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS60">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Workers co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS70">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Housing co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS80">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Consumer co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS90">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Producer co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS100">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Multi-stakeholder co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS110">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Secondary co-operative</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS120">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Community Interest Company (CIC)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS130">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Community Benefit Society / Industrial and Provident Society (IPS)</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS140">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Employee trust</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS150">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Self-employed</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="OS160">
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="EN">Unincorporated</skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+			
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:prefLabel xml:lang="IT"></skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+</rdf:RDF>
