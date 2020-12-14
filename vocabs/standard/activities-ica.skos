@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" 
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xml:base="http://purl.org/essglobal/standard/activities-ica/">
+
+
+<skos:ConceptScheme rdf:about="">
+<dc:title>Activities ICA</dc:title>
+        <dc:description>The set of economic activities defined by the ICA (L2) to be used with the terms economicSector, primarySector</dc:description>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</dcterms:created>
+        <dc:language>en-en</dc:language>
+        <dc:publisher rdf:resource="https://solidarityeconomy.coop/" />
+        <dcterms:publisher>ESSGLOBAL</dcterms:publisher>
+        <dc:relation rdf:resource="http://www.ripess.org/"/>
+</skos:ConceptScheme>
+
+
+<skos:Concept rdf:about="ICA10">
+        <skos:altLabel>A</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Agriculture</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA20">
+        <skos:altLabel>B</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Dairy</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA30">
+        <skos:altLabel>C</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Forestry</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA40">
+        <skos:altLabel>D</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Irrigation</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA50">
+        <skos:altLabel>E</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Fishing</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA60">
+        <skos:altLabel>F</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Artisans</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA70">
+        <skos:altLabel>G</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Construction</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA80">
+        <skos:altLabel>H</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Industry</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA90">
+        <skos:altLabel>I</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Manufacturing</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA100">
+        <skos:altLabel>J</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Mining</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA110">
+        <skos:altLabel>K</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Professional</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA120">
+        <skos:altLabel>L</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Service</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA130">
+        <skos:altLabel>M</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Tourism</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA140">
+        <skos:altLabel>N</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Financial Services</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA150">
+        <skos:altLabel>O</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Insurance</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA160">
+        <skos:altLabel>P</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Education</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA170">
+        <skos:altLabel>Q</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Health</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA180">
+        <skos:altLabel>R</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Community</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA190">
+        <skos:altLabel>S</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Social</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA200">
+        <skos:altLabel>T</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Social Service</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA210">
+        <skos:altLabel>U</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Housing</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA220">
+        <skos:altLabel>V</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Transport</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA230">
+        <skos:altLabel>W</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Utilities</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA240">
+        <skos:altLabel>X</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Retail</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="ICA250">
+        <skos:altLabel>Y</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Production</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA260">
+        <skos:altLabel>Z</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Wholesale and retail trade</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA270">
+        <skos:altLabel>AA</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Education / health / social work</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA280">
+        <skos:altLabel>AB</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">Other Services</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+<skos:Concept rdf:about="ICA290">
+        <skos:altLabel>AC</skos:altLabel>
+        <skos:prefLabel xml:lang="EN">All</skos:prefLabel>
+        <skos:prefLabel xml:lang="ES"></skos:prefLabel>
+        <skos:prefLabel xml:lang="FR"></skos:prefLabel>
+        <skos:prefLabel xml:lang="PT"></skos:prefLabel>
+
+        <skos:scopeNote xml:lang="EN"></skos:scopeNote>
+        <skos:scopeNote xml:lang="ES"></skos:scopeNote>
+        <skos:scopeNote xml:lang="FR"></skos:scopeNote>
+        <skos:scopeNote xml:lang="PT"></skos:scopeNote>
+        <skos:inScheme rdf:resource=""/>
+</skos:Concept>
+
+
+</rdf:RDF>
