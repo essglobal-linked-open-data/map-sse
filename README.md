@@ -1,7 +1,14 @@
-# map-sse
+# map-sse [UNMAINTAINED]
+
 Metadata Application Profile for the Social and Solidarity Economy.
 
 This repository contains the source files for the MAP-SSE (previously referred to as DCAP-SSE). Until October 2016, these were maintained on a server at [essglobal.org](http://essglobal.org/dcap-sse/). A reason for moving them is to allow other people to get involved in the maintenance and development of the MAP-SSE.
+
+Update: as of the end of 2020, this repository is no longer maintained. Instead, see the fork maintained by the [SolidarityEconomyAssociation][1] here:
+
+https://github.com/SolidarityEconomyAssociation/map-sse
+
+[1]: https://github.com/SolidarityEconomyAssociation
 
 ## Documentation sources
 
